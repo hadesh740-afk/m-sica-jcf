@@ -1,1605 +1,1091 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class='no-js' lang='es'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JCF - Jóvenes Construyendo el Futuro</title>
-    <link rel="shortcut icon" href="publico/img/favicon.svg">
+    <title>Coordinación Nacional de Becas para el Bienestar Benito Juárez | Gobierno | gob.mx</title>
 
-    <!-- RECAPTCHA -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+  <meta charset='UTF-8'>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
 
-    <!--JQUERY-->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <!-- ========================================== -->
+  <!-- CORRECCIÓN: Base URL para rutas relativas   -->
+  <!-- ========================================== -->
+  <base href="https://www.gob.mx/becasbenitojuarez/">
 
-    <!--GOOGLEFONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap" rel="stylesheet">
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="Fh3w4A9Uvtqw53MX/ftIp9ymoyw9y+T03MsI4rZr6DY=" name="csrf-token" />
 
-    <!--BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link href='' rel='stylesheet' type='text/css'>
+  <link href='https://framework-gb.cdn.gob.mx/applications/cms/favicon.png' rel='shortcut icon'>
 
-    <!--FONTAWESOME-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link data-turbolinks-track="true" href="/cms/assets/application.css" media="all" rel="stylesheet" />
+  <link data-turbolinks-track="true" href="https://framework-gb.cdn.gob.mx/gm/accesibilidad/css/gobmx-accesibilidad.min.css" media="all" rel="stylesheet" />
+  <link data-turbolinks-track="true" href="https://fonts.googleapis.com" media="all" rel="preconnect" />
+  <link data-turbolinks-track="true" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300" media="all" rel="stylesheet" />
+  <link data-turbolinks-track="true" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" media="all" rel="stylesheet" />
+      <link href='https://www.gob.mx/cdn/themes/default_theme/stylesheets/default.css'rel="stylesheet" type="text/css" class="theme" ></link>
 
-    <!--SCROLL MAGIC-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/EaselPlugin.min.js.map"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/ScrollToPlugin.min.js"></script>
 
-    <!--JQUERY.UI-->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://jovenesconstruyendoelfuturo.stps.gob.mx/lib/date/ui.datepicker-es-MX.js"></script>
-    <link rel="stylesheet" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/lib/date/datepicker.css">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 
-    <!-- FANCYBOX -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+ <![endif]-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script src="https://framework-gb.cdn.gob.mx/applications/cms/carrusel/swiper-bundle.min.js"></script>
 
-    <!-- ESTILOS PLATAFORMA -->
-    <link rel="stylesheet" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/css/free.gob.mx.css">
-    <link rel="stylesheet" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/css/menu.css">
+  <link rel="stylesheet" href="https://framework-gb.cdn.gob.mx/applications/cms/carrusel/swiper-bundle.min.css">
 
-    <!--CSS DGCMP-->
-    <link rel="stylesheet" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/css/genericos.css">
-    <link rel="stylesheet" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/css/info.css">
-    <link rel="stylesheet" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/css/testimonios.css">
-    <link rel="stylesheet" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/css/form.css">
-    <link rel="stylesheet" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/css/header_jcf.css">
+    <script type="text/javascript">
 
-    <!-- mensajes de confirm -->
-    <link rel="stylesheet" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/lib/js/jquery-confirm-v3.3.4/css/jquery-confirm.css">
-    <script src="https://jovenesconstruyendoelfuturo.stps.gob.mx/lib/js/jquery-confirm-v3.3.4/js/jquery-confirm.js"></script>
-
-    <!-- CHECKBOX -->
-    <link href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/css/footer.css">
-    <link rel="stylesheet" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/css/contacto.css">
-    <link rel="icon" href="favicon.png">
-
-    <style type="text/css">
-        body{
-            font-family: 'Montserrat';
+        var SubGroup = '';
+        if(false || false){
+            SubGroup = 'Temas';
+        }else{
+            SubGroup = 'becasbenitojuarez';
         }
-        .slider_titulo h3{
-            font-family: 'GMX', 'Montserrat';
-        }
-        @font-face{
-            font-family:GMX;
-            scr: url(https://jovenesconstruyendoelfuturo.stps.gob.mx/fonts/GMX-Black.ttf);
-        }
-        main{
-            min-height: 100vh;
-        }
-    </style>
+        var PageType = '';
+        if(false){
+            PageType = 'Home'
+        }else{
+            if(false){
+                PageType = '';
+            }else {
+                var site = window.location.pathname;
+                var arrayPageType = ["articulos", "prensa", "agenda", "documentos", "multimedia", "galerias", "videos",
+                    "acciones_y_programas", "acciones-y-programas", "mi-foto-con-el-presidente",
+                    "estructuras", "descargables", "que-hacemos", "finanzas", "infografias"];
 
-    <script>
+                if (site.search("archivo") != -1) {
+                    PageType = "archivo_";
+                }
+                for (var i = 0; i < arrayPageType.length; i++) {
+                    if (site.search(arrayPageType[i]) != -1) {
+                        PageType += arrayPageType[i];
+                        break;
+                    }
+                }
+            }
+        }
+
+
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'UA-125791804-1');
+
+        gtag('config', '');
+
+        gtag('require', 'linker');
+        gtag('linker:autoLink', ['www.gob.mx']);
+        gtag('set', 'contentGroup1', 'Gobierno');
+        gtag('set', 'contentGroup2', SubGroup);
+        gtag('set', 'contentGroup3', PageType);
+        gtag('set', 'dimension14', 'Gobierno');
+        gtag('set', 'dimension15', SubGroup);
+        gtag('set', 'dimension16', PageType);
+        gtag('set', 'dimension13', 'No Registrado');
+        gtag('send', 'pageview');
+        gtag('set', 'contentGroup1', null);
+        gtag('set', 'contentGroup2', null);
+        gtag('set', 'contentGroup3', null);
+        gtag('set', 'dimension14', null);
+        gtag('set', 'dimension15', null);
+        gtag('set', 'dimension16', null);
+        gtag('set', 'dimension13', null);
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-265988525-1', 'auto', {'allowLinker':true});
+        ga('require', 'linker');
+        ga('linker:autoLink', ['www.gob.mx']);
+        ga('set', 'contentGroup1', 'Gobierno');
+        ga('set', 'contentGroup2', SubGroup);
+        ga('set', 'contentGroup3', PageType);
+        ga('set', 'dimension14', 'Gobierno');
+        ga('set', 'dimension15', SubGroup);
+        ga('set', 'dimension16', PageType);
+        ga('set', 'dimension13', 'No Registrado');
+        ga('send', 'pageview');
+        ga('set', 'contentGroup1', null);
+        ga('set', 'contentGroup2', null);
+        ga('set', 'contentGroup3', null);
+        ga('set', 'dimension14', null);
+        ga('set', 'dimension15', null);
+        ga('set', 'dimension16', null);
+        ga('set', 'dimension13', null);
     </script>
 
-    <!-- ESTILOS HOME -->
-    <link href="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/css/homenew.css" rel="stylesheet">
 
-    <style type="text/css">
-        .carousel__track{
-            display: none !important;
-        }
-        .pride {
-            display: flex;
-            justify-content: center;
-            margin-top: -15px;
-        }
-        .pride img {
-            width: 280px;
-        }
-        .banner-container {
-            width: 100vw;
-            position: relative;
-            left: 50%;
-            right: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-            display: block;
-            padding: 0;
-            overflow: hidden;
-        }
-        .banner-responsive {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover;
-            object-position: center;
-            max-width: none;
-        }
-        .banner-square-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            position: relative;
-            z-index: 9999;
-        }
-        .banner-square {
-            width: 450px;
-            height: auto;
-            display: block;
-            max-width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-        .banner-square:hover {
-            transform: scale(1.02);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-        }
-        @media (max-width: 768px) {
-            .banner-square {
-                width: 90%;
-                max-width: 350px;
-                border-radius: 12px;
-            }
-            .banner-square-container {
-                margin: 15px 0;
-                margin-top: 10em;
-                padding: 0 10px;
-            }
-        }
-        @media (max-width: 480px) {
-            .banner-square {
-                width: 95%;
-                max-width: 280px;
-                border-radius: 10px;
-            }
-            .banner-square-container {
-                margin: 10px 0;
-                margin-top: 10em;
-            }
-        }
-        @media (min-width: 1440px) and (max-width:1900px) {
-            .pride { margin-top: -27px; }
-            .pride img { width: 222px; }
-        }
-        @media (max-width: 768px) {
-            .pride { margin-top: 220px; }
-            .pride img { width: 250px; }
-            .banner-responsive { min-height: 200px; }
-        }
-        .logo-boxeando-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 15px auto;
-        }
-        .logo-boxeando {
-            width: 220px;
-            height: auto;
-            display: block;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            cursor: pointer;
-        }
-        .logo-boxeando:hover {
-            transform: scale(1.08);
-            opacity: 0.85;
-        }
-        @media (max-width: 768px) { .logo-boxeando { width: 160px; } }
-        @media (max-width: 480px) { .logo-boxeando { width: 130px; } }
-        @media (min-width: 1440px) { .logo-boxeando { width: 260px; } }
-    </style>
+  <script type = "text/javascript"> 
+  var rails_env_prod = true; </script>
+  <script src="/cms/assets/application.js"></script>
+  <script src="/cms/assets/imageReplace.js"></script>
 
-    <!-- Elfsight Platform -->
-    <script src="https://elfsightcdn.com/platform.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
-    <!-- === ESTILOS DEL REPRODUCTOR DE MÚSICA === -->
-    <style>
-
-#musicOverlay {
-    display: none;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.2);
-    z-index: 99998;
-    backdrop-filter: blur(2px);
-}
-#musicOverlay.show { display: block; }
-
-#musicWidgetContainer {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99999;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* === ESTADO COLAPSADO (Burbuja marca de agua) === */
-#musicWidgetContainer.collapsed {
-    width: 50px;
-    height: 50px;
-}
-
-#musicBubble {
-    position: absolute;
-    top: 0; left: 0;
-    width: 50px; height: 50px;
-    background: rgba(159, 34, 65, 0.08);
-    color: rgba(159, 34, 65, 0.25);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    cursor: pointer;
-    border: 1px solid rgba(159, 34, 65, 0.06);
-    backdrop-filter: blur(1px);
-    box-shadow: none;
-    z-index: 2;
-    transition: all 0.3s ease;
-}
-
-#musicBubble:hover {
-    background: rgba(159, 34, 65, 0.2);
-    color: rgba(159, 34, 65, 0.5);
-    border: 1px solid rgba(159, 34, 65, 0.15);
-    transform: scale(1.15);
-}
-
-#musicBubble i {
-    animation: musicPulse 3s ease-in-out infinite;
-}
-
-@keyframes musicPulse {
-    0%, 100% { transform: scale(1); opacity: 0.3; }
-    50% { transform: scale(1.1); opacity: 0.6; }
-}
-
-/* Estado "reproduciendo" - un poco más visible */
-#musicBubble.has-audio {
-    background: rgba(159, 34, 65, 0.15);
-    color: rgba(159, 34, 65, 0.4);
-}
-
-/* === ESTADO EXPANDIDO (Barra inferior) === */
-#musicWidgetContainer.expanded {
-    width: calc(100% - 40px);
-    max-width: 800px;
-    height: 110px;
-    bottom: 20px;
-    right: 20px;
-    left: auto;
-}
-
-#musicBar {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
-    border-radius: 16px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.4);
-    border: 1px solid rgba(255,255,255,0.08);
-    display: flex;
-    align-items: center;
-    padding: 8px 45px 8px 15px;
-    box-sizing: border-box;
-    position: relative;
-    opacity: 0;
-    transform: scale(0.8);
-    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    overflow: hidden;
-}
-
-#musicWidgetContainer.expanded #musicBar {
-    opacity: 1;
-    transform: scale(1);
-}
-
-#musicWidgetWrapper {
-    width: 100%;
-    height: 90px;
-    opacity: 0;
-    transition: opacity 0.3s ease 0.15s;
-    overflow: hidden;
-}
-
-#musicWidgetContainer.expanded #musicWidgetWrapper {
-    opacity: 1;
-}
-
-#musicCloseBtn {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    background: rgba(255,255,255,0.1);
-    border: none;
-    color: rgba(255,255,255,0.7);
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    transition: all 0.2s;
-    line-height: 1;
-}
-#musicCloseBtn:hover {
-    background: rgba(233,69,96,0.3);
-    color: #fff;
-}
-
-#musicWidgetContainer.collapsed #musicBar {
-    opacity: 0;
-    pointer-events: none;
-    transform: scale(0.8);
-}
-
-@media (max-width: 768px) {
-    #musicWidgetContainer.expanded {
-        width: calc(100% - 20px);
-        right: 10px;
-        left: 10px;
-        height: 130px;
-    }
-    #musicWidgetWrapper {
-        height: 110px;
-    }
-    #musicWidgetContainer.collapsed {
-        width: 44px;
-        height: 44px;
-    }
-    #musicBubble {
-        width: 44px;
-        height: 44px;
-        font-size: 16px;
-    }
-}
-
-    </style>
-<base target="_blank">
-</head>
+                                <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="948VY-ZM68F-X7Y7K-BEYVV-MSV5F",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"948VY-ZM68F-X7Y7K-BEYVV-MSV5F",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="xxs2fi5567cvg2qbnaaq-f-cfac8d1c2-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"41","ak.cp":"413578","ak.ai":parseInt("270161",10),"ak.ol":"0","ak.cr":17,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"5079902f","ak.r":46038,"ak.a2":e,"ak.m":"b","ak.n":"essl","ak.cport":55746,"ak.gh":"189.247.197.79","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1778477057","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==AsV6AP7c1oPXCVQZycpbaUfw8kQGxDTYf3BMIFk6EH3wFEyAYSwru2DIdvjujKA8f0i4PQ8WTIhE4OWDan1IfFHX3xaVy82hPIFAKvEfNj0Ef0EHDPmMYN1k/pEyHsSQ+0Hem7tFqK2gFZ6LCcHg25XKr/d0lP7NWhLEwfeSOxvgr3SBjLeRUhUGrwaW4sEMdSB0c5TdOnNt1OnwBm11x+pb/kqi8HYz3yt8MSo+Funb53Ek/GTUSi3wtiShkOqfFRYvOGw2S4+6zgeZRBjbpC2OJC0AW63yFFBsDpFIsg2ek98U9VvjHk6W4Uu2nqq8bBZxp/w8d+tbxGSiAO5UPhnMOoZghjMRZgsYSYg5v0GK3htpwZ1K4wAOssV0fdh+ilRzqMujgaKQkIZhOWAa1nDWQOYl5mWZE6ZSRp1hxjk=","ak.pv":"141","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
 <body>
-   
-    <!-- GOBMX HEADER -->
-    <header class="gmx">
-        <nav class="navbar fixed-top navbar-expand-sm navbar-gmx bg-gmx">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="https://www.gob.mx/">
-                    <img src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" width="128" height="48" alt="Página de inicio, Gobierno de México">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-toggle="collapse" data-bs-target="#navbarMainCollapse" data-target="#navbarMainCollapse" aria-controls="navbarMainCollapse" aria-expanded="false">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarMainCollapse">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="https://www.gob.mx/tramites">Trámites</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.gob.mx/gobierno">Gobierno</a></li>
-                        <li><a class="nav-link" href="https://www.gob.mx/busqueda"><span class="sr-only">Búsqueda</span><i class="icon-search"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <nav id="nav2" class="mainmenu">
-            <div class="leftmenulogos">
-                <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/logosmenu_2.svg" class="mainlogos_b">
-            </div>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
-            <div class="righmenulist">
-                <ul id="menuderecha">
-                    <div id="menuleft">
-                        <li><a href="https://www.facebook.com/JovConFuturo"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/menu/ICON_FB.svg" class="icon_social"></a></li>
-                        <li><a href="https://twitter.com/JovConFuturo"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/menu/ICON_TW.svg" class="icon_social"></a></li>
-                        <li><a href="https://www.instagram.com/jovconfuturo/"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/menu/ICON_IG.svg" class="icon_social"></a></li>
-                        <li><a href="https://www.youtube.com/channel/UC9tHEm_u8abj1N9A-GmKdXg"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/menu/ICON_YT.svg" class="icon_social"></a></li>
-                        <li><a href="https://www.tiktok.com/@jovconfuturo"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/menu/ICON_TT.svg" class="icon_social"></a></li>
-                    </div>
-                    <div id="menuright">
-                        <li id="#liinicio"><a class="active" href="#mainhome">Inicio</a></li>
-                        <li><a href="aprendiz">Aprendiz</a></li>
-                        <li><a href="tutores">Tutor</a></li>
-                        <li><a href="#interesslide">Interés</a></li>
-                        <li><a href="oficinas/">Oficinas virtuales</a></li>
-                        <li><a href="oficinas-moviles/">Oficinas móviles</a></li>
-                        <li><a href="focalizacion/">Focalización</a></li>
-                        <li><a href="#histslide">Historias</a></li>
-                        <li><a href="#consslide">Contacto</a></li>
-                        <!-- BOTÓN DE INICIO DE SESIÓN → ACTIVA EL REPRODUCTOR -->
-                        <li id="loginWeb" class="iniciases">
-                            <a href="#" onclick="event.preventDefault(); expandMusic();">
-                                <img class="initses" src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/menu/user_2.svg" alt="inicia sesión"> INICIA SESIÓN
-                            </a>
-                        </li>
-                        <li id="callcenter" class="text-center">
-                            <hr>
-                            <p class="pcallcentrer">Centro de atención telefónica</p>
-                            <p class="pcallcentrer"><strong>079</strong></p>
-                        </li>
-                    </div>
-                </ul>
-                <ul id="loginMovil">
-                    <li class="iniciases">
-                        <a href="#" onclick="event.preventDefault(); expandMusic();">
-                            <img class="initses" src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/menu/user_2.svg" alt="inicia sesión"> INICIA SESIÓN
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v13.0" nonce="MZ2GPb2d"></script><!-- a href="#principal" class="skip">Saltar al contenido principal</a -->
+  <header>
+    <nav class="navbar navbar-inverse  navbar-fixed-top">
+      <div class="container 1val">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-target="#navbarMainCollapse" data-toggle="collapse">
+            <span class="sr-only">Interruptor de Navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" style="padding: 1px 3px 3px 3px;" class="navbar-brand " title="Ir a la página inicial">
 
-    <script>
-        $(document).ready(function() {
-            $(".hassub")
-            .mouseover(function() { $('.submenu').show(); })
-            .mouseout(function() {
-                if($(".submenu:hover").length != 0) {
-                } else { $('.submenu').hide(); }
-            });
-        });
-    </script>
-
-    <main>
-        <div class="dondeloader"><div class="loader"></div></div>
-        <div id="mainhome">
-            <div class="logoleft">
-                <a href="https://www.gob.mx/stps" target="_blank"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/home2/HOME_STPS.png" class="programas" id="anchstps"/></a>
-            </div>
-            <div class="logoright">
-                <a href="https://programasparaelbienestar.gob.mx/" target="_blank"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_6.png" class="programas" id="anchprogramas"/></a>
-            </div>
-            <div id="logomain">
-                <a href=""><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_20.png" alt="Jóvenes construyendo el futuro"></a>
-            </div>
-            <div id="maintext">
-                <h1 class="padtop">Es uno de los Programas para el Bienestar de <br>mayor importancia del Gobierno de México</h1>
-                <div class="logo-boxeando-container">
-                    <a href="/boxeandoporlapaz">
-                        <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/boxeandoporlapaz/img/BoxeandoporlapazLogo.png" alt="Boxeando por la Paz" class="logo-boxeando"/>
-                    </a>
-                </div>
-                <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_5.png" class="showmore"/>
-            </div>
-            
-            <div id="secondslide">
-                <div id="logojunto">
-                    <div id="icon-tutor" class="iconslogo">
-                        <span id="leyenda-tutor" class="leyendaicon goldct">Tutor</span>
-                        <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_12_2.png" alt="tutor">
-                    </div>
-                    <div id="icon-aprendiz" class="iconslogo">
-                        <span id="leyenda-aprendiz" class="leyendaicon redap">Jóven</span>
-                        <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_13_2.png" alt="aprendiz">
-                    </div>
-                    <div id="icon-gobierno" class="iconslogo">
-                        <span id="leyenda-gobierno" class="leyendaicon redgob">Gobierno</span>
-                        <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_14_2.png" alt="gobierno">
-                    </div>
-                </div>
-                <div class="textsecondslide">
-                    <p class="text-center pslideprinc"><b class="redap">Es uno de los Programas para el Bienestar que impulsa el Gobierno de México</b> en el que se brinda a jóvenes de entre <b class="goldct">18 y 29 años,</b> que <b class="goldct">no estudian ni laboran,</b> capacitación hasta por <b class="goldct">12 meses</b> en <b class="goldct">Centros de Trabajo</b> que se benefician de su contribución, al mismo tiempo que los jóvenes beneficiarios desarrollan habilidades.</p>
-                    <p class="text-center pslideprinc">Durante la capacitación, las y los jóvenes reciben del Gobierno de México una beca de <b class="redap">nueve mil quinientos ochenta y dos pesos 47/100 M.N. mensual y seguro médico por parte del IMSS.</b></p>
-                    <div class="btncenterslide" id="backindex">
-                        <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_17.png" class="btn btn-circle" id="backslide"/>
-                    </div>
-                </div>
-            </div>
-            <style type="text/css">
-                #btn-vermasAP{ opacity: 0; }
-                #btn-vermasCT{ opacity: 0; }
-            </style>
-            <div id="cajaMovil">
-                <div style="position: relative;">
-                    <div id="cajaTutor">
-                        <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_15.png" id="hiderightMovil"/>
-                        <div id="regcentroMovil" class="floatboxes">
-                            <div class="floatboxredMovil" id="floatctred" style="background: #bc955a;">
-                                <div class="floatboxMovil" id="floatct">
-                                    <div class="box-height">
-                                        <h4>Si tienes un <span class="goldct"> centro de trabajo</span>, </h4>
-                                        <h4 class="leftpad"><span class="goldct"> empresa</span> u <span class="goldct">organización social</span></h4>
-                                        <div id="monitoReg" class="monitoap">
-                                            <h4 class="padtop">Regístrate como</h4>
-                                            <h1 class="largect">TUTOR</h1>
-                                            <div class="floatmonitoMovil ct"><img class="floatingct" src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_12.png"/></div>
-                                        </div>
-                                        <ul id="monitolista" class="padtopless">
-                                            <li class="litriangle"> <span class="goldct">Impulsa tu negocio</span> con la capacitación de talento joven.</li>
-                                            <li class="litriangle">Brinda a un joven la oportunidad de forjar <span class="goldct">experiencia profesional</span> mientras recibe un <span class="goldct">apoyo económico y seguro</span> médico por parte del Gobierno de México.</li>
-                                            <li class="litriangle">Obtén un <span class="goldct">distintivo de compromiso social.</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="btnUb">
-                                        <button class="btn_insc btn_tut" onclick="location.href='/tutores';"><p class="icon-text-home">INSCRÍBETE</p><span class="icon-prim-home next_o"></span></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_17.png" class="regresarTutor leftct"/>
-                    </div>
-                    <img id="btn-vermasCT" src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_3.png" class="vermasTutor leftct"/>
-
-                    <div id="cajaAprendiz">
-                        <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_16.png" id="hideleftMovil"/>
-                        <div id="regaprendizMovil" class="floatboxes">
-                            <div class="floatboxredMovil" id="floatapred">
-                                <div class="floatboxMovil" id="floatap">
-                                    <div class="box-height">
-                                        <h4>Si tienes entre <span class="redap">18</span> y <span class="redap">29 años</span></h4>
-                                        <h4 class="leftpad">y <span class="redap">no estudias ni trabajas.</span></h4>
-                                        <div id="monitoReg" class="monitoap">
-                                            <h4 class="padtop">Regístrate como</h4>
-                                            <h1 class="largeap">APRENDIZ</h1>
-                                            <div class="floatmonitoMovil ap"><img class="floatingap" src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_13.png"/></div>
-                                        </div>
-                                        <ul id="monitolista" class="padtopless">
-                                            <li class="litriangle">Capacítate en un Centro de Trabajo <span class="redap">por hasta doce meses.</span></li>
-                                            <li class="litriangle">Obtén una <span class="redap">constancia de capacitación.</span></li>
-                                            <li class="litriangle">Recibe una beca mensual de <span class="redap">$9,582.47</span></li>
-                                            <li class="litriangle">Contarás con <span class="redap">seguro médico del IMSS</span> durante tu capacitación.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="btnUb">
-                                        <button class="btn_insc btn_apr" onclick="location.href='/aprendiz';"><p class="icon-text-home">INSCRÍBETE</p><span class="icon-prim-home next"></span></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_17.png" class="regresarAprendiz rightap"/>
-                    </div>
-                    <img id="btn-vermasAP" src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_3.png" class="vermasAprendiz rightap"/>
-                </div>
-            </div>
+            <div class="logo-main"></div>
+          </a>
         </div>
+        <div id="navbarMainCollapse" class="collapse navbar-collapse nav-padding">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/tramites" title="Trámites">Trámites </a></li>
+            <li><a href="/gobierno" title="Gobierno">Gobierno</a></li>
+                <li><a href="/becasbenitojuarez/en" title="Versión en inglés del sitio web">English</a>
+                </li>
+              </li>
 
-        <div class="fondosecond" id="fondosecondid">
-            <div id="secondhome">
-                <div id="regaprendiz" class="floatboxes">
-                    <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_1.png" class="imgreg ap"/>
-                    <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_3.png" class="vermas"/>
-                    <div class="floatboxred" id="floatapred">
-                        <div class="floatbox" id="floatap">
-                            <div class="box-height">
-                                <h4>Si tienes entre <span class="redap">18</span> y <span class="redap">29 años</span></h4>
-                                <h4 class="leftpad">y <span class="redap">no estudias ni trabajas.</span></h4>
-                                <div class="monitoap">
-                                    <h4 class="padtop">Regístrate como</h4>
-                                    <h1 class="largeap">APRENDIZ</h1>
-                                    <div class="floatmonito ap"><img class="floatingap" src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_13.png"/></div>
-                                </div>
-                                <ul class="padtopless">
-                                    <li class="litriangle">Capacítate en un Centro de Trabajo <span class="redap">por hasta doce meses.</span></li>
-                                    <li class="litriangle">Obtén una <span class="redap">constancia de capacitación.</span></li>
-                                    <li class="litriangle">Recibe una beca mensual de <span class="redap">$9,582.47</span></li>
-                                    <li class="litriangle">Contarás con <span class="redap">seguro médico del IMSS</span> durante tu capacitación.</li>
-                                </ul>
-                            </div>
-                            <div class="padtopless">
-                                <a class="btn_insc btn_apr" href="aprendiz.php"><p class="icon-text-home">INSCRÍBETE</p><span class="icon-prim-home next"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_15.png" id="hideleft"/>
-                <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_16.png" id="hideright"/>
-                <div id="regcentro" class="floatboxes">
-                    <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_2.png" class="imgreg ct"/>
-                    <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_3.png" class="vermas"/>
-                    <div class="floatboxred" id="floatctred" style="background: #bc955a;">
-                        <div class="floatbox" id="floatct">
-                            <div class="box-height">
-                                <h4>Si tienes un <span class="goldct"> centro de trabajo</span>, </h4>
-                                <h4 class="leftpad"><span class="goldct"> empresa</span> u <span class="goldct">organización social</span></h4>
-                                <div class="monitoap">
-                                    <h4 class="padtop">Regístrate como</h4>
-                                    <h1 class="largect">TUTOR</h1>
-                                    <div class="floatmonito ct"><img class="floatingct" src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_12.png"/></div>
-                                </div>
-                                <ul class="padtopless">
-                                    <li class="litriangle"> <span class="goldct">Impulsa tu negocio</span> con la capacitación de talento joven.</li>
-                                    <li class="litriangle">Brinda a un joven la oportunidad de forjar <span class="goldct">experiencia profesional</span> mientras recibe un <span class="goldct">apoyo económico y seguro</span> médico por parte del Gobierno de México.</li>
-                                    <li class="litriangle">Obtén un <span class="goldct">distintivo de compromiso social.</span></li>
-                                </ul>
-                            </div>
-                            <div class="padtopless">
-                                <a class="btn_insc btn_tut" href="tutor.php"><p class="icon-text-home">INSCRÍBETE</p><span class="icon-prim-home next_o"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="secondcentertext">
-                    <div id="logosec">
-                        <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/ELE_20.png" alt="Jóvenes construyendo el futuro">
-                    </div>
-                    <p class="padtop">Jóvenes Construyendo el Futuro es el programa <br>del <span class="redgob">Gobierno de México</span> que une la experiencia <br>de los <span class="goldct">centros de trabajo</span> con la energía de los <span class="redap">jóvenes</span> <br>para impulsar las oportunidades laborales en el <br>país y, con ello, contribuir en la economía de los <br>beneficiarios y sus familias.</p>
-                </div>
-            </div>
-            <div class="btncenterslide" style="width: 100%; ">
-                <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/home2/HOME_7.svg" class="btn btn-circle" id="initpage" width="70px"/>
-            </div>
+
+            <li>
+              <form accept-charset="UTF-8" action="/busqueda" class="search_form" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                <input type="hidden" name="site" value="becasbenitojuarez">
+                <button data-v-6394873e="" id="botonbuscar" type="button" class="btn btn-search"><a data-v-6394873e="" href="https://www.gob.mx/busqueda?utf8=✓" target="_blank" id="botbusca"><img data-v-6394873e="" alt="Buscar" src="https://framework-gb.cdn.gob.mx/landing/img/lupa.png"></a></button>
+</form>            </li>
+          </ul>
         </div>
-
-        <div id="interesslide" class="apct redbg">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-8 col-lg-9 sp">
-                    <div class="row">
-                        <div class="col-12"><h2 class="oro_b_bis">INTERÉS</h2></div>
-                        <div class="col-12 ma-t" id="slideint">
-                            <section class="carousel" aria-label="Gallery" id="slidecont">
-                                <input type="hidden" id="actslide" value="1">
-                                <div class="imgslider" data-slideact="1">
-                                    <div class="intimg">
-                                        <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/home2/HOME_22.png" alt="ok" class="imgslider1" id="img1">
-                                    </div>
-                                </div>
-                                <div class="carousel__snapper">
-                                    <a class="carousel__prev" id="carousel__prev">.</a>
-                                    <a class="carousel__next" id="carousel__next">.</a>
-                                </div>
-                                <div class="">
-                                    <ol class="carousel__viewport" id="slidescroll">
-                                        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                                            <div class="carousel__snapper">
-                                                <div class="contslider">
-                                                    <div class="logoslider"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/OFMOV.svg" alt="oficinas móviles"></div>
-                                                    <div class="minHeight">
-                                                        <p class="txtslider">Las <b class="vino_b">Oficinas Móviles</b> son módulos que recorren el territorio nacional llegando a zonas marginadas, sin acceso a internet para apoyar a jóvenes y negocios locales en el registro o trámites del programa, así como acercar oportunidades como las del <b class="vino_b">Servicio Nacional de Empleo</b>.</p>
-                                                        <p class="txtslider text-center"><b class="ginda_b">Conoce toda la información de oficinas móviles.</b></p>
-                                                    </div>
-                                                    <div class="btnslider"><a class="btnTam btn_gral btn_blanco" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/oficinas-moviles/"><p class="icon-text-home">VER MÁS</p><span class="icon-prim-home next"></span></a></div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ol>
-                                </div>
-                                <aside class="carousel__navigation">
-                                    <ol class="carousel__navigation-list">
-                                        <li class="carousel__navigation-item"><a class="carousel__navigation-button" data-slide="1"></a></li>
-                                        <li class="carousel__navigation-item"><a class="carousel__navigation-button" data-slide="2"></a></li>
-                                        <li class="carousel__navigation-item"><a class="carousel__navigation-button" data-slide="3"></a></li>
-                                    </ol>
-                                </aside>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-3">
-                    <a class="twitter-timeline" data-height="500vh" data-theme="light" href="https://twitter.com/JovConFuturo?ref_src=twsrc%5Etfw"></a>
-                    <div id="otrasredes">
-                        <ul>
-                            <li class="iconred"><a href="https://www.facebook.com/JovConFuturo" target="_blank"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/icon/FACEBOOK.svg" alt=""></a></li>
-                            <li class="iconred"><a href="https://twitter.com/JovConFuturo" target="_blank"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/icon/TWITTER.svg" alt=""></a></li>
-                            <li class="iconred"><a href="https://www.instagram.com/jovconfuturo" target="_blank"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/icon/INSTAGRAM.svg" alt=""></a></li>
-                            <li class="iconred"><a href="https://www.youtube.com/channel/UC9tHEm_u8abj1N9A-GmKdXg" target="_blank"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/icon/YOUTUBE.svg" alt=""></a></li>
-                            <li class="iconred"><a href="https://www.tiktok.com/@jovconfuturo" target="_blank"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/icon/TIKTOK.svg" alt=""></a></li>
-                        </ul>
-                        <p class="pcallcentrer">Centro de atención telefónica <strong>079</strong> Disponible 24 horas, de Lunes a Domingo.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="btncenterslide">
-                <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/home2/EXP_B.svg" class="btn btn-circle" id="initpage2" width="70px"/>
-            </div>
-        </div>
-
-        <div id="resslide" class="apct">
-            <div class="row">
-                <div class="col-12 titRes"><h2 class="oro_b">RESULTADOS</h2></div>
-                <div class="col-12">
-                    <div class="carousel3">
-                        <div class="cajaresultado datLeft">
-                            <div class="cajatextoint">
-                                <div class="ingleft smallslider cajaslider3">
-                                    <div class="slider3 simg"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/home2/HOMBRE.jpeg" alt="HOMBRES EN JCF"></div>
-                                    <div class="slider3 snumero goldct">1,459,158</div>
-                                    <div class="slider3 stitulo">HOMBRES</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cajaresultado datGral">
-                            <div class="cajatextoint">
-                                <div class="ingcenter bigslider cajaslider3">
-                                    <div class="slider3 simg"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/home2/HOME_23.png" alt="BENEFICIARIOS EN JCF"></div>
-                                    <div class="slider3 snumero redap">3,500,160</div>
-                                    <div class="slider3 stitulo">BENEFICIARIOS</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cajaresultado datRight">
-                            <div class="cajatextoint">
-                                <div class="ingright smallslider cajaslider3">
-                                    <div class="slider3 simg"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/home2/MUJER.jpeg" alt="MUJERES EN JCF"></div>
-                                    <div class="slider3 snumero goldct">2,040,991</div>
-                                    <div class="slider3 stitulo">MUJERES</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="btncenterslide">
-                <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/home2/HOME_7.svg" class="btn btn-circle" id="initpage3" width="70px"/>
-            </div>
-        </div>
-
-        <div id="histslide" class="apct redbg">
-            <div class="row">
-                <div class="col-12"><h2 class="oro_b_bis">HISTORIAS</h2></div>
-                <div class="col-12 ma-ne">
-                    <section class="carousel2" aria-label="Gallery" id="slidecont2">
-                        <input type="hidden" id="actslide2" value="0">
-                        <div class="imgslider2" data-slideact="0">
-                            <div class="intimg2">
-                                <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/historias/JARDINES.jpg" alt="ok" class="imgslider2" id="img21">
-                            </div>
-                        </div>
-                        <div class="carousel2__snapper">
-                            <a class="carousel2__prev" id="carousel2__prev">.</a>
-                            <a class="carousel2__next" id="carousel2__next">.</a>
-                        </div>
-                        <div class="">
-                            <ol class="carousel2__viewport" id="slidescroll2">
-                                <li id="carousel2__slide1" tabindex="1" class="carousel2__slide">
-                                    <div class="carousel2__snapper">
-                                        <div class="slider_titulo"><h3>Jardines de México</h3></div>
-                                        <div class="slider_subtitulo"><h5>Tehuixtla, Morelos</h5></div>
-                                        <div class="contslider2">
-                                            <div class="bc-text">
-                                                <div class="txtslider2">
-                                                    <p class="cnt-text">¿Te imaginas capacitarte en los jardines contemplativos más grandes del mundo? Jardines de México es un lugar mágico donde Jóvenes Construyendo el Futuro adquieren habilidades laborales y enriquecen su CV.</p>
-                                                </div>
-                                                <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/icon/COM_AB.svg" class="com_ab">
-                                                <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/icon/COM_CE.svg" class="com_ce">
-                                            </div>
-                                            <div class="btnslider2">
-                                                <a data-fancybox="video-gallery" href="https://youtu.be/9j7tbgW1jjs">
-                                                    <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/icon/VERVIDEO.svg" class="btnfill_b">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </div>
-                        <aside class="carousel2__navigation carousel2_ub">
-                            <ol class="carousel2__navigation-list">
-                                <li class="carousel2__navigation-item"><a class="carousel2__navigation-button" data-slide="1"></a></li>
-                                <li class="carousel2__navigation-item"><a class="carousel2__navigation-button" data-slide="2"></a></li>
-                                <li class="carousel2__navigation-item"><a class="carousel2__navigation-button" data-slide="3"></a></li>
-                                <li class="carousel2__navigation-item"><a class="carousel2__navigation-button" data-slide="4"></a></li>
-                            </ol>
-                        </aside>
-                    </section>
-                </div>
-            </div>
-            <div class="btncenterslide">
-                <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/imgs/home2/EXP_B.svg" class="btn btn-circle" id="initpage4" width="70px"/>
-            </div>
-        </div>
-
-        <link rel="stylesheet" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/css/modal_contacto.css">
-        <link rel="stylesheet" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/css/faq_modal.css">
-        <div class="footerContacto" id="consslide">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 borDerecha sp_b">
-                    <h2 class="tit_seccion oro_b">CONSULTA</h2>
-                    <div class="cajaspreguntas">
-                        <ul>
-                            <li class="vino"><button type="button" data-bs-toggle="modal" data-bs-target="#modal-faq" id="btn-faq"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/contacto/CONSULTA-1.svg" alt="preguntas"> PREGUNTAS FRECUENTES </button></li>
-                            <li class="ginda"><button type="button" data-bs-toggle="modal" data-bs-target="#modal-rop"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/contacto/CONSULTA-1.svg" alt="preguntas" > REGLAS DE OPERACIÓN</button></li>
-                            <li class="ginda"><button type="button" data-bs-toggle="modal" data-bs-target="#avisoPriv"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/contacto/CONSULTA-3.svg" alt="preguntas"> AVISO DE PRIVACIDAD</button></li>
-                            <li class="vino"><a href="publico/doc/DIAGNOSTICO_2021_PP_S-280_JCF.pdf" target="_black"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/contacto/CONSULTA-2.svg"> DIAGNÓSTICO DEL PROGRAMA</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 borIzquierda sp_b">
-                    <h2 class="tit_seccion">CONTACTO</h2>
-                    <div id="DirPreg" class="cajaspreguntas">
-                        <ul>
-                            <li class="borOro">
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#modal-estatales" class="btn-esta" id="btnoficinas_est"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/contacto/CONSULTA-1.svg" alt="preguntas" >DIRECTORIO OFICINAS ESTATALES</button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="cajaspreguntas2">
-                        <div class="siguenos">
-                            <h5>SÍGUENOS EN NUESTRAS REDES SOCIALES</h5>
-                            <ul>
-                                <li class="iconsredes"><a href="https://www.facebook.com/JovConFuturo" target="_blank"><label class="icon-social icon-fb"></label></a></li>
-                                <li class="iconsredes"><a href="https://twitter.com/JovConFuturo" target="_blank"><label class="icon-social icon-tw"></label></a></li>
-                                <li class="iconsredes"><a href="https://www.youtube.com/channel/UC9tHEm_u8abj1N9A-GmKdXg" target="_blank"><label class="icon-social icon-yt"></label></a></li>
-                                <li class="iconsredes"><a href="https://www.instagram.com/jovconfuturo" target="_blank"><label class="icon-social icon-ig"></label></a></li>
-                                <li class="iconsredes"><a href="https://www.tiktok.com/@jovconfuturo" target="_blank"><label class="icon-social icon-tt"></label></a></li>
-                            </ul>
-                            <p>Centro de atención telefónica <a href="tel:+079">079</a> <br>Disponible 24 horas, de Lunes a Domingo.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12" id="leyenda">
-                    <hr>
-                    <p class="leyenda">Este programa es público ajeno a cualquier partido político. <br> Queda prohibido el uso para fines distintos a los establecidos en el Programa.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- MODAL FAQ -->
-        <div class="modal fade" id="modal-faq" tabindex="-1" aria-labelledby="modalFaqLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal_head">
-                        <div class="mod-tit">
-                            <img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/ROP.svg" class="icon-rop" alt="Icono FAQ">
-                            Preguntas Frecuentes
-                        </div>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Cerrar">
-                            <span aria-hidden="true"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/TIMES.svg" class="img_times" alt="Cerrar"></span>
-                        </button>
-                    </div>
-                    <div class="modal-body modal-faq-body">
-                        <div class="faq-buscador-container">
-                            <div class="faq-buscador">
-                                <input type="text" id="faq-buscar" placeholder="Buscar pregunta..." autocomplete="off">
-                                <button type="button" id="btn-faq-buscar"><i class="fas fa-search"></i></button>
-                                <div id="faq-autocomplete-list" class="faq-autocomplete-results"></div>
-                            </div>
-                        </div>
-                        <div id="faq-contenido">
-                            <div class="faq-loading"><i class="fas fa-spinner fa-spin"></i><p>Cargando...</p></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            var faqDataGlobal = null;
-            var todasLasCoincidencias = [];
-            var coincidenciasEncontradas = [];
-            var indiceCoincidencia = -1;
-            function generarMensajeVacio(icono, titulo, mensaje) {
-                return `<div class="faq-empty"><i class="fas ${icono}"></i><p>${titulo}</p><small>${mensaje}</small></div>`;
-            }
-            function cargarEstructuraFaq() {
-                if (faqDataGlobal) { renderizarVistaActores(); return; }
-                $.ajax({
-                    url: 'utilidades/dataFaq.php', data: { pet: 1 }, type: "POST", dataType: "json",
-                    beforeSend: function() { $("#faq-contenido").html('<div class="faq-loading"><i class="fas fa-spinner fa-spin"></i><p>Cargando información...</p></div>'); },
-                    success: function(res) {
-                        if (res.success && res.full_data) { faqDataGlobal = res.full_data; renderizarVistaActores(); }
-                        else { $("#faq-contenido").html(generarMensajeVacio('fa-folder-open','Sin información disponible','No se encontraron preguntas frecuentes en este momento. Intenta más tarde.')); }
-                    },
-                    error: function() { $("#faq-contenido").html(generarMensajeVacio('fa-exclamation-triangle','Error al cargar','No se pudo conectar con el servidor. Verifica tu conexión e intenta nuevamente.')); }
-                });
-            }
-            function renderizarVistaActores() {
-                if (!faqDataGlobal || !faqDataGlobal.actores || faqDataGlobal.actores.length === 0) {
-                    $("#faq-contenido").html(generarMensajeVacio('fa-users-slash','Sin información disponible','No hay preguntas frecuentes configuradas en este momento. Intenta más tarde.'));
-                    return;
-                }
-                let html = '';
-                if (faqDataGlobal.contenido_intro) {
-                    let intros = faqDataGlobal.contenido_intro.filter(i => i.tipo_nivel === 'principal');
-                    if (intros.length > 0) {
-                        html += '<div class="faq-intro">';
-                        intros.forEach(i => html += `<div class="intro-item"><h5 class="intro-titulo">${i.titulo}</h5><div class="intro-contenido">${i.contenido}</div></div>`);
-                        html += '</div>';
-                    }
-                }
-                html += '<div class="faq-section-title"><h5>¿Quién eres?</h5><p>Selecciona tu perfil</p></div>';
-                html += '<div class="faq-actores-grid">';
-                faqDataGlobal.actores.forEach(a => {
-                    html += `<div class="faq-actor-card" onclick="renderizarCategorias(${a.id_actor})" style="background:${a.color_fondo || '#9f2241'}"><i class="fas ${a.icono || 'fa-user'}"></i><h4>${a.nombre || 'Sin nombre'}</h4><p>${a.descripcion || ''}</p></div>`;
-                });
-                html += '</div>';
-                $("#faq-contenido").html(html);
-            }
-            function renderizarCategorias(idActor) {
-                let actor = faqDataGlobal.actores.find(a => a.id_actor == idActor);
-                if (!actor) { $("#faq-contenido").html(`<div class="faq-breadcrumb"><a href="#" onclick="renderizarVistaActores(); return false;"><i class="fas fa-arrow-left"></i> Volver al inicio</a></div>`+generarMensajeVacio('fa-user-slash','Perfil no encontrado','El perfil seleccionado no está disponible.')); return; }
-                let html = `<div class="faq-breadcrumb"><a href="#" onclick="renderizarVistaActores(); return false;"><i class="fas fa-arrow-left"></i> Volver al inicio</a></div>`;
-                html += `<div class="faq-actor-header"><h4><i class="fas ${actor.icono || 'fa-user'}" style="color:${actor.color_fondo || '#9f2241'}"></i> ${actor.nombre}</h4>${actor.descripcion ? `<p>${actor.descripcion}</p>` : ''}</div>`;
-                if (!actor.categorias || actor.categorias.length === 0) { html += generarMensajeVacio('fa-folder-open','Sin categorías disponibles','Este perfil aún no tiene categorías configuradas.'); $("#faq-contenido").html(html); return; }
-                html += '<div class="faq-section-title"><h5>Categorías</h5><p>Selecciona un tema</p></div><div class="faq-categorias-grid">';
-                actor.categorias.forEach(cat => {
-                    html += `<div class="faq-categoria-card" onclick="renderizarPreguntas(${idActor}, ${cat.id_categoria})"><i class="fas ${cat.icono || 'fa-folder'}"></i><div class="faq-cat-info"><h5>${cat.nombre || 'Sin nombre'} <i class="fas fa-chevron-right faq-arrow"></i></h5><p>${cat.descripcion || ''}</p></div></div>`;
-                });
-                html += '</div>';
-                $("#faq-contenido").html(html);
-            }
-            function renderizarPreguntas(idActor, idCat) {
-                let actor = faqDataGlobal.actores.find(a => a.id_actor == idActor);
-                let cat = actor.categorias.find(c => c.id_categoria == idCat);
-                if (!cat) { $("#faq-contenido").html(`<div class="faq-breadcrumb"><a href="#" onclick="renderizarCategorias(${idActor}); return false;"><i class="fas fa-arrow-left"></i> Volver a categorías</a></div>`+generarMensajeVacio('fa-folder-open','Categoría no encontrada','La categoría seleccionada no está disponible.')); return; }
-                let html = `<div class="faq-breadcrumb"><a href="#" onclick="renderizarCategorias(${idActor}); return false;"><i class="fas fa-arrow-left"></i> Volver a categorías</a></div>`;
-                html += `<div class="faq-actor-header"><h4><i class="fas ${cat.icono || 'fa-folder'}" style="color:${actor.color_fondo || '#9f2241'}"></i> ${cat.nombre}</h4>${cat.descripcion ? `<p>${cat.descripcion}</p>` : ''}</div>`;
-                let totalPreguntas = 0;
-                if (cat.preguntas) totalPreguntas += cat.preguntas.length;
-                if (cat.subcategorias) { cat.subcategorias.forEach(s => { if (s.preguntas) totalPreguntas += s.preguntas.length; }); }
-                if (totalPreguntas === 0) { html += generarMensajeVacio('fa-question-circle','Sin preguntas disponibles','Esta categoría aún no tiene preguntas frecuentes configuradas.'); $("#faq-contenido").html(html); return; }
-                if (cat.subcategorias && cat.subcategorias.length > 0) {
-                    html += '<div class="faq-subcategorias-container">';
-                    html += '<button class="faq-subcategoria-btn active" onclick="filtrarSubcat(0, this)">Todas</button>';
-                    cat.subcategorias.forEach(s => { html += `<button class="faq-subcategoria-btn" onclick="filtrarSubcat(${s.id_subcategoria}, this)">${s.nombre}</button>`; });
-                    html += '</div>';
-                }
-                html += '<div class="faq-preguntas-container">';
-                if (cat.preguntas && cat.preguntas.length > 0) { cat.preguntas.forEach(p => html += generarHTMLPregunta(p, 0)); }
-                if (cat.subcategorias) { cat.subcategorias.forEach(s => { if (s.preguntas && s.preguntas.length > 0) { s.preguntas.forEach(p => html += generarHTMLPregunta(p, s.id_subcategoria)); } }); }
-                html += '</div>';
-                $("#faq-contenido").html(html);
-                bindEventosPreguntas();
-            }
-            function generarHTMLPregunta(p, subId, ruta = '') {
-                let tagsHtml = '';
-                if (p.etiquetas) { tagsHtml = '<div class="faq-tags">' + p.etiquetas.split(',').map(t => `<span class="faq-tag">${t.trim()}</span>`).join('') + '</div>'; }
-                return `<div class="faq-item ${p.destacada ? 'destacada' : ''}" data-subcategoria="${subId}" data-grupo="${ruta}"><div class="faq-question"><h5>${p.destacada ? '* ' : ''}${p.pregunta}</h5><div class="faq-toggle"><i class="fas fa-chevron-down"></i></div></div><div class="faq-answer">${ruta ? `<div class="faq-ruta"><small><i class="fas fa-folder-open"></i> ${ruta}</small></div>` : ''}<p>${p.respuesta}</p>${tagsHtml}</div></div>`;
-            }
-            function buscarPreguntas(termino) {
-                if (!faqDataGlobal || termino.length < 3) return;
-                let palabras = termino.toLowerCase().split(' ').filter(p => p.length > 0);
-                let resultados = [];
-                faqDataGlobal.actores.forEach(a => {
-                    if (!a.categorias) return;
-                    a.categorias.forEach(c => {
-                        if (c.preguntas) { c.preguntas.forEach(p => { if (cumpleAND(p, palabras)) { p.ruta = `${a.nombre} > ${c.nombre}`; resultados.push(p); } }); }
-                        if (c.subcategorias) { c.subcategorias.forEach(s => { if (s.preguntas) { s.preguntas.forEach(p => { if (cumpleAND(p, palabras)) { p.ruta = `${a.nombre} > ${c.nombre} > ${s.nombre}`; resultados.push(p); } }); } }); }
-                    });
-                });
-                renderizarResultadosBusqueda(resultados, termino);
-            }
-            function cumpleAND(p, pal) {
-                let t = ((p.pregunta || '') + " " + (p.respuesta || '') + " " + (p.etiquetas || "")).toLowerCase();
-                return pal.every(word => t.includes(word));
-            }
-            function renderizarResultadosBusqueda(res, term) {
-                let html = `<div class="faq-breadcrumb"><a href="#" onclick="renderizarVistaActores(); return false;"><i class="fas fa-arrow-left"></i> Volver al inicio</a></div>`;
-                if (res.length === 0) { html += generarMensajeVacio('fa-search','Sin resultados',`No se encontraron preguntas para "${term}". Intenta con otros términos.`); $("#faq-contenido").html(html); return; }
-                let grupos = {};
-                res.forEach(p => { if (p.ruta) grupos[p.ruta] = (grupos[p.ruta] || 0) + 1; });
-                html += `<div class="faq-search-header p-3 bg-white border-bottom shadow-sm sticky-top"><div class="d-flex justify-content-between align-items-center mb-2"><div class="small">Se encontraron <strong>${res.length}</strong> resultado(s)</div><div class="faq-controles-nav"><button class="btn_mini btn_ginda" onclick="navegarCoincidencia(-1)"><i class="fas fa-chevron-up"></i></button><span id="contador-nav" class="mx-2 font-weight-bold">0 / 0</span><button class="btn_mini btn_ginda" onclick="navegarCoincidencia(1)"><i class="fas fa-chevron-down"></i></button></div></div><div id="faq-pills-container" class="d-flex flex-wrap gap-2 mt-2"></div></div>`;
-                html += '<div class="faq-preguntas-container">';
-                res.forEach(p => {
-                    let regex = new RegExp(`(${term.split(' ').join('|')})`, 'gi');
-                    let pMark = {...p, pregunta: p.pregunta.replace(regex, '<mark class="faq-resaltado">$1</mark>'), respuesta: p.respuesta.replace(regex, '<mark class="faq-resaltado">$1</mark>')};
-                    html += generarHTMLPregunta(pMark, 0, p.ruta);
-                });
-                html += "</div>";
-                $("#faq-contenido").html(html);
-                generarPills(grupos, term);
-                bindEventosPreguntas();
-                setTimeout(() => { todasLasCoincidencias = document.querySelectorAll('mark.faq-resaltado'); coincidenciasEncontradas = [...todasLasCoincidencias]; indiceCoincidencia = -1; if (coincidenciasEncontradas.length > 0) navegarCoincidencia(1); }, 100);
-            }
-            function navegarCoincidencia(dir) {
-                if (coincidenciasEncontradas.length === 0) return;
-                if (indiceCoincidencia >= 0 && indiceCoincidencia < coincidenciasEncontradas.length) { coincidenciasEncontradas[indiceCoincidencia].classList.remove('current-match'); }
-                indiceCoincidencia += dir;
-                if (indiceCoincidencia >= coincidenciasEncontradas.length) indiceCoincidencia = 0;
-                if (indiceCoincidencia < 0) indiceCoincidencia = coincidenciasEncontradas.length - 1;
-                const actual = coincidenciasEncontradas[indiceCoincidencia];
-                actual.classList.add('current-match');
-                $(".faq-item").hide().removeClass("active");
-                $(actual).closest(".faq-item").show().addClass("active");
-                actual.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                $("#contador-nav").text(`${indiceCoincidencia + 1} / ${coincidenciasEncontradas.length}`);
-            }
-            function filtrarSubcat(id, btn) {
-                $(".faq-subcategoria-btn").removeClass("active");
-                $(btn).addClass("active");
-                if (id == 0) { $(".faq-item").show(); } else { $(".faq-item").hide(); $(`.faq-item[data-subcategoria="${id}"]`).show(); }
-            }
-            function bindEventosPreguntas() { $(".faq-question").off("click").on("click", function() { $(this).closest(".faq-item").toggleClass("active"); }); }
-            function generarPills(grupos, term) {
-                let $cont = $("#faq-pills-container"); $cont.empty();
-                if (Object.keys(grupos).length > 1) {
-                    $cont.append(`<button class="faq-pill active" onclick="filtrarPorPill(this, 'all', '${term}')">Todas</button>`);
-                    Object.keys(grupos).forEach(ruta => { let label = ruta.split('>').pop().trim(); $cont.append(`<button class="faq-pill" onclick="filtrarPorPill(this, '${ruta}', '${term}')">${label}</button>`); });
-                }
-            }
-            function filtrarPorPill(btn, ruta, term) {
-                $(".faq-pill").removeClass("active"); $(btn).addClass("active"); indiceCoincidencia = -1;
-                coincidenciasEncontradas = (ruta === 'all') ? [...todasLasCoincidencias] : [...todasLasCoincidencias].filter(m => $(m).closest(".faq-item").attr("data-grupo") === ruta);
-                if (coincidenciasEncontradas.length > 0) navegarCoincidencia(1); else $("#contador-nav").text("0 / 0");
-            }
-            $(document).ready(function() {
-                $('#modal-faq').appendTo('body');
-                var modalFaq = document.getElementById('modal-faq');
-                if (modalFaq) { modalFaq.addEventListener('show.bs.modal', function () { cargarEstructuraFaq(); }); }
-                $("#btn-faq-buscar").on("click", function(e) { e.preventDefault(); let termino = $("#faq-buscar").val().trim(); if (termino.length >= 3) buscarPreguntas(termino); });
-            });
-        </script>
-    </main>
-
-    <!-- FOOTER -->
-    <div class="gmx">
-        <footer class="gmx">
-            <div class="main-footer">
-                <div class="list-info">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <img src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" href="/" alt="Gobierno de México" class="logo_footer" style="max-width: 90%;">
-                            </div>
-                            <div class="col-sm-3">
-                                <h5>Enlaces</h5>
-                                <ul>
-                                    <li><a href="https://participa.gob.mx/" target="_blank" rel="noopener">Participa</a></li>
-                                    <li><a href="https://www.gob.mx/publicaciones" target="_blank" rel="noopener">Publicaciones Oficiales</a></li>
-                                    <li><a href="http://www.ordenjuridico.gob.mx/" target="_blank" rel="noopener">Marco Jurídico</a></li>
-                                    <li><a href="https://consultapublicamx.inai.org.mx/vut-web/" target="_blank" rel="noopener">Plataforma Nacional de Transparencia</a></li>
-                                    <li><a href="https://alertadores.funcionpublica.gob.mx/" target="_blank" rel="noopener">Alerta</a></li>
-                                    <li><a href="https://sidec.funcionpublica.gob.mx/" target="_blank" rel="noopener">Denuncia</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-3">
-                                <h5>¿Qué es gob.mx?</h5>
-                                <p>Es el portal único de trámites, información y participación ciudadana. <a href="https://www.gob.mx/que-es-gobmx">Leer más</a></p>
-                                <ul>
-                                    <li><a href="https://datos.gob.mx/">Portal de datos abiertos</a></li>
-                                    <li><a href="https://www.gob.mx/accesibilidad">Declaración de accesibilidad</a></li>
-                                    <li><a href="https://www.gob.mx/privacidadintegral">Aviso de privacidad integral</a></li>
-                                    <li><a href="https://www.gob.mx/privacidadsimplificado">Aviso de privacidad simplificado</a></li>
-                                    <li><a href="https://www.gob.mx/terminos">Términos y Condiciones</a></li>
-                                    <li><a href="https://www.gob.mx/terminos#medidas-seguridad-informacion">Política de seguridad</a></li>
-                                    <li><a href="https://www.gob.mx/sitemap">Mapa de sitio</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-3">
-                                <h5><a href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54">Denuncia contra servidores públicos</a></h5>
-                                <h5>Síguenos en</h5>
-                                <ul class="list-inline list-group list-group-horizontal">
-                                    <li><a class="social-icon facebook" target="_blank" rel="noopener" href="https://www.facebook.com/gobmexico" aria-label="Facebook de presidencia"></a></li>
-                                    <li><a class="social-icon twitter" target="_blank" rel="noopener" href="https://twitter.com/GobiernoMX" aria-label="Twitter de presidencia"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid footer-pleca"><div class="row"><div class="col"><br><br></div></div></div>
-            </div>
-        </footer>
-    </div>
-
-    <!-- MODAL REGLAS DE OPERACIÓN -->
-    <div class="modal fade" id="modal-rop" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-tutor">
-            <div class="modal-content caja_plan radio-modal">
-                <div class="modal_head ginda">
-                    <div class="mod-tit"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/ROP.svg" class="icon-rop"> REGLAS DE OPERACIÓN</div>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/TIMES.svg" class="img_times"></span></button>
-                </div>
-                <div class="modal-rop">
-                    <iframe src="https://www.dof.gob.mx/nota_detalle.php?codigo=5777674&fecha=31/12/2025#gsc.tab=0"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- OFICINAS ESTATALES -->
-    <div id="modal-estatales" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-estatal">
-            <div class="modal-content modal-bordes">
-                <div class="modal_head oro">
-                    <div class="mod-tit"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/ROP.svg" class="icon-rop"> OFICINAS ESTATALES</div>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/TIMES.svg" class="img_times"></span></button>
-                </div>
-                <div class="modal-body">
-                    <div class="margen_intro">
-                        <h1 style="font-size:1.0rem"></h1>
-                        <p>Si requieres asistencia o tienes alguna duda sobre el programa, comunícate al <span class="color_texto">Centro de Atención 079 las 24 horas, de Lunes a Domingo </span> o acude a las oficinas de la <span class="color_texto">Secretaría del Trabajo y Previsión Social.</span> Localiza la oficina de la STPS de tu ciudad:</p>
-                    </div>
-                    <input class="form-control" id="myInput" type="text" placeholder="Busca tu localidad...">
-                    <div class="table-responsive">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col" id="tit_uno" class="color_texto"><div>Dirección</div></th>
-                                    <th scope="col" class="color_texto">C.P</th>
-                                    <th scope="col" class="color_texto">Municipio</th>
-                                    <th scope="col" class="color_texto">Teléfono</th>
-                                    <th scope="col" id="tit_dos" class="color_texto"><div>Horario de atención</div></th>
-                                    <th scope="col" class="color_texto"><div>Encargado</div></th>
-                                </tr>
-                            </thead>
-                            <tbody id="myTable" class="test_dir"></tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      </div>
+    </nav>
     
-    <!-- AVISO DE PRIVACIDAD -->
-    <div class="modal fade in" id="avisoPriv" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-tutor" role="document">
-            <div class="modal-content caja_plan radio-modal">
-                <div class="modal_head oro">
-                    <div class="mod-tit"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/ROP.svg" class="icon-rop" alt="Icono ROP"> AVISO DE PRIVACIDAD</div>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/TIMES.svg" class="img_times" alt="Cerrar"></span></button>
-                </div>
-                <div class="modal-body modal-priv">
-                    <div class="text-pop" data-nosnippet>
-                        <h5 class="tit_aviso">PLATAFORMA DIGITAL "JÓVENES CONSTRUYENDO EL FUTURO"</h5>
-                        <p>La Secretaría del Trabajo y Previsión Social (STPS) a través de la Unidad del Programa Jóvenes Construyendo el Futuro, con domicilio en Blvd. Adolfo López Mateos 1968, Col. Los Alpes, Álvaro Obregón, Ciudad de México. C.P. 01010, es la responsable del tratamiento de los datos personales que nos proporcione a través de la Plataforma Digital del Programa "Jóvenes Construyendo el Futuro", los cuales serán protegidos conforme a lo dispuesto por la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados, (LGPDPPSO) y demás normatividad que resulte aplicable.</p>
-                        <p>Dicho Programa es público ajeno a cualquier partido político. Queda prohibido el uso para fines distintos a los establecidos en el Programa.</p>
-                        <p class="subtit">Qué datos personales recabamos y para qué finalidad.</p>
-                        <p><b>Se recabarán los siguientes datos personales:</b></p>
-                        <ol>
-                            <li>Nombre, estado civil, Registro Federal de Contribuyentes (RFC), Clave Única del Registro de Población (CURP), lugar de nacimiento, fecha de nacimiento, nacionalidad, domicilio, teléfono particular, teléfono celular, correo electrónico, edad, fotografía, datos de página en la red social Facebook.</li>
-                            <li>Trayectoria educativa, títulos profesionales o certificados de competencias (de ser el caso).</li>
-                            <li>Clave de elector y vigencia de la identificación oficial, información que se obtiene de la credencial de elector.</li>
-                            <li>Si se desempeña o ha desempeñado en alguna actividad remunerada.</li>
-                            <li>Pronunciamiento respecto de la actividad o área en la que le gustaría capacitarse.</li>
-                            <li>Datos de un familiar del aspirante, tales como: nombre, domicilio, teléfono y parentesco.</li>
-                            <li>Datos sensibles que se recaban:</li>
-                            <li>Número de cuenta y CLABE interbancaria del Aprendiz con la Institución Financiera encargada de realizar la dispersión de los recursos económicos por concepto de beca, en caso de requerirlo;</li>
-                            <li>Datos que permitan determinar si pertenece a algún grupo con condiciones de discriminación histórica, tales como: origen étnico o racial, identidad y/o preferencia sexual y discapacidades.</li>
-                            <li>Imagen capturada en fotografía, video o cualquier otro medio para fines informativos y publicitarios relacionados con la operación del Programa Jóvenes Construyendo el Futuro y/o Estrategias que se implementen.</li>
-                        </ol>
-                        <p><strong>Con las siguientes finalidades:</strong></p>
-                        <ol>
-                            <li>Verificar la identidad de los participantes en el Programa para su debida acreditación, (Jóvenes, Tutores y Representantes de los Centros de Trabajo), a través del uso de la Plataforma Digital que opera el Programa.</li>
-                            <li>Hacer efectivos los objetivos del Programa por los sujetos que, en las Reglas de Operación vigentes se señalan.</li>
-                            <li>Enviar noticias, información y solicitudes relacionadas con el Programa.</li>
-                            <li>Gestionar la inscripción al Instituto Mexicano del Seguro Social.</li>
-                            <li>Invitación a foros, pláticas y demás reuniones relacionadas con el Programa.</li>
-                            <li>Gestionar la generación de cuentas y kits de tarjetas bancarias por parte del Banco del Bienestar.</li>
-                            <li>Hacer entrega de las Tarjetas Bancarias y kits emitidos por el Banco del Bienestar.</li>
-                            <li>Gestionar la dispersión del apoyo económico por concepto de beca a las y los beneficiarios del Programa, misma que se realiza a través de la Tesorería de la Federación (TESOFE).</li>
-                            <li>Obtener información para el diseño y estructura del Programa.</li>
-                            <li>Verificar la idoneidad de participantes.</li>
-                            <li>Fines estadísticos.</li>
-                            <li>Registrar su perfil laboral en el Portal del Empleo de la Secretaría del Trabajo y Previsión Social (www.empleo.gob.mx), con la finalidad de promover su perfil laboral y en su momento, accedan a mejores oportunidades de empleo.</li>
-                            <li>Promover acciones de información y orientación para la vinculación laboral y en su caso para la generación de un perfil laboral en el Portal del Empleo.</li>
-                            <li>Emitir la constancia de capacitación.</li>
-                            <li>Realizar visitas de verificación y/o supervisión física y/o vía remota a través de videollamadas a los Centros de Trabajo y Aprendices.</li>
-                            <li>Dar seguimiento a los Aprendices posterior de haber egresado del Programa.</li>
-                            <li>Informar sobre las Estrategias Nacionales para ser partícipe de las mismas.</li>
-                            <li>Utilizar su imagen, ya sea en fotografía, video o cualquier otro medio para fines informativos y publicitarios relacionados con la operación del Programa Jóvenes Construyendo el Futuro y/o Estrategias que se implementen.</li>
-                        </ol>
-                        <p>Se hace del conocimiento a los Usuarios de la Plataforma Digital del Programa "Jóvenes Construyendo el Futuro" que, el tratamiento de datos personales para las finalidades enunciadas en el párrafo anterior, son indispensables para el registro de cada aspirante o participante y contribuir al desarrollo del Programa conforme se establece en las Reglas de Operación vigentes del Programa Jóvenes Construyendo el Futuro.</p>
-                        <p class="subtit">Fundamento para el tratamiento de datos personales.</p>
-                        <p>El tratamiento de sus datos personales se realiza con fundamento en los artículos 1, 2, fracción II inciso b, 16 del Reglamento Interior de la Secretaría del Trabajo y Previsión Social publicado en el Diario Oficial de la Federación (D.O.F.) el 23 de agosto de 2019 cuya última reforma fue publicada en el D.O.F. el 05 de junio de 2023, las Reglas de Operación del Programa Jóvenes Construyendo el Futuro con su última actualización en el D.O.F. el 31 de diciembre de 2025, artículo 3, fracción III de la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados, publicada en el D.O.F. el 20 de marzo de 2025, cuya última reforma fue publicada en el D.O.F. el 14 de noviembre de 2025.</p>
-                        <p class="subtit">Transferencia de datos personales.</p>
-                        <p>Se informa que los datos personales de los Aprendices del Programa Jóvenes Construyendo el Futuro, podrán ser transferidos a las personas físicas y/o morales, públicas y/o privadas, y sus diversos Centros de Trabajo, cuyo registro haya sido aceptado por la Secretaría, así como instituciones bancarias, con la finalidad de hacer efectivos los objetivos del Programa Jóvenes Construyendo el Futuro.</p>
-                        <p>No se realizarán transferencias que requieran del consentimiento del titular, salvo aquéllas que sean necesarias para atender requerimientos de información de una autoridad competente, que estén debidamente fundados y motivados.</p>
-                        <p class="subtit">Portabilidad.</p>
-                        <p>El ejercicio del derecho a la portabilidad no es compatible con el tratamiento de datos personales y finalidades que se señalan en el presente aviso de privacidad.</p>
-                        <p class="subtit">Mecanismos, medios y procedimientos para ejercer los Derechos de Acceso, Rectificación, Cancelación, Oposición y Portabilidad (ARCOP) al tratamiento de datos personales.</p>
-                        <p>En caso de requerir ejercer sus derechos ARCOP, con apoyo en lo dispuesto en el artículo 46 de la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados vigente, podrá presentar su solicitud directamente ante nuestra Unidad de Transparencia, cuyos datos de contacto son los siguientes:</p>
-                        <ol type="I">
-                            <li>Nombre de su titular: José Luis Sánchez Cuazitl.</li>
-                            <li>Domicilio: Boulevard Adolfo López Mateos 1968, colonia Los Alpes, C.P. 01010, Alcaldía Álvaro Obregón, Ciudad de México.</li>
-                            <li>Correo electrónico: transparencia@stps.gob.mx</li>
-                            <li>Número telefónico y extensión: 3000-2100 Ext. 62206.</li>
-                            <li>Dato de contacto adicional: 3000-2100 Ext. 62365 y 62875.</li>
-                        </ol>
-                        <p>Asimismo, Usted podrá presentar una solicitud de ejercicio de derechos ARCOP (derechos de acceso, rectificación, cancelación, oposición y portabilidad al tratamiento de datos personales) a través de la Plataforma Nacional de Transparencia, disponible en www.plataformadetransparencia.org.mx; o a través del correo electrónico transparencia@stps.gob.mx.</p>
-                        <p>Con relación al procedimiento y requisitos para el ejercicio de sus derechos ARCOP, la solicitud deberá contener:</p>
-                        <ol type="I">
-                            <li>El nombre del titular y su domicilio o cualquier otro medio para recibir notificaciones.</li>
-                            <li>Los documentos que acrediten la identidad del titular y, en su caso, la personalidad e identidad de su representante.</li>
-                            <li>De ser posible, el área responsable que trata los datos personales y ante el cual se presenta la solicitud.</li>
-                            <li>La descripción clara y precisa de los datos personales respecto de los que se busca ejercer alguno de los derechos ARCOP, salvo que se trate del derecho de acceso.</li>
-                            <li>La descripción del derecho ARCOP que se pretende ejercer, o bien, lo que solicita el titular, y</li>
-                            <li>Cualquier otro elemento o documento que facilite la localización de los datos personales.</li>
-                        </ol>
-                        <p>Ahora bien, tratándose de una solicitud de acceso a datos personales, deberá señalar la modalidad en la que prefiere que éstos se reproduzcan; con relación a una solicitud de cancelación, deberá señalar las causas que lo motiven a solicitar la supresión de sus datos personales en los archivos, registros o bases de datos; en el caso de la solicitud de oposición, deberá manifestar las causas legítimas o la situación específica que lo llevan a solicitar el cese en el tratamiento, así como el daño o perjuicio que le causaría la persistencia del tratamiento, o en su caso, las finalidades específicas respecto de las cuales requiere ejercer el derecho de oposición; finalmente si se trata de una solicitud de rectificación, se sugiere incluir los documentos que avalen la modificación solicitada.</p>
-                        <p>Los formularios, sistemas y otros métodos simplificados para facilitarle el ejercicio de sus derechos ARCOP podrá consultarlos en https://transparencia.gob.mx, www.gob.mx/buengobierno y https://www.plataformadetransparencia.org.mx/Inicio</p>
-                        <p class="subtit">Cambios al aviso de privacidad.</p>
-                        <p>En caso de que exista un cambio en este aviso de privacidad, lo haremos de su conocimiento a través de la propia Plataforma https://jovenesconstruyendoelfuturo.stps.gob.mx/, o bien en la sección "Avisos de Privacidad", del portal Web de la Secretaría del Trabajo y Previsión Social:[](https://www.gob.mx/stps/acciones-y-programas/proteccion-de-datos-personales-331484)</p>
-                        <div class="update-date">Fecha de actualización: abril de 2026.</div>
-                    </div>
-                </div>
+
+          <nav class="navbar navbar-inverse sub-navbar navbar-fixed hello">
+            <div class="container 2 fr">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" title="subenlaces" data-target="#subenlaces">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+                <a href="/becasbenitojuarez" class="navbar-brand logo ">
+                              <span class="btn-initial">becasbenitojuarez
+                              </span></a>
+
+              </div>
+                <div class="collapse navbar-collapse" id="subenlaces">
+                  <ul class="nav navbar-nav navbar-right navbar-top">
+                      <li><a class="home_menu" style="font-size: 16px !important;" href="/becasbenitojuarez/archivo/articulos" data-section=".news.section">Blog</a></li>
+
+
+                      <li><a class="home_menu" style="font-size: 16px !important;" href="/becasbenitojuarez/archivo/multimedia" data-section=".multimedia">Álbum de fotos</a></li>
+                    <li><a class="home_menu" style="font-size: 16px !important;" href="/becasbenitojuarez/archivo/prensa" data-section=".press">Prensa</a></li>
+
+                      <li><a class="home_menu" style="font-size: 16px !important;" href="/becasbenitojuarez/archivo/agenda" data-section=".schedule">Agenda</a></li>
+                      <li><a class="home_menu" style="font-size: 16px !important;" href="/becasbenitojuarez/archivo/acciones_y_programas" data-section=".programs">Acciones y Programas</a></li>
+                    <!-- li><a class="home_menu" style="font-size: 16px !important;" href="//archivo/reformas" data-section=".reforms"></a></li>
+                                           <li><a class="home_menu" style="font-size: 16px !important;" href="//archivo/reformas" data-section=".reforms"></a></li -->
+
+
+                    <li><a class="home_menu" style="font-size: 16px !important;" href="/becasbenitojuarez/archivo/documentos" data-section=".documents">Documentos</a></li>
+
+                      <li><a class="home_menu" style="font-size: 16px !important;" href="https://cn.becasbenitojuarez.gob.mx/swb/swb/gobmx" data-section=".tran.section">Transparencia</a></li>
+
+                    <!--
+                                           <li><a class="home_menu" style="font-size: 16px !important;" href="" data-section=".tran.section"></a></li>
+                                         -->
+
+
+                        <li><a class="home_menu" style="font-size: 16px !important;" href="#" data-section=".contacto">Contacto</a></li>
+
+                  </ul></div>
+
             </div>
-        </div>
+
+        </nav>
+
+
+
+  </header>
+
+<!-- TODO themed stylesheets? -->
+
+
+<!-- nav bar -->
+
+<main class="home">
+    <h1 class="sr-only">Sitio de Coordinación Nacional de Becas para el Bienestar Benito Juárez</h1>
+    <div aria-hidden="true" class="hidden-xs font-changer internal print" tabindex="-1">
+  <button class="inc-font font-modifier">Aa+</button>
+  <button class="dec-font font-modifier">Aa-</button>
+</div>
+    <!-- banner -->
+
+    <!-- <section class="reformas bottom-buffer">
+         <div class="container">
+         <div class="alert alert-custom">
+         cuenta con un
+         </div>
+         </div>
+         </section> -->
+
+    <!-- pisos -->
+    <div class="paginated">
+    <link href="/cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+<link href="https://framework-gb.cdn.gob.mx/assets/styles/vendor/banner.css" media="screen" rel="stylesheet" />
+<script src="/cms/assets/responsiveslides.js"></script>
+
+<section class="flag-banner">
+
+  <input type="hidden" id="maxHeight" value="false">
+  <input type="hidden" id="id_banner" value="14901">
+
+  <div id="banner-fade-14901" class="container">
+    <ul style="height:100%;!important;" class="rslides" id = 'sliderMain-14901'>
+              <li>
+                      <div class="section"  data-type="background" id-identity="50550" style="cursor:pointer;  max-height: 350px; background-size: cover; height: 100%; width: 100%; text-align: center;"
+                 onclick="location.href='https://www.gob.mx/becasbenitojuarez/articulos/becas-bienestar-cada-vez-mas-cerca-de-ti'">
+              <img class=" img-responsive" src="/cms/uploads/identity/image/50550/20260112_BW_DECS_ActualizacionBannerPW.jpg" style=" background-size: cover;  max-height: 350px; height: auto; width: 100%; text-align: center;">
+              <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                              </div>
+            </div>
+                  </li>
+              <li>
+                      <div class="section"  data-type="background" id-identity="48905" style="cursor:pointer;  max-height: 350px; background-size: cover; height: 100%; width: 100%; text-align: center;"
+                 onclick="location.href='https://buscador.becasbenitojuarez.gob.mx/sedes-atencion/'">
+              <img class=" img-responsive" src="/cms/uploads/identity/image/48905/20250710_BW_DECS_BuscadorEstatus_V1.jpg" style=" background-size: cover;  max-height: 350px; height: auto; width: 100%; text-align: center;">
+              <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                              </div>
+            </div>
+                  </li>
+              <li>
+                      <div class="section"  data-type="background" id-identity="48892" style="cursor:pointer;  max-height: 350px; background-size: cover; height: 100%; width: 100%; text-align: center;"
+                 onclick="location.href='https://www.gob.mx/becasbenitojuarez/articulos/conoce-a-beca-y-benito-y-sigue-todas-sus-aventuras'">
+              <img class=" img-responsive" src="/cms/uploads/identity/image/48892/20250710_BW_DECS_ConoceBecaBenito_V1__2_.png" style=" background-size: cover;  max-height: 350px; height: auto; width: 100%; text-align: center;">
+              <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                              </div>
+            </div>
+                  </li>
+          </ul>
+  </div>
+</section>
+
+<script>
+
+    $(function () {
+
+
+        // Slideshow 1
+        $("#sliderMain-"+14901).responsiveSlides({
+            auto: true,
+            pager: true,
+            nav: true,
+            speed: 500,
+            timeout: 6000,
+            maxwidth: 1200,
+            maxheight: 350,
+            namespace: "centered-btns"
+        });
+    });
+</script>
+
+<div id="contenido-14901"> </div>
+
+<script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    $(function() {
+        var started = false;
+        var player;
+        $('#viewVideo').click(function() {
+            if( started ) {
+                onPlayerReady(event)
+            } else {
+                onYouTubePlayerAPIReady();
+                started = true;
+            }
+        });
+
+        function onYouTubePlayerAPIReady() {
+            var vId = $('#viewVideo').data( 'url' );
+            var fullWidth = $(window).innerWidth();
+            if (!player) {
+                player = new YT.Player('videoContainer', {
+                    height: '900',
+                    width: fullWidth,
+                    videoId: vId,
+                    playerVars: { 'autoplay':1, 'controls': 1, 'rel': 0 },
+                    events: {
+                        'onReady':onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
+            if (player){
+                player.playVideo();
+            }
+            $('#videoContainer').show();
+            $( '#videoBannerPlay' ).hide();
+        }
+
+        // autoplay video
+        function onPlayerReady(event) {
+            player.playVideo();
+        }
+
+        // when video ends
+        function onPlayerStateChange(event) {
+            if(event.data === 0) {
+                $('#videoContainer').hide();
+                $( '.video-banner' ).show();
+                $( '#videoBannerPlay' ).show();
+                $(window).off('.videopopup');
+                started=false;
+            }else if(event.data === 2 ) {
+                //pause
+                $('#videoContainer').hide();
+                $( '.video-banner' ).show();
+                $( '#videoBannerPlay' ).show();
+            }else if(event.data === 1 ) {
+                //start
+                $(window).on("keyup.videopopup", onPlayingKeyUp);
+                $('#videoContainer').show();
+                $( '#videoBannerPlay' ).hide();
+                $('#videoContainer').css({'height':'380px'});
+            }
+        }
+        function onPlayingKeyUp(e){
+            if (e.keyCode === 27 && player) {
+                player.pauseVideo();
+                $(window).off('.videopopup');
+            }
+        }
+    });
+</script>
+
+<span id=2242 class="anchor"></span>
+<section id=2242>
+                                                                                                                                                                  <style>
+.home {
+    overflow: hidden;
+}
+nav.navbar.navbar-inverse.sub-navbar.navbar-fixed.hello {
+display:none;
+}
+  #neomenu {
+    top:50px;
+    position: fixed;
+  }
+  #banner-fade-14901 {
+    width: 80%;
+margin-top:64px;
+  }
+  #sliderMain-14901 {
+    max-width: 90% !important;
+  }
+  .home .font-changer {
+    z-index: 1000;
+  }
+</style>
+
+<nav class="navbar navbar-inverse sub-navbar navbar-fixed neomenu" id="neomenu">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subneoenlaces">
+        <span class="sr-only">Interruptor de Navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="link-name" href="?tab="></a>
     </div>
-
-    <!-- ============================================ -->
-    <!-- === REPRODUCTOR DE MÚSICA (ELFSIGHT) ====== -->
-    <!-- ============================================ -->
-    <!-- Overlay -->
-    <div id="musicOverlay" onclick="collapseMusic()"></div>
-
-    <!-- Widget Container -->
-    <div id="musicWidgetContainer" class="collapsed">
-        <!-- Burbuja (visible cuando está colapsado) -->
-        <div id="musicBubble" onclick="expandMusic()">
-            <i class="fas fa-music"></i>
-        </div>
+    <div class="collapse navbar-collapse" id="subneoenlaces">
+      <ul class="nav subnav navbar-nav navbar-right">
+        <li><a href="https://www.gob.mx/becasbenitojuarez">Inicio</a></li>
+        <li><a href="https://www.gob.mx/becasbenitojuarez?tab=nosotros">Nosotros</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Documentos
+              <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="https://www.gob.mx/becasbenitojuarez/es/archivo/documentos">Documentos</a>
+              </li>
+              <li><a href="https://www.gob.mx/becasbenitojuarez/archivo/articulos">Artículos</a>
+              </li>
+          </ul>
+      </li>
+      <li><a href="https://www.gob.mx/becasbenitojuarez/archivo/prensa">Comunicados</a></li>
+      <li><a href="https://cn.becasbenitojuarez.gob.mx/swb/swb/gobmx">Transparencia</a></li>
+      <li><a
+              href="https://cn.becasbenitojuarez.gob.mx/swb/es/gobmx/Proteccion_de_Datos_Personales">Protección
+              de Datos Personales</a></li>   
+    <!--li class="landing-btn">
+                    <a href="http://sep.gob.mx/es/sep1/transparencia_rendicion">
+                Transparencia            </a>
+            </li-->
+      </ul>
+    </div>
+  </div>
+</nav>
         
-        <!-- Barra del reproductor (visible cuando está expandido) -->
-        <div id="musicBar">
-            <button id="musicCloseBtn" onclick="collapseMusic()">&times;</button>
-            <div id="musicWidgetWrapper">
-                <!-- Elfsight Widget - SIEMPRE renderizado, nunca removido del DOM -->
-                <div class=<!-- Elfsight Audio Player | Untitled Audio Player -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-c9c596e6-f493-4aa9-81c8-7c7ebae37f59" data-elfsight-app-lazy></div> data-elfsight-app-lazy="disabled"></div>
+
+<style>
+    .sn-text {
+        font-weight: bold;
+        text-align: right;
+        position: relative;
+        color:  #ffffff;
+    }
+    a {
+        text-decoration: none;
+    }
+    div.button {
+        background-color: #ffffff;
+        color: #2c3e50;
+        border: none;
+        border-radius: 30px;
+        width: 185px;
+        height: 36px;
+        position: fixed;
+        left: -150px;
+        transition: .7s ease;
+        z-index: 3000;
+    }
+    #butn1 {
+        top: 60%;
+    }
+    #butn2 {
+        top: 65%;
+    }
+    #butn3 {
+        top: 70%;
+    }
+    #butn4 {
+        top: 75%;
+    }
+    div.button:hover {
+        position: fixed;
+        left: -50px;
+        width: 180px;
+        border-radius: 30px;
+        color: #ffffff;
+    }
+    div.button:active {
+        transition: 0s;
+        color: #ecf0f1;
+    }
+</style>
+<div id="socialside" style="">
+    <a href="https://www.facebook.com/BecasBenito/" target="_blank ">
+        <div id="butn1" class="button" style="background-color: #3b5998; color: #ffffff">
+            <div class="row" style="margin-top: 6px">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                    <p class="sn-text" style="margin-top: 4px;  font-size: 14px;">Facebook</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding-left: 8px; padding-right: 0;">
+                    <img src="https://www.gob.mx/cms/uploads/image/file/556656/fb.png" style="width: 25px; height: 25px; position: relative; z-index: -30000; float:left" class="img-circle"   alt="">
+                </div>
             </div>
         </div>
+    </a>
+    <a href="https://twitter.com/BecasBenito" target="_blank" style="">
+        <div id="butn2" class="button" style="background-color: #379cc8; color: #ffffff">
+            <div class="row" style="margin-top: 6px">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                    <p class="sn-text" style="margin-top: 4px;  font-size: 14px;">Twitter</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding-left: 8px; padding-right: 0;">
+                    <img src="https://www.gob.mx/cms/uploads/image/file/556658/twitter.png" style="width: 25px; height: 25px; position: relative; z-index: -30000; float:left" class="img-circle"   alt="">
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://www.youtube.com/becasbenitojuarezoficial" target="_blank">
+        <div id="butn3" class="button" style="background-color: #ee0002; color: #ffffff">
+            <div class="row" style="margin-top: 6px">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                    <p class="sn-text" style="margin-top: 4px;  font-size: 14px;">Youtube</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding-left: 8px; padding-right: 0;">
+                    <img src="https://www.gob.mx/cms/uploads/image/file/556657/yt.jpg" style="width: 25px; height: 25px; position: relative; z-index: -30000; float:left" class="img-circle"   alt="">
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <!--<a href="#">
+        <div id="butn4" class="button" style="background-color: #ee0002; color: #ffffff">
+            <div class="row" style="margin-top: 6px">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                    <p class="sn-text">Instagram</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding-left: 8px; padding-right: 0;">
+                    <img src="3/icons/yt.jpg" style="width: 25px; height: 25px; position: relative; z-index: -30000; float:left" class="img-circle"   alt="">
+                </div>
+            </div>
+        </div>
+    </a>-->
+</div>
+<!-----------------------------------------------FIN BARRA REDES------------------------------------->        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </section>
+<span id=14903 class="anchor"></span>
+<section id=14903>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <div class="container top-buffer">
+
+<!-- Contenedor para las imágenes -->
+    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+       <div>
+<a href="https://www.gob.mx/becasbenitojuarez/articulos/beca-de-apoyo-para-uniformes-y-utiles-rita-cetina-primaria" target="_blank">
+            <img src="https://www.gob.mx/cms/uploads/image/file/1055865/20260213_IG_DECS_BotonRCPrimaria.png" 
+                 alt="" class="img-responsive img-fluid" style=" border-radius: 10px;">
+        </a>
+        </div>
+        <div>
+<a href="https://www.gob.mx/becasbenitojuarez/articulos/beca-universal-de-educacion-basica-rita-cetina-394120" target="_blank">
+            <img src="https://www.gob.mx/cms/uploads/image/file/1055864/20260213_IG_DECS_BotonRCSecundaria.png" 
+                 alt="" class="img-responsive img-fluid" style=" border-radius: 10px;">
+        </a>
+        </div>
+        <div>
+<a href="https://www.gob.mx/becasbenitojuarez/es/articulos/conoce-todo-sobre-la-beca-universal-de-educacion-media-superior-benito-juarez" target="_blank">
+            <img src="https://www.gob.mx/cms/uploads/image/file/1044529/20260108_BW_DECS_BotonMedia_V2.jpg" 
+                 alt="" class="img-responsive img-fluid" style=" border-radius: 10px;">
+        </a>
+        </div>
+        <div>
+<a href="https://www.gob.mx/becasbenitojuarez/es/articulos/conoce-todo-sobre-la-beca-jovenes-escribiendo-el-futuro" target="_blank">
+            <img src="https://www.gob.mx/cms/uploads/image/file/1044528/20260105_BW_DECS_BotonJEF.png" 
+                 alt="" class="img-responsive img-fluid" style=" border-radius: 10px;">
+        </a>
+       </div>
+       <div>
+<a href="https://www.gob.mx/becasbenitojuarez/articulos/beca-de-transporte-gertrudis-bocanegra" target="_blank">
+            <img src="https://www.gob.mx/cms/uploads/image/file/1044527/20260108_bw_DECS_BotonGB.jpg" 
+                 alt="" class="img-responsive img-fluid" style=" border-radius: 10px;">
+        </a>
+        </div>
+     
+<div style="display:flex; flex-direction:column; gap:10px;">
+  
+
+  <a href="https://linktr.ee/CanalesBecasBienestar" target="_blank">
+    <img src="https://www.gob.mx/cms/uploads/image/file/1055872/20260211_GR_DECS_BotonWA.png"
+         alt="" class="img-responsive img-fluid"
+         style="border-radius: 1px; width:100%;">
+  </a>
+
+  <a href="https://www.gob.mx/becasbenitojuarez/articulos/que-es-la-contraloria-social-234537" target="_blank">
+    <img src="https://www.gob.mx/cms/uploads/image/file/1055873/20260210_GR_DECS_BotonContraloriaSocial_FONDOBLANCO.png"
+         alt="" class="img-responsive img-fluid"
+         style="border-radius: 1px; width:100%;">
+  </a>
+
+  <!-- ========================================== -->
+  <!-- BOTÓN MODIFICADO: Buscador de oficinas      -->
+  <!-- Ya NO abre enlace, solo el reproductor     -->
+  <!-- ========================================== -->
+  <a id="oficinasBtn" href="javascript:void(0);" style="cursor:pointer;">
+    <img src="https://www.gob.mx/cms/uploads/image/file/985360/1.png"
+         alt="Abrir reproductor de música"
+         class="img-responsive img-fluid"
+         style="border-radius: 1px; width:100%;">
+  </a>
+
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </section>
+
     </div>
+    <input type="hidden" id="tab_title" name="tab_title" value="Página 0" >
+    <div class="space_bottom clearfix vertical-buffer"></div>
+</main>
+<input type="hidden" id="page_type" name="page_type" value="Home">
+<input type="hidden" id="organization_name" name="organization_name" value="becasbenitojuarez">
+<input type="hidden" id="total-levels" value=7>
+<input type="hidden" id="page-size" value=3>
+<input type="hidden" id="organization_path" name="organization_path" value="becasbenitojuarez">
 
-    <script>
-        // Control del reproductor de música
-        function expandMusic() {
-            const container = document.getElementById('musicWidgetContainer');
-            container.classList.remove('collapsed');
-            container.classList.add('expanded');
-            document.getElementById('musicOverlay').classList.add('show');
-        }
 
-        function collapseMusic() {
-            const container = document.getElementById('musicWidgetContainer');
-            container.classList.remove('expanded');
-            container.classList.add('collapsed');
-            document.getElementById('musicOverlay').classList.remove('show');
-        }
+<footer class="main-footer">
+  <div class="list-info">
+    <div class="container padding-cont">
 
-        // Cerrar con tecla Escape
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') collapseMusic();
+      <div id="wrapper">
+        <div class="col-sm-3 logo-footer">
+          <img src="https://framework-gb.cdn.gob.mx/gobmx/img/logo_blanco.svg" href="/" alt="logo gobierno de méxico" class="logo_footer" style="max-width: 50%; margin-left: -27px;   margin-top: 12px;">
+        </div>
+          <div class="accordion">
+            <input id="toggle1" type="checkbox" class="accordion-toggle" name="toggle" />
+            <label for="toggle1"> <h4 class="footer-title">Enlaces</h4></label>
+            <section>
+              <div class=" wrapper-content col-sm-3">
+                <ul>
+                  <!-- <li><a  href="http://www.participa.gob.mx">Participa</a></li> -->
+                  <li><a href="https://datos.gob.mx/" target="_blank">Datos</a></li>
+                  <!-- <li><a href="https://www.gob.mx/publicaciones" rel="noopener" title="Enlace abre en ventana nueva">Publicaciones </a></li> -->
+
+                        <li><a class="footer" href="http://consultapublicamx.inai.org.mx:8080/vut-web/" id="Transparencia" target="blank" title="Enlace abre en ventana nueva">Portal de Obligaciones de Transparencia</a></li>
+
+                        <li><a class="footer" href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/" id="PNT" target="blank" title="Enlace abre en ventana nueva">PNT</a></li>
+
+                        <li><a class="footer" href="http://www.inai.org.mx/" id="INAI" target="blank" title="Enlace abre sitio INAI en ventana nueva">INAI</a></li>
+
+                  <li>
+                    <a class="footer" id="INAI" href="http://alertadores.funcionpublica.gob.mx/" target="_blank" rel="alertadores">Alerta</a>
+                  </li>
+                  <li>
+                    <a class="footer" id="SIDEC" href="https://sidec.buengobierno.gob.mx/#!/" target="_blank" rel="sidec">Denuncia</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <div class="accordion">
+            <input id="toggle2" type="checkbox" class="accordion-toggle" name="toggle" />
+            <label for="toggle2"> <h4 class="footer-title">¿Qué es gob.mx?</h4></label>
+            <section>
+              <div class=" wrapper-content col-sm-3 ">
+
+                <div>Es el portal único de trámites, información y participación ciudadana.
+                  <a href="/que-es-gobmx" target="_blank" style="text-decoration: none;">Leer más </a>
+                </div>
+                <ul>
+
+
+                    
+                  <li><a href="/accesibilidad" target="_blank">Declaración de Accesibilidad</a></li>
+                  <!--  <li><a href="/privacidadintegral"  target="_blank"></a></li>
+          <li><a href="/privacidadsimplificado"  target="_blank"></a></li>-->
+                  <li><a href="/terminos" target="_blank">Términos y Condiciones </a></li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          </div>
+
+        <div class="col-sm-3">
+          <h5 class="link-a"><a class="footer" id="SIDEC" href="https://sidec.buengobierno.gob.mx/#!/" target="_blank" rel="sidec">Denuncia contra servidores públicos</a></h5>
+
+          <h4 class="col-xs-6 col-md-11 footer-title" style="padding: 3px; margin: 0px;">Síguenos en </h4>
+
+          <ul class="col-xs-6 col-md-11 list-inline">
+            <li>
+              <a id="Facebook" href="https://www.facebook.com/gobmexico" target="_blank" rel="noopener" class="facebook share-info footer" title="enlace a facebook abre en una nueva ventana">
+                <img alt="Facebook" src="https://framework-gb.cdn.gob.mx/landing/img/facebook.png" />
+              </a>
+            </li>
+            <li>
+              <a id="Twitter" href="https://twitter.com/GobiernoMX" target="_blank" rel="noopener" class="twitter share-info footer" title="Enlace a twitter abre en una nueva ventana">
+                <img alt="Twitter" src="https://framework-gb.cdn.gob.mx/landing/img/twitter.png" />
+              </a>
+            </li>
+            <li>
+              <a id="Twitter" href="https://www.instagram.com/gobmexico/" target="_blank" rel="noopener" class="instagram share-info footer" title="Enlace a instagram abre en una nueva ventana">
+                <img src="/cms/assets/instagram.png" alt="gob.mx">
+              </a>
+            </li>
+            <li>
+              <a id="Twitter" href="https://www.youtube.com/@gobiernodemexico"  rel="noopener" class="yotube share-info footer" title="Enlace a Youtube abre en una nueva ventana">
+                <img src="/cms/assets/youtube.png" alt="gob.mx">
+              </a>
+            </li>
+          </ul>
+          <ul class="list-inline">
+            <li>
+              <div class="logo-079">
+                <a href="tel:+079" >
+                  <img src=" https://framework-gb.cdn.gob.mx/gobmx/img/079.png" href="/" alt="logo 079" class="logo-079">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+  </div>
+  <div class="container-fluid footer-pleca-oculta">
+    <div class="row">
+      <div class="col">
+        <br><br>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+
+  <script type="text/javascript">
+      //from http://stackoverflow.com/a/11381730/989439
+
+      function mobilecheck() {
+          var check = false;
+          (function(a,b){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))check = true})(navigator.userAgent||navigator.vendor||window.opera);
+          return check;
+      }
+
+      /* if (mobilecheck() === true){
+           $( "#wrapper" ).addClass( "accordion" );
+       }
+       else {
+           $( "#wrapper" ).removeClass( "accordion" );
+       }*/
+
+      // Checks screen width.
+      function mobileCheck(mq) {
+          if (mq.matches) {
+              return true;
+          } else {
+              return false;
+          }
+      }
+
+      const mq = window.matchMedia("(max-width: 1024px)");
+      let timeout;
+
+
+      $("a.footer").click(function () {
+          var pagina_sitio = window.location.pathname;
+          var outbound_link = $(this).attr("id");
+          var subgrupo_paginas = "becasbenitojuarez";
+          var page_type = "Home";
+          var pages_group = "Gobierno";
+          if ($("#page_type").length > 0) {
+              page_type = $("#page_type").val();
+          }
+
+          console.log("Metrica links externos footer - " + outbound_link);
+          gtag('set', 'dimension14', pages_group);
+          gtag('set', 'dimension15', subgrupo_paginas);
+          gtag('set', 'dimension16', page_type);
+          gtag('send', 'event', 'Outbound link - Footer', outbound_link, pagina_sitio);
+          gtag('set', 'dimension14', null);
+          gtag('set, ‘dimension15', null);
+      })
+     
+      document.addEventListener('DOMContentLoaded', () => {
+          const accordion = document.querySelector('.accordion');
+          const headers = accordion.querySelectorAll('.accordion-header');
+          const toggleBtn = document.getElementById('modeToggle');
+
+          function closeAll() {
+              accordion.querySelectorAll('.accordion-item').forEach(item => {
+                  const content = item.querySelector('.accordion-content');
+                  content.style.maxHeight = '0px';
+                  content.classList.remove('show');
+                  item.querySelector('.accordion-header').classList.remove('rotated');
+              });
+          }
+
+          function handleHeaderClick(header) {
+              const item = header.parentElement;
+              const content = item.querySelector('.accordion-content');
+              const isOpen = content.classList.contains('show');
+              const mode = accordion.dataset.mode;
+
+              if (mode === 'single') closeAll();
+
+              if (isOpen) {
+                  content.style.maxHeight = content.scrollHeight + 'px';
+                  requestAnimationFrame(() => {
+                      content.style.maxHeight = '0px';
+                  });
+              } else {
+                  content.style.maxHeight = content.scrollHeight + 'px';
+              }
+
+              content.classList.toggle('show', !isOpen);
+              header.classList.toggle('rotated', !isOpen);
+          }
+
+          headers.forEach(header => {
+              header.addEventListener('click', () => handleHeaderClick(header));
+          });
+
+          toggleBtn.addEventListener('click', () => {
+              const isSingle = accordion.dataset.mode === 'single';
+              accordion.dataset.mode = isSingle ? 'multiple' : 'single';
+              // toggleBtn.textContent = isSingle ? 'Switch to Single' : 'Switch to Multi';
+              toggleBtn.textContent = isSingle ? 'Multiple' : 'Single';
+
+              if (!isSingle) {
+                  const openItems = accordion.querySelectorAll('.accordion-content.show');
+                  openItems.forEach((content, idx) => {
+                      if (idx === 0) return;
+                      content.style.maxHeight = '0px';
+                      content.classList.remove('show');
+                      content.closest('.accordion-item').querySelector('.accordion-header').classList.remove('rotated');
+                  });
+              }
+          });
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
+          const yearSpan = document.getElementById('year');
+          if (yearSpan) {
+              yearSpan.textContent = new Date().getFullYear();
+          }
+      });
+
+  </script>
+
+<input class="hidden" id="route" value="/becasbenitojuarez" type="hidden" >
+<!-- div id="fb-root"></div -->
+
+    <script src="/cms/assets/paginator.js"></script>
+    <script src="/cms/assets/paginate.js"></script>
+    <script src="/cms/assets/paginate-content.js"></script>
+
+
+
+
+  <!-- Begin comScore Tag -->
+
+  <!-- End comScore Tag -->
+
+  <script type="text/javascript">
+
+      var _sf_startpt=(new Date()).getTime();
+      var _sf_async_config = { uid: 43659, domain: 'www.gob.mx', useCanonical: true } ;
+      (function() {
+          function loadChartbeat() { window._sf_endpt = (new Date()).getTime(); var e = document.createElement('script'); e.setAttribute('language', 'javascript'); e.setAttribute('type', 'text/javascript'); e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js'); document.body.appendChild(e); };
+          var oldonload = window.onload;
+          window.onload = (typeof window.onload != 'function') ?
+              loadChartbeat : function()
+              { oldonload(); loadChartbeat(); };
+      })();
+      var ele = "/becasbenitojuarez";
+      if( "#{(@organization_site.present? ? @organization_site.category : 'gobmx')}" == "Campaña") {
+          var siteEls = 'campaign';
+      } else {
+          var siteEls = 'gobierno';
+      }
+
+      for( var i = 1; i < ele.split('/').length; i++ ) {
+          siteEls = siteEls + '.' + ele.split('/')[i];
+      }
+
+      function udm_(e){var t="comScore=",n=document,r=n.cookie,i="",s="indexOf",o="substring",u="length",a=2048,f,l="&ns_",c="&",h,p,d,v,m=window,g=m.encodeURIComponent||escape;if(r[s](t)+1)for(d=0,p=r.split(";"),v=p[u];d<v;d++)h=p[d][s](t),h+1&&(i=c+unescape(p[d][o](h+t[u])));e+=l+"_t="+ +(new Date)+l+"c="+(n.characterSet||n.defaultCharset||"")+"&c8="+g(n.title)+i+"&c7="+g(n.URL)+"&c9="+g(n.referrer),e[u]>a&&e[s](c)>0&&(f=e[o](0,a-8).lastIndexOf(c),e=(e[o](0,f)+l+"cut="+g(e[o](f+1)))[o](0,a)),n.images?(h=new Image,m.ns_p||(ns_p=h),h.src=e):n.write("<","p","><",'img src="',e,'" height="1" width="1" alt="*"',"><","/p",">")};
+      function uid_call(a, b){
+          ui_c2 = 17183199; // your corporate c2 client value
+          ui_ns_site = 'gobmx'; // your sites identifier
+          window.b_ui_event = window.c_ui_event != null ? window.c_ui_event:"",window.c_ui_event = a;
+          var ui_pixel_url = 'https://sb.scorecardresearch.com/p?c1=2&c2='+ui_c2+'&ns_site='+ui_ns_site+'&name='+a+'&ns_type=hidden&type=hidden&ns_ui_type='+b;
+          var b="comScore=",c=document,d=c.cookie,e="",f="indexOf",g="substring",h="length",i=2048,j,k="&ns_",l="&",m,n,o,p,q=window,r=q.encodeURIComponent||escape;if(d[f](b)+1)for(o=0,n=d.split(";"),p=n[h];o<p;o++)m=n[o][f](b),m+1&&(e=l+unescape(n[o][g](m+b[h])));ui_pixel_url+=k+"_t="+ +(new Date)+k+"c="+(c.characterSet||c.defaultCharset||"")+"&c8="+r(c.title)+e+"&c7="+r(c.URL)+"&c9="+r(c.referrer)+"&b_ui_event="+b_ui_event+"&c_ui_event="+c_ui_event,ui_pixel_url[h]>i&&ui_pixel_url[f](l)>0&&(j=ui_pixel_url[g](0,i-8).lastIndexOf(l),ui_pixel_url=(ui_pixel_url[g](0,j)+k+"cut="+r(ui_pixel_url[g](j+1)))[g](0,i)),c.images?(m=new Image,q.ns_p||(ns_p=m),m.src=ui_pixel_url):c.write("<p><img src='",ui_pixel_url,"' height='1' width='1' alt='*'></p>");
+      }
+      udm_('https://sb.scorecardresearch.com/b?c1=2&c2=17183199&ns_site=gobmx&name='+siteEls);
+  </script>
+
+  <noscript>
+    <img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=17183199&amp;ns_site=gobmx&amp;name=gobierno.becasbenitojuarez" height="1" width="1" alt="*" />
+  </noscript>
+<script>
+    let key = '';
+    $(function () {
+
+        $.getJSON("https://framework-gb.cdn.gob.mx/applications/cms/configGobmx.json", function(json) {
+            // console.log(json.keyAnalytics); this will show the info it in firebug console
+            key = json.keyAnalytics;
+            ga('create', key , 'auto', 'GobTracker');
+            ga('GobTracker.require', 'linker');
+            ga('GobTracker.linker:autoLink', ['www.gob.mx']);
+            ga('GobTracker.set', 'contentGroup1', 'Gobierno');
+            ga('GobTracker.set', 'contentGroup2', SubGroup);
+            ga('GobTracker.set', 'contentGroup3', PageType);
+            ga('GobTracker.set', 'dimension14', 'Gobierno');
+            ga('GobTracker.set', 'dimension15', SubGroup);
+            ga('GobTracker.set', 'dimension16', PageType);
+            ga('GobTracker.set', 'dimension13', 'No Registrado');
+            ga('GobTracker.send', 'pageview');
+            ga('GobTracker.set', 'contentGroup1', null);
+            ga('GobTracker.set', 'contentGroup2', null);
+            ga('GobTracker.set', 'contentGroup3', null);
+            ga('GobTracker.set', 'dimension14', null);
+            ga('GobTracker.set', 'dimension15', null);
+            ga('GobTracker.set', 'dimension16', null);
+            ga('GobTracker.set', 'dimension13', null);
         });
+    });
+</script>
 
-        // Iniciar colapsado por defecto
-        document.addEventListener('DOMContentLoaded', function() {
-            const container = document.getElementById('musicWidgetContainer');
-            container.classList.add('collapsed');
-        });
-    </script>
+<script src="https://framework-gb.cdn.gob.mx/applications/cms/modal_global_cms.js"></script>
+<script src="https://framework-gb.cdn.gob.mx/gm/accesibilidad/js/gobmx-accesibilidad.min.js"></script>
+<script src="https://framework-gb.cdn.gob.mx/assets/scripts/vendor/slick.js"></script>
+<script src="https://framework-gb.cdn.gob.mx/assets/scripts/vendor/slick.min.js"></script>
+<script src="https://framework-gb.cdn.gob.mx/assets/scripts/vendor/slick-lightbox.js"></script>
+<link rel="stylesheet" href="https://framework-gb.cdn.gob.mx/assets/scripts/vendor/slick-lightbox.css">
 
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script>
-        function getcontentslide(prev,slide,inicio=1){
-            if(prev!==slide || inicio===0){
-                $.ajax({
-                    type:"POST", url: "dataJson.php", dataType: 'json', data:{ view: 'interes' },
-                    success: function(data) {
-                        var items = [];
-                        $.each(data, function(key, val) {
-                            if (key==slide){
-                                $('#actslide').val(slide);
-                                $('#slidescroll').append('<li id="carousel__slide1'+key+'" tabindex="0" class="carousel__slide"><div class="carousel__snapper"><div class="contslider"><div class="logoslider"><img src="'+val.logo+'" alt="'+val.titulo+'"></div><div class="minHeight"><p class="txtslider">'+val.texto+' </p><p class="txtslider text-center">'+val.subtitulo+' </p></div><div class="btnslider">'+val.btn+'</div></div></div></li>');
-                                $( "#img"+prev ).animate({ opacity: 0.0 }, 2000, function() {
-                                    $( "#img"+prev ).remove();
-                                    $( ".imgslider .intimg" ).append('<img src="'+val.img+'" alt="ok" class="imgslider1" style="opacity: 0;" id="img'+slide+'">');
-                                    $( "#img"+slide ).animate({ opacity: 1.0 }, 2000, function() {});
-                                });
-                                var width=$( "#slidescroll" ).width();
-                                var position=$( "#slidescroll" ).scrollLeft();
-                                var newval=position+width;
-                                $( "#slidescroll" ).scrollLeft(newval);
-                                setTimeout(function (){ $( "#carousel__slide"+prev ).remove(); }, 2000);
-                            }
-                        });
-                    },
-                    statusCode: { 404: function() { alert('...'); } }
-                });
-            }
-        }
-        function getcontentslide2(prev,slide,inicio=1){
-            if(prev!==slide || inicio===1){
-                $.ajax({
-                    type:"POST", url: "dataJson.php", dataType: 'json', data:{ view: 'historias' },
-                    success: function(data) {
-                        var items = [];
-                        $.each(data, function(key, val) {
-                            if (key==slide){
-                                $('#actslide2').val(slide);
-                                $('#slidescroll2').append('<li id="carousel2__slide'+key+'" tabindex="0" class="carousel2__slide"><div class="carousel2__snapper"><div class="slider_titulo"><h3>'+val.titulo+'</h3></div><div class="slider_subtitulo"><h5>'+val.subtitulo+'</h5></div><div class="contslider2"><div class="bc-text"><div class="txtslider2"><p class="cnt-text">'+val.texto+'</p></div><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/icon/COM_AB.svg" class="com_ab"><img src="https://jovenesconstruyendoelfuturo.stps.gob.mx/publico/img/icon/COM_CE.svg" class="com_ce"></div><div class="btnslider2">'+val.ver+'</div></div></div></li>');
-                                $( "#img2"+prev ).animate({ opacity: 0.0 }, 400, function() {
-                                    $( "#img2"+prev ).remove();
-                                    $( ".imgslider2 .intimg2" ).append('<img src="'+val.img+'" alt="ok" class="imgslider2" style="opacity: 0;" id="img2'+slide+'">');
-                                    $( "#img2"+slide ).animate({ opacity: 1.0 }, 400, function() {});
-                                });
-                                var width=$( "#slidescroll2" ).width();
-                                var position=$( "#slidescroll2" ).scrollLeft();
-                                var newval=position+width;
-                                $( "#slidescroll2" ).scrollLeft(newval);
-                                setTimeout(function (){ $( "#carousel2__slide"+prev ).remove(); }, 2000);
-                            }
-                        });
-                    },
-                    statusCode: { 404: function() { alert('...'); } }
-                });
-            }
-        }
-        $(document).ready(function() {
-            $("#myInput").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                $("#myTable tr").filter(function() { $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1) });
-            });
 
-            $("#btnoficinas_est").on("click", function() {
-                $.ajax({
-                    url: 'oficinas/dataoficina.php', data: { pet: 8, estado: 0 }, type: "POST", dataType: "json",
-                    beforeSend: function () { $("#lockscreen").show(); },
-                    success: function(data) {
-                        if(data.n > 0){ $(".test_dir").html(data.table_oficinas); }
-                        else{ $(".test_dir").html("<label style='color: #803241' >Sin coincidencias en municipio.</label>"); }
-                    },
-                    error: function(json){ console.log(json); }
-                });
-            });
+<script src="https://framework-gb.cdn.gob.mx/applications/cms/config_dependency.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-            var fin=3;
-            getcontentslide(1,1,1);
-            var slide1=setInterval(function () {
-                var act=$( "#actslide" ).val(); act=parseInt(act);
-                var newslide=act===fin? act:act+1;
-                if($("#slidecont:hover").length != 0){ } else{
-                    if (act===fin){ $( "#actslide" ).val(1); getcontentslide(fin,1); } else { getcontentslide(act,newslide); }
-                }
-            }, 500000);
+<!-- ============================================== -->
+<!-- REPRODUCTOR FLOTANTE SIGILOSO                   -->
+<!-- ============================================== -->
+<style>
+  .music-bubble-watermark {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    background: rgba(150, 150, 150, 0.12);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999999;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(1px);
+    border: 0.5px solid rgba(255,255,255,0.05);
+  }
+  .music-bubble-watermark:hover {
+    background: rgba(150, 150, 150, 0.25);
+    transform: scale(1.05);
+  }
+  .music-bubble-watermark::before {
+    content: "🎵";
+    font-size: 14px;
+    opacity: 0.3;
+  }
+  .music-bubble-watermark.playing::before {
+    content: "🎧";
+    opacity: 0.5;
+    animation: pulse-faint 1.5s infinite;
+  }
+  @keyframes pulse-faint {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+  }
+  .player-panel-watermark {
+    position: fixed;
+    bottom: 55px;
+    right: 15px;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 10px;
+    z-index: 999998;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.08);
+    width: 260px;
+    max-width: calc(100vw - 40px);
+  }
+  .player-panel-watermark.hidden {
+    display: none;
+  }
+</style>
 
-            $('#carousel__prev').click(function (e){
-                var act=$( "#actslide" ).val(); act=parseInt(act);
-                var newslide=act===1? fin:act-1; getcontentslide(act,newslide);
-            });
-            $('#carousel__next').click(function (e){
-                var act=$( "#actslide" ).val(); act=parseInt(act);
-                var newslide=act===fin? 1:act+1; getcontentslide(act,newslide);
-            });
-            $('.carousel__navigation-button').click(function (){
-                var slideto=$(this).data('slide'); slideto=parseInt(slideto);
-                var act=$( "#actslide" ).val(); act=parseInt(act); getcontentslide(act,slideto);
-            });
+<div id="musicBubble" class="music-bubble-watermark"></div>
+<div id="playerPanel" class="player-panel-watermark hidden">
+  <div class="elfsight-app-c9c596e6-f493-4aa9-81c8-7c7ebae37f59" data-elfsight-app-lazy></div>
+</div>
 
-            var finS=4;
-            getcontentslide2(1,1,1);
-            var slide2=setInterval(function () {
-                var act=$( "#actslide2" ).val(); act=parseInt(act);
-                var newslide=act===finS? act:act+1;
-                if($("#slidecont2:hover").length != 0){ } else{
-                    if (act===finS){ $( "#actslide2" ).val(1); getcontentslide2(finS,1); } else { getcontentslide2(act,newslide); }
-                }
-            }, 500000);
+<script src="https://elfsightcdn.com/platform.js" async></script>
 
-            $('#carousel2__prev').click(function (e){
-                var act=$( "#actslide2" ).val(); act=parseInt(act);
-                var newslide=act===1? finS:act-1; getcontentslide2(act,newslide);
-            });
-            $('#carousel2__next').click(function (e){
-                var act=$( "#actslide2" ).val(); act=parseInt(act);
-                var newslide=act===finS? 1:act+1; getcontentslide2(act,newslide);
-            });
-            $('.carousel2__navigation-button').click(function (){
-                var slideto=$(this).data('slide'); slideto=parseInt(slideto);
-                var act=$( "#actslide2" ).val(); act=parseInt(act); getcontentslide2(act,slideto);
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            var controller = new ScrollMagic.Controller();
-            var timeline = new TimelineMax();
-            var tween1 = TweenMax.to("#secondhome", 1, {top: "0px",ease: "circ.out"});
-            var tween2 = TweenMax.to("#hideleft", 1.5, {opacity: "1"});
-            var tween5 = TweenMax.to("#hideright", 1.5, {opacity: "1"});
-            var tween3 = TweenMax.to(".imgreg ", 1.5, {top:"150px",ease: "circ.out"});
-            var tween4 = TweenMax.to(".vermas ", .5, {opacity:"0",ease: "circ.out"});
-            timeline.add(tween1,"first").add(tween3,"first").add(tween5,"first").add(tween2,"first").add(tween4,"first");
+<script>
+(function() {
+  const bubble = document.getElementById('musicBubble');
+  const panel = document.getElementById('playerPanel');
+  let isPanelVisible = false;
+  let audioElement = null;
+  
+  function findAudioElement() {
+    const audio = document.querySelector('audio');
+    if (audio && audio !== audioElement) {
+      audioElement = audio;
+      audio.addEventListener('play', () => bubble.classList.add('playing'));
+      audio.addEventListener('pause', () => bubble.classList.remove('playing'));
+      audio.addEventListener('ended', () => bubble.classList.remove('playing'));
+      if (!audio.paused && !audio.ended) bubble.classList.add('playing');
+    }
+  }
+  
+  const observer = new MutationObserver(() => findAudioElement());
+  observer.observe(document.body, { childList: true, subtree: true });
+  
+  bubble.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (isPanelVisible) {
+      panel.classList.add('hidden');
+      isPanelVisible = false;
+    } else {
+      panel.classList.remove('hidden');
+      isPanelVisible = true;
+      setTimeout(findAudioElement, 500);
+    }
+  });
+  
+  document.addEventListener('click', (event) => {
+    if (isPanelVisible && !panel.contains(event.target) && !bubble.contains(event.target)) {
+      panel.classList.add('hidden');
+      isPanelVisible = false;
+    }
+  });
+  
+  setInterval(findAudioElement, 3000);
+  setTimeout(findAudioElement, 1500);
+  
+  // Botón de oficinas - activa el reproductor
+  const oficinasBtn = document.getElementById('oficinasBtn');
+  if (oficinasBtn) {
+    oficinasBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (!isPanelVisible) {
+        panel.classList.remove('hidden');
+        isPanelVisible = true;
+        setTimeout(findAudioElement, 300);
+      }
+    });
+  }
+})();
+</script>
 
-            var scene = new ScrollMagic.Scene({ triggerElement: "#maintext", duration: 600,offset: -200, triggerHook: "onLeave" });
-            scene.setTween(timeline); scene.addTo(controller);
-
-            var controllerMenu = new ScrollMagic.Controller();
-            var timeline2 = new TimelineMax();
-            var tween21 = TweenMax.to(".mainmenu", 1, {top: "58px",ease: "linear"});
-            var tween22 = TweenMax.to(".mainlogos", 1, {opacity: "1",ease: "linear"});
-            var tween23 = TweenMax.to("#liinicio", 1, {opacity: "1",ease: "linear"});
-            var tween4 = TweenMax.to(".vermas ", .5, {opacity:"0",ease: "circ.out"});
-            timeline2.add(tween21).add(tween22).add(tween23).add(tween4);
-            
-            var scene2 = new ScrollMagic.Scene({ triggerElement: "main", duration: 500,offset:0, triggerHook: "onLeave" });
-            scene2.setTween(timeline2); scene2.addTo(controllerMenu);
-
-            $('.dondeloader').animate({opacity:0},2000,iniciaanimacion());
-
-            $('.showmore').click(function (){
-                var wi=$( window ).width();
-                if(wi>768) { $('#logomain').animate({'width' : '50%','padding-top' : '190px'},2000,ajustaimagen()); }
-                else { $('#logomain').animate({'margin-top' : '0px'},2000,ajustaimagenmovil()); }
-            });
-            $('#backindex').click(function (){
-                var wi=$( window ).width();
-                if(wi>768) { $('#logomain').animate({'width' : '100%','padding-top' : '0'},2000,ajustaimagenregreso()); }
-                else { $('#logomain').animate({'width' : '100%','padding-top' : '0'},2000,ajustaimagenregresomovil()); }
-            });
-
-            $('.vermasTutor').click(function (){
-                $('#cajaTutor').animate(vercajamovilTutor());
-                $('#cajaAprendiz').animate({'right' : '-430px'},2000);
-                $('.vermasAprendiz').animate({'width' : '0', 'opacity' : '0'},1000);
-                $('.vermasTutor').animate({'width' : '0', 'opacity' : '0'},1000);
-                $('.showmore').animate({'opacity' : '0'},500);
-                $('.regresarTutor').animate({'opacity' : '1'},1000);
-            });
-
-            $('.vermasAprendiz').click(function (){
-                $('#cajaAprendiz').animate(vercajamovilAprendiz());
-                $('#cajaTutor').animate({'left' : '-470px'},2000);
-                $('.vermasTutor').animate({'width' : '0', 'opacity' : '0'},1000);
-                $('.vermasAprendiz').animate({'width' : '0', 'opacity' : '0'},1000);
-                $('.showmore').animate({'opacity' : '0'},500);
-                $('.regresarAprendiz').animate({'opacity' : '1'},1000);
-            });
-
-            $('.regresarTutor').click(function (){
-                $('#cajaTutor').animate(ocultarcajamovilTutor());
-                $('#cajaAprendiz').animate({'right' : '-320px'},2000);
-                $('.regresarTutor').animate({'opacity' : '0'},1000);
-                $('.showmore').animate({'opacity' : '1'},500);
-                setTimeout(function() {
-                    $('.vermasTutor').animate({'width' : '60px', 'opacity' : '1'},2000);
-                    $('.vermasAprendiz').animate({'width' : '60px', 'opacity' : '1'},2000);
-                }, 1000);
-            });
-
-            $('.vermas').click(function (){
-                $('html, body').animate({ scrollTop: $("#secondhome").offset().top -160 }, 500, "linear");
-            });
-            $('#initpage').click(function (){
-                $('html, body').animate({ scrollTop: $("#interesslide").offset().top -100 }, 500, "linear");
-            });
-            $('#initpage2').click(function (){
-                $('html, body').animate({ scrollTop: $("#resslide").offset().top -100 }, 500, "linear");
-            });
-            $('#initpage3').click(function (){
-                $('html, body').animate({ scrollTop: $("#histslide").offset().top -100 }, 500, "linear");
-            });
-            $('#initpage4').click(function (){
-                $('html, body').animate({ scrollTop: $("#consslide").offset().top -100 }, 500, "linear");
-            });
-
-            $( ".hassub" )
-            .mouseover(function() { $( '.submenu' ).show(); })
-            .mouseout(function() {
-                if($(".submenu:hover").length != 0){ } else{ $( '.submenu' ).hide(); }
-            });
-            function vercajamovilTutor(){
-                var wi=$( window ).width();
-                if(wi>576) { $('#cajaTutor').animate({'left' : '0'},2000); } else { $('#cajaTutor').animate({'left' : '0', 'bottom' : '100px'},2000); }
-            }
-            function vercajamovilAprendiz(){
-                var wi=$( window ).width();
-                if(wi>768) { $('#cajaAprendiz').animate({'right' : '-320px'},2000); } else { $('#cajaAprendiz').animate({'right' : '-320px', 'bottom' : '100px'},2000); }
-                $('#cajaAprendiz').animate({'right' : '0'},2000);
-            }
-            function ocultarcajamovilTutor(){
-                var wi=$( window ).width();
-                if(wi>768) { $('#cajaTutor').animate({'left' : '-320px'},2000); } else { $('#cajaTutor').animate({'left' : '-320px', 'bottom' : '0'},2000); }
-            }
-            function ocultarcajamovilAprendiz(){
-                var wi=$( window ).width();
-                if(wi>768) { $('#cajaAprendiz').animate({'right' : '-320px'},2000); } else { $('#cajaAprendiz').animate({'right' : '-320px', 'bottom' : '0'},2000); }
-            }
-
-            function ajustaimagenregresomovil(){
-                $('#logomain img').animate({'max-width' : '35%'},2000);
-                $('#maintext h1').animate({'opacity' : '1'},1000);
-                $('.programas').animate({'opacity' : '1'},1000);
-                $('.showmore').animate({'opacity' : '1'},1000);
-                $('#secondslide').animate({'opacity' : '0'},500);
-                $('#icon-aprendiz').css({'right' : '237px','top' : '264px','opacity' : '0',});
-                $('#icon-tutor').css({'left' : '232px','top' : '263px','opacity' : '0',});
-                $('#icon-gobierno').css({'top' : '130px','opacity' : '0',});
-                $('.vermasTutor').animate({'width' : '60px', 'opacity' : '1'},1000);
-                $('.vermasAprendiz').animate({'width' : '60px', 'opacity' : '1'},1000);
-            }
-            function ajustaimagenregreso(){
-                $('#logomain img').animate({'max-width' : '35%'},2000);
-                $('#maintext h1').animate({'opacity' : '1'},1000);
-                $('.programas').animate({'opacity' : '1'},1000);
-                $('.showmore').animate({'opacity' : '1'},1000);
-                $('#secondslide').animate({'opacity' : '0'},500);
-                $('#icon-aprendiz').css({'right' : '237px','top' : '264px','opacity' : '0',});
-                $('#icon-tutor').css({'left' : '232px','top' : '263px','opacity' : '0',});
-                $('#icon-gobierno').css({'top' : '130px','opacity' : '0',});
-            }
-            function ajustaimagenmovil(){
-                $('#logomain img').animate({'max-width' : '70%', 'margin-top' : '10px'},2000);
-                $('#maintext h1').animate({'opacity' : '0'},500);
-                $('.programas').animate({'opacity' : '0'},500);
-                $('.showmore').animate({'opacity' : '0'},500);
-                $('#secondslide').animate({'opacity' : '1'},1000);
-                $('.vermasTutor').animate({'width' : '0', 'opacity' : '0'},1000);
-                $('.vermasAprendiz').animate({'width' : '0', 'opacity' : '0'},1000);
-                setTimeout(function() {
-                    $('#leyenda-tutor').animate({'opacity' : '1'},2000);
-                    $('#icon-tutor').animate({'left' : '32px', 'top':'63px', 'opacity':'1'},2000,function (){
-                        $('#leyenda-tutor').animate({'opacity' : '0'},1000);
-                        $('#leyenda-aprendiz').animate({'opacity' : '1'},2000);
-                        $('#icon-aprendiz').animate({'right' : '37px', 'top':'64px', 'opacity':'1'},2000,function (){
-                            $('#leyenda-aprendiz').animate({'opacity' : '0'},1000);
-                            $('#leyenda-gobierno').animate({'opacity' : '1'},2000);
-                            $('#icon-gobierno').animate({'top':'0', 'opacity':'1'},2000,function (){
-                                setTimeout(function() { $('#leyenda-gobierno').animate({'opacity' : '0'},500); }, 500);
-                            });
-                        });
-                    });
-                }, 2000);
-            }
-            function ajustaimagen(){
-                $('#logomain img').animate({'max-width' : '70%'},2000);
-                $('#maintext h1').animate({'opacity' : '0'},500);
-                $('.programas').animate({'opacity' : '0'},500);
-                $('.showmore').animate({'opacity' : '0'},500);
-                $('#secondslide').animate({'opacity' : '1'},1000);
-                setTimeout(function() {
-                    $('#leyenda-tutor').animate({'opacity' : '1'},2000);
-                    $('#icon-tutor').animate({'left' : '32px', 'top':'63px', 'opacity':'1'},2000,function (){
-                        $('#leyenda-tutor').animate({'opacity' : '0'},1000);
-                        $('#leyenda-aprendiz').animate({'opacity' : '1'},2000);
-                        $('#icon-aprendiz').animate({'right' : '37px', 'top':'64px', 'opacity':'1'},2000,function (){
-                            $('#leyenda-aprendiz').animate({'opacity' : '0'},1000);
-                            $('#leyenda-gobierno').animate({'opacity' : '1'},2000);
-                            $('#icon-gobierno').animate({'top':'0', 'opacity':'1'},2000,function (){
-                                setTimeout(function() { $('#leyenda-gobierno').animate({'opacity' : '0'},500); }, 500);
-                            });
-                        });
-                    });
-                }, 2000);
-            }
-            function iniciaanimacion(){
-                $('#logomain img').animate({'max-width' : '35%','margin-top' : '0'},2000);
-                setTimeout(function() {
-                    $('.dondeloader').hide();
-                    $('#maintext h1').animate({'opacity' : '1'},1000);
-                    $('.programas').animate({'opacity' : '1', 'max-width' : '200px', 'padding-top':'20px'},500);
-                    setTimeout(function() {
-                        $('.showmore').animate({'opacity' : '1', 'max-width' : '160px', 'margin-top':'10px'},1000);
-                        setTimeout(function() {
-                            $('#hideleftMovil').animate({'opacity' : '1'},1000);
-                            $('#hiderightMovil').animate({'opacity' : '1'},1000);
-                            setTimeout(function() {
-                                $('#btn-vermasCT').animate({'opacity' : '1',},1000);
-                                $('#btn-vermasAP').animate({'opacity' : '1',},1000);
-                            },1000);
-                        }, 1000);
-                    }, 1000);
-                }, 1000);
-            }
-
-            $(document).on("click", "a[href^='#']", function (e) {
-                var id = $(this).attr("href");
-                var wi=$( window ).width();
-                var valtop=95;
-                if ($(id).length > 0) {
-                    e.preventDefault();
-                    $('html, body').animate({ scrollTop: $(id).offset().top-valtop }, 500, "linear");
-                }
-            });
-        });
-    </script>
-</body>
-	</html>                          $('#hiderightMovil').animate({'opacity' : '1'},1000);
-                            setTimeout(function() {
-                                $('#btn-vermasCT').animate({'opacity' : '1',},1000);
-                                $('#btn-vermasAP').animate({'opacity' : '1',},1000);
-                            },1000);
-                        }, 1000);
-                    }, 1000);
-                }, 1000);
-            }
-
-            $(document).on("click", "a[href^='#']", function (e) {
-                var id = $(this).attr("href");
-                var wi=$( window ).width();
-                var valtop=95;
-                if ($(id).length > 0) {
-                    e.preventDefault();
-                    $('html, body').animate({ scrollTop: $(id).offset().top-valtop }, 500, "linear");
-                }
-            });
-        });
-    </script>
 </body>
 </html>
