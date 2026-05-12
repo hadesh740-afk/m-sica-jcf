@@ -1,1091 +1,893 @@
 <!DOCTYPE html>
-<html class='no-js' lang='es'>
+<html lang="es">
 <head>
-    <title>Coordinación Nacional de Becas para el Bienestar Benito Juárez | Gobierno | gob.mx</title>
-
-  <meta charset='UTF-8'>
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#393C3E">
-
-  <!-- ========================================== -->
-  <!-- CORRECCIÓN: Base URL para rutas relativas   -->
-  <!-- ========================================== -->
-  <base href="https://www.gob.mx/becasbenitojuarez/">
-
-  <meta content="authenticity_token" name="csrf-param" />
-<meta content="Fh3w4A9Uvtqw53MX/ftIp9ymoyw9y+T03MsI4rZr6DY=" name="csrf-token" />
-
-  <link href='' rel='stylesheet' type='text/css'>
-  <link href='https://framework-gb.cdn.gob.mx/applications/cms/favicon.png' rel='shortcut icon'>
-
-  <link data-turbolinks-track="true" href="/cms/assets/application.css" media="all" rel="stylesheet" />
-  <link data-turbolinks-track="true" href="https://framework-gb.cdn.gob.mx/gm/accesibilidad/css/gobmx-accesibilidad.min.css" media="all" rel="stylesheet" />
-  <link data-turbolinks-track="true" href="https://fonts.googleapis.com" media="all" rel="preconnect" />
-  <link data-turbolinks-track="true" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300" media="all" rel="stylesheet" />
-  <link data-turbolinks-track="true" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" media="all" rel="stylesheet" />
-      <link href='https://www.gob.mx/cdn/themes/default_theme/stylesheets/default.css'rel="stylesheet" type="text/css" class="theme" ></link>
-
-
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-
- <![endif]-->
-  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-  <script src="https://framework-gb.cdn.gob.mx/applications/cms/carrusel/swiper-bundle.min.js"></script>
-
-  <link rel="stylesheet" href="https://framework-gb.cdn.gob.mx/applications/cms/carrusel/swiper-bundle.min.css">
-
-    <script type="text/javascript">
-
-        var SubGroup = '';
-        if(false || false){
-            SubGroup = 'Temas';
-        }else{
-            SubGroup = 'becasbenitojuarez';
-        }
-        var PageType = '';
-        if(false){
-            PageType = 'Home'
-        }else{
-            if(false){
-                PageType = '';
-            }else {
-                var site = window.location.pathname;
-                var arrayPageType = ["articulos", "prensa", "agenda", "documentos", "multimedia", "galerias", "videos",
-                    "acciones_y_programas", "acciones-y-programas", "mi-foto-con-el-presidente",
-                    "estructuras", "descargables", "que-hacemos", "finanzas", "infografias"];
-
-                if (site.search("archivo") != -1) {
-                    PageType = "archivo_";
-                }
-                for (var i = 0; i < arrayPageType.length; i++) {
-                    if (site.search(arrayPageType[i]) != -1) {
-                        PageType += arrayPageType[i];
-                        break;
-                    }
-                }
-            }
-        }
-
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', '');
-
-        gtag('require', 'linker');
-        gtag('linker:autoLink', ['www.gob.mx']);
-        gtag('set', 'contentGroup1', 'Gobierno');
-        gtag('set', 'contentGroup2', SubGroup);
-        gtag('set', 'contentGroup3', PageType);
-        gtag('set', 'dimension14', 'Gobierno');
-        gtag('set', 'dimension15', SubGroup);
-        gtag('set', 'dimension16', PageType);
-        gtag('set', 'dimension13', 'No Registrado');
-        gtag('send', 'pageview');
-        gtag('set', 'contentGroup1', null);
-        gtag('set', 'contentGroup2', null);
-        gtag('set', 'contentGroup3', null);
-        gtag('set', 'dimension14', null);
-        gtag('set', 'dimension15', null);
-        gtag('set', 'dimension16', null);
-        gtag('set', 'dimension13', null);
-
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-265988525-1', 'auto', {'allowLinker':true});
-        ga('require', 'linker');
-        ga('linker:autoLink', ['www.gob.mx']);
-        ga('set', 'contentGroup1', 'Gobierno');
-        ga('set', 'contentGroup2', SubGroup);
-        ga('set', 'contentGroup3', PageType);
-        ga('set', 'dimension14', 'Gobierno');
-        ga('set', 'dimension15', SubGroup);
-        ga('set', 'dimension16', PageType);
-        ga('set', 'dimension13', 'No Registrado');
-        ga('send', 'pageview');
-        ga('set', 'contentGroup1', null);
-        ga('set', 'contentGroup2', null);
-        ga('set', 'contentGroup3', null);
-        ga('set', 'dimension14', null);
-        ga('set', 'dimension15', null);
-        ga('set', 'dimension16', null);
-        ga('set', 'dimension13', null);
-    </script>
-
-
-  <script type = "text/javascript"> 
-  var rails_env_prod = true; </script>
-  <script src="/cms/assets/application.js"></script>
-  <script src="/cms/assets/imageReplace.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-
-                                <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="948VY-ZM68F-X7Y7K-BEYVV-MSV5F",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"948VY-ZM68F-X7Y7K-BEYVV-MSV5F",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="xxs2fi5567cvg2qbnaaq-f-cfac8d1c2-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"41","ak.cp":"413578","ak.ai":parseInt("270161",10),"ak.ol":"0","ak.cr":17,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"5079902f","ak.r":46038,"ak.a2":e,"ak.m":"b","ak.n":"essl","ak.cport":55746,"ak.gh":"189.247.197.79","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1778477057","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==AsV6AP7c1oPXCVQZycpbaUfw8kQGxDTYf3BMIFk6EH3wFEyAYSwru2DIdvjujKA8f0i4PQ8WTIhE4OWDan1IfFHX3xaVy82hPIFAKvEfNj0Ef0EHDPmMYN1k/pEyHsSQ+0Hem7tFqK2gFZ6LCcHg25XKr/d0lP7NWhLEwfeSOxvgr3SBjLeRUhUGrwaW4sEMdSB0c5TdOnNt1OnwBm11x+pb/kqi8HYz3yt8MSo+Funb53Ek/GTUSi3wtiShkOqfFRYvOGw2S4+6zgeZRBjbpC2OJC0AW63yFFBsDpFIsg2ek98U9VvjHk6W4Uu2nqq8bBZxp/w8d+tbxGSiAO5UPhnMOoZghjMRZgsYSYg5v0GK3htpwZ1K4wAOssV0fdh+ilRzqMujgaKQkIZhOWAa1nDWQOYl5mWZE6ZSRp1hxjk=","ak.pv":"141","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
-<body>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v13.0" nonce="MZ2GPb2d"></script><!-- a href="#principal" class="skip">Saltar al contenido principal</a -->
-  <header>
-    <nav class="navbar navbar-inverse  navbar-fixed-top">
-      <div class="container 1val">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-target="#navbarMainCollapse" data-toggle="collapse">
-            <span class="sr-only">Interruptor de Navegación</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="/" style="padding: 1px 3px 3px 3px;" class="navbar-brand " title="Ir a la página inicial">
-
-            <div class="logo-main"></div>
-          </a>
-        </div>
-        <div id="navbarMainCollapse" class="collapse navbar-collapse nav-padding">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/tramites" title="Trámites">Trámites </a></li>
-            <li><a href="/gobierno" title="Gobierno">Gobierno</a></li>
-                <li><a href="/becasbenitojuarez/en" title="Versión en inglés del sitio web">English</a>
-                </li>
-              </li>
-
-
-            <li>
-              <form accept-charset="UTF-8" action="/busqueda" class="search_form" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
-                <input type="hidden" name="site" value="becasbenitojuarez">
-                <button data-v-6394873e="" id="botonbuscar" type="button" class="btn btn-search"><a data-v-6394873e="" href="https://www.gob.mx/busqueda?utf8=✓" target="_blank" id="botbusca"><img data-v-6394873e="" alt="Buscar" src="https://framework-gb.cdn.gob.mx/landing/img/lupa.png"></a></button>
-</form>            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Productivity Suite Premium - Dashboard ejecutivo con herramientas avanzadas de productividad">
+    <meta name="theme-color" content="#1a0f0f">
+    <title>Productivity Suite | Executive Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     
+    <!-- Elfsight Platform -->
+    <script src="https://elfsightcdn.com/platform.js" defer></script>
+    
+    <style>
+        /* ========== VARIABLES ========== */
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #111115;
+            --bg-tertiary: #1a1a1f;
+            --bg-elevated: #1f1f25;
+            --bg-card: rgba(26, 26, 31, 0.7);
+            --wine-dark: #3a1515;
+            --wine-medium: #5a1a1a;
+            --wine-light: #7a2a2a;
+            --wine-subtle: rgba(90, 26, 26, 0.3);
+            --forest-dark: #0d2a1a;
+            --forest-medium: #1a3a2a;
+            --forest-light: #2a5a3a;
+            --forest-subtle: rgba(26, 58, 42, 0.3);
+            --gray-100: #e0e0e0;
+            --gray-200: #b0b0b0;
+            --gray-300: #808080;
+            --gray-400: #505050;
+            --gray-500: #303030;
+            --gray-600: #202020;
+            --gray-700: #151515;
+            --accent-success: #2ecc71;
+            --accent-warning: #e67e22;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+            --glass-bg: rgba(26, 26, 31, 0.6);
+            --glass-border: rgba(90, 26, 26, 0.2);
+            --glass-blur: blur(12px);
+            --sidebar-width: 260px;
+            --border-radius-sm: 6px;
+            --border-radius-md: 10px;
+            --border-radius-lg: 16px;
+            --transition-fast: 150ms ease;
+            --transition-base: 250ms ease;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-mono: 'SF Mono', 'Monaco', 'Cascadia Code', monospace;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: var(--font-sans);
+            background: radial-gradient(circle at 0% 0%, var(--bg-primary), #000000);
+            color: var(--gray-100);
+            line-height: 1.5;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-tertiary);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, var(--wine-medium), var(--forest-medium));
+            border-radius: 4px;
+        }
+        /* Layout */
+        .app-container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: var(--sidebar-width);
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border-right: 1px solid var(--glass-border);
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            z-index: 100;
+        }
+        .logo-area {
+            padding: 28px 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .logo-icon svg {
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+        }
+        .logo-area h2 {
+            font-size: 20px;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--gray-100), var(--wine-light));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .logo-area h2 span {
+            font-weight: 300;
+            color: var(--forest-light);
+        }
+        .nav-menu {
+            flex: 1;
+            padding: 20px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: var(--border-radius-md);
+            color: var(--gray-200);
+            text-decoration: none;
+            transition: all var(--transition-fast);
+            cursor: pointer;
+        }
+        .nav-item svg {
+            opacity: 0.7;
+        }
+        .nav-item:hover {
+            background: var(--wine-subtle);
+            color: var(--gray-100);
+        }
+        .nav-item.active {
+            background: linear-gradient(135deg, var(--wine-subtle), var(--forest-subtle));
+            color: var(--gray-100);
+            border-left: 2px solid var(--wine-medium);
+        }
+        .sidebar-footer {
+            padding: 20px;
+            border-top: 1px solid var(--glass-border);
+        }
+        .focus-mode-indicator {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: var(--gray-300);
+            padding: 8px;
+            background: var(--bg-tertiary);
+            border-radius: var(--border-radius-sm);
+        }
+        .main-content {
+            flex: 1;
+            margin-left: var(--sidebar-width);
+            padding: 0 32px 32px 32px;
+        }
+        .dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--glass-border);
+            margin-bottom: 32px;
+        }
+        .header-left h1 {
+            font-size: 28px;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--gray-100), var(--gray-200));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .view-description {
+            color: var(--gray-300);
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .global-clock {
+            text-align: right;
+        }
+        #globalTime {
+            font-size: 20px;
+            font-weight: 600;
+            font-family: var(--font-mono);
+            color: var(--gray-100);
+        }
+        #globalDate {
+            font-size: 12px;
+            color: var(--gray-300);
+            margin-left: 8px;
+        }
+        .settings-icon {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--glass-border);
+            padding: 8px;
+            border-radius: var(--border-radius-sm);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-fast);
+        }
+        .view {
+            display: none;
+            animation: fadeIn var(--transition-base);
+        }
+        .view.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .widget-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 24px;
+        }
+        .widget {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius-lg);
+            padding: 20px;
+            transition: all var(--transition-base);
+        }
+        .widget:hover {
+            transform: translateY(-2px);
+            border-color: var(--wine-subtle);
+            box-shadow: var(--shadow-lg);
+        }
+        .widget-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .widget-header h3 {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--gray-200);
+        }
+        .time-large {
+            font-size: 48px;
+            font-weight: 600;
+            font-family: var(--font-mono);
+            text-align: center;
+            background: linear-gradient(135deg, var(--gray-100), var(--wine-light));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .pomodoro-time, .stopwatch-time {
+            font-size: 48px;
+            font-family: var(--font-mono);
+            text-align: center;
+            margin: 20px 0;
+        }
+        .pomodoro-controls, .stopwatch-controls, .timer-controls {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+        button {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--glass-border);
+            padding: 8px 16px;
+            border-radius: var(--border-radius-sm);
+            color: var(--gray-100);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-family: var(--font-sans);
+        }
+        button:hover {
+            background: var(--wine-subtle);
+            border-color: var(--wine-medium);
+        }
+        .timer-input {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--glass-border);
+            padding: 8px;
+            border-radius: var(--border-radius-sm);
+            color: var(--gray-100);
+            width: 100%;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .calc-display {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--glass-border);
+            padding: 16px;
+            font-size: 24px;
+            font-family: var(--font-mono);
+            text-align: right;
+            border-radius: var(--border-radius-md);
+            color: var(--gray-100);
+            width: 100%;
+            margin-bottom: 12px;
+        }
+        .calc-buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+        .calc-btn {
+            padding: 12px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius-sm);
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .calc-btn.operator {
+            background: var(--forest-subtle);
+            color: var(--forest-light);
+        }
+        .calc-btn.clear {
+            background: var(--wine-subtle);
+            color: var(--wine-light);
+        }
+        .notes-container {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .note-item, .task-item {
+            background: var(--bg-tertiary);
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .task-item {
+            gap: 10px;
+        }
+        .task-text.completed {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+        .counter-stats {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: var(--gray-300);
+        }
+        .stat-value {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .tasks-container, .notes-full-container, .settings-panel {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border-radius: var(--border-radius-lg);
+            padding: 24px;
+        }
+        .task-input-area {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        #newTaskInput, #fullNotes {
+            flex: 1;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--glass-border);
+            padding: 12px;
+            border-radius: var(--border-radius-md);
+            color: var(--gray-100);
+            font-family: var(--font-sans);
+        }
+        #fullNotes {
+            min-height: 300px;
+            width: 100%;
+        }
+        .setting-group {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .embedded-space {
+            background: linear-gradient(135deg, var(--bg-card), var(--wine-subtle));
+        }
+        .embed-placeholder {
+            text-align: center;
+            padding: 40px;
+            color: var(--gray-400);
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform var(--transition-base);
+                position: fixed;
+                z-index: 1000;
+            }
+            .sidebar.open {
+                transform: translateX(0);
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 0 16px 16px 16px;
+            }
+            .widget-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .notification {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--wine-medium);
+            border-radius: var(--border-radius-md);
+            padding: 12px 20px;
+            z-index: 1000;
+            animation: slideIn 0.3s ease;
+        }
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        .focus-mode-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-          <nav class="navbar navbar-inverse sub-navbar navbar-fixed hello">
-            <div class="container 2 fr">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" title="subenlaces" data-target="#subenlaces">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
+        /* ============================================ */
+        /* === REPRODUCTOR DE MÚSICA INTEGRADO ====== */
+        /* ============================================ */
+        
+        /* Overlay oscuro cuando está expandido */
+        #musicOverlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(10, 10, 15, 0.6);
+            z-index: 9998;
+            backdrop-filter: blur(4px);
+        }
+        #musicOverlay.show { display: block; }
 
-                <a href="/becasbenitojuarez" class="navbar-brand logo ">
-                              <span class="btn-initial">becasbenitojuarez
-                              </span></a>
+        /* Contenedor principal - siempre fijo abajo a la derecha */
+        #musicWidgetContainer {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
 
-              </div>
-                <div class="collapse navbar-collapse" id="subenlaces">
-                  <ul class="nav navbar-nav navbar-right navbar-top">
-                      <li><a class="home_menu" style="font-size: 16px !important;" href="/becasbenitojuarez/archivo/articulos" data-section=".news.section">Blog</a></li>
+        /* === ESTADO COLAPSADO (Burbuja marca de agua) === */
+        #musicWidgetContainer.collapsed {
+            width: 50px;
+            height: 50px;
+        }
 
+        /* La burbuja visual - adaptada a paleta vino/verde */
+        #musicBubble {
+            position: absolute;
+            top: 0; left: 0;
+            width: 50px; height: 50px;
+            background: rgba(90, 26, 26, 0.06); /* Vino muy transparente */
+            color: rgba(42, 90, 58, 0.2); /* Verde oscuro apenas visible */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            cursor: pointer;
+            border: 1px solid rgba(90, 26, 26, 0.04);
+            backdrop-filter: blur(1px);
+            box-shadow: none;
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
 
-                      <li><a class="home_menu" style="font-size: 16px !important;" href="/becasbenitojuarez/archivo/multimedia" data-section=".multimedia">Álbum de fotos</a></li>
-                    <li><a class="home_menu" style="font-size: 16px !important;" href="/becasbenitojuarez/archivo/prensa" data-section=".press">Prensa</a></li>
+        #musicBubble:hover {
+            background: rgba(90, 26, 26, 0.15);
+            color: rgba(42, 90, 58, 0.4);
+            border: 1px solid rgba(90, 26, 26, 0.1);
+            transform: scale(1.15);
+        }
 
-                      <li><a class="home_menu" style="font-size: 16px !important;" href="/becasbenitojuarez/archivo/agenda" data-section=".schedule">Agenda</a></li>
-                      <li><a class="home_menu" style="font-size: 16px !important;" href="/becasbenitojuarez/archivo/acciones_y_programas" data-section=".programs">Acciones y Programas</a></li>
-                    <!-- li><a class="home_menu" style="font-size: 16px !important;" href="//archivo/reformas" data-section=".reforms"></a></li>
-                                           <li><a class="home_menu" style="font-size: 16px !important;" href="//archivo/reformas" data-section=".reforms"></a></li -->
+        #musicBubble i {
+            animation: musicPulse 3s ease-in-out infinite;
+        }
 
+        @keyframes musicPulse {
+            0%, 100% { transform: scale(1); opacity: 0.2; }
+            50% { transform: scale(1.1); opacity: 0.5; }
+        }
 
-                    <li><a class="home_menu" style="font-size: 16px !important;" href="/becasbenitojuarez/archivo/documentos" data-section=".documents">Documentos</a></li>
+        /* Estado "reproduciendo" - un poco más visible */
+        #musicBubble.has-audio {
+            background: rgba(90, 26, 26, 0.12);
+            color: rgba(42, 90, 58, 0.35);
+        }
 
-                      <li><a class="home_menu" style="font-size: 16px !important;" href="https://cn.becasbenitojuarez.gob.mx/swb/swb/gobmx" data-section=".tran.section">Transparencia</a></li>
+        /* === ESTADO EXPANDIDO (Barra inferior) === */
+        #musicWidgetContainer.expanded {
+            width: calc(100% - 40px);
+            max-width: 800px;
+            height: 110px;
+            bottom: 20px;
+            right: 20px;
+            left: auto;
+        }
 
-                    <!--
-                                           <li><a class="home_menu" style="font-size: 16px !important;" href="" data-section=".tran.section"></a></li>
-                                         -->
+        /* Barra con gradiente vino/verde oscuro */
+        #musicBar {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(145deg, #2a1515 0%, #1a2a1a 50%, #0d1a0d 100%);
+            border-radius: 16px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.6), 0 0 0 1px rgba(90, 26, 26, 0.2);
+            border: 1px solid rgba(90, 26, 26, 0.15);
+            display: flex;
+            align-items: center;
+            padding: 8px 45px 8px 15px;
+            box-sizing: border-box;
+            position: relative;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
 
+        /* Efecto sutil de brillo en la barra */
+        #musicBar::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(90, 26, 26, 0.3), rgba(42, 90, 58, 0.2), transparent);
+        }
 
-                        <li><a class="home_menu" style="font-size: 16px !important;" href="#" data-section=".contacto">Contacto</a></li>
+        #musicWidgetContainer.expanded #musicBar {
+            opacity: 1;
+            transform: scale(1);
+        }
 
-                  </ul></div>
+        /* El wrapper del widget - siempre renderizado pero oculto cuando colapsado */
+        #musicWidgetWrapper {
+            width: 100%;
+            height: 90px;
+            opacity: 0;
+            transition: opacity 0.3s ease 0.15s;
+            overflow: hidden;
+        }
 
+        #musicWidgetContainer.expanded #musicWidgetWrapper {
+            opacity: 1;
+        }
+
+        /* Botón de cerrar (X) - tonos vino */
+        #musicCloseBtn {
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            background: rgba(90, 26, 26, 0.2);
+            border: none;
+            color: rgba(224, 224, 224, 0.5);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: all 0.2s;
+            line-height: 1;
+        }
+        #musicCloseBtn:hover {
+            background: rgba(90, 26, 26, 0.4);
+            color: #e0e0e0;
+        }
+
+        /* Cuando está colapsado, ocultamos la barra */
+        #musicWidgetContainer.collapsed #musicBar {
+            opacity: 0;
+            pointer-events: none;
+            transform: scale(0.8);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            #musicWidgetContainer.expanded {
+                width: calc(100% - 20px);
+                right: 10px;
+                left: 10px;
+                height: 130px;
+            }
+            #musicWidgetWrapper {
+                height: 110px;
+            }
+            #musicWidgetContainer.collapsed {
+                width: 44px;
+                height: 44px;
+            }
+            #musicBubble {
+                width: 44px;
+                height: 44px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <div class="logo-area">
+            <div class="logo-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="url(#logoGradient)"/>
+                    <path d="M10 16L14 20L22 11" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                    <defs><linearGradient id="logoGradient" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#5a1a1a"/><stop offset="1" stop-color="#1a3a2a"/></linearGradient></defs>
+                </svg>
             </div>
-
+            <h2>Suite<span>Pro</span></h2>
+        </div>
+        <nav class="nav-menu">
+            <div class="nav-item active" data-view="dashboard"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 2H8V8H2V2Z M12 2H18V8H12V2Z M2 12H8V18H2V12Z M12 12H18V18H12V12Z" stroke="currentColor" stroke-width="1.5"/></svg><span>Dashboard</span></div>
+            <div class="nav-item" data-view="timer"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M10 6V10L13 13" stroke="currentColor" stroke-width="1.5"/></svg><span>Tiempo</span></div>
+            <div class="nav-item" data-view="tasks"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4H16V16H4V4Z M7 8L9 10L13 6" stroke="currentColor" stroke-width="1.5"/></svg><span>Tareas</span></div>
+            <div class="nav-item" data-view="notes"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 3H15V17L12 14L9 17L5 17V3Z" stroke="currentColor" stroke-width="1.5"/></svg><span>Notas</span></div>
+            <div class="nav-item" data-view="calculator"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="3" width="12" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M7 7H13 M8 10H12 M8 13H10" stroke="currentColor" stroke-width="1.5"/></svg><span>Calculadora</span></div>
+            <div class="nav-item" data-view="settings"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 12C11.1046 12 12 11.1046 12 10C12 8.89543 11.1046 8 10 8C8.89543 8 8 8.89543 8 10C8 11.1046 8.89543 12 10 12Z M13 2L16 4L13 6 M7 2L4 4L7 6 M17 9L15 8.5L17 8 M3 9L5 8.5L3 8 M17 11L15 11.5L17 12 M3 11L5 11.5L3 12" stroke="currentColor" stroke-width="1.5"/></svg><span>Ajustes</span></div>
         </nav>
-
-
-
-  </header>
-
-<!-- TODO themed stylesheets? -->
-
-
-<!-- nav bar -->
-
-<main class="home">
-    <h1 class="sr-only">Sitio de Coordinación Nacional de Becas para el Bienestar Benito Juárez</h1>
-    <div aria-hidden="true" class="hidden-xs font-changer internal print" tabindex="-1">
-  <button class="inc-font font-modifier">Aa+</button>
-  <button class="dec-font font-modifier">Aa-</button>
+        <div class="sidebar-footer"><div class="focus-mode-indicator"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" fill="#2ecc71"/></svg><span>Enfoque disponible</span></div></div>
+    </aside>
+    <main class="main-content">
+        <header class="dashboard-header">
+            <div class="header-left"><h1 id="currentViewTitle">Dashboard Ejecutivo</h1><p class="view-description">Panel principal de productividad</p></div>
+            <div class="header-right"><div class="global-clock"><span id="globalTime">--:--</span><span id="globalDate"></span></div><button class="settings-icon" id="quickSettingsBtn"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/><path d="M17 10H15.5 M17 13H15.5 M17 7H15.5 M3 10H4.5 M3 13H4.5 M3 7H4.5 M10 17V15.5 M10 3V4.5 M13 17L12.5 15.5 M7 17L7.5 15.5 M13 3L12.5 4.5 M7 3L7.5 4.5" stroke="currentColor" stroke-width="1.5"/></svg></button></div>
+        </header>
+        <!-- Dashboard View -->
+        <div id="dashboardView" class="view active">
+            <div class="widget-grid">
+                <div class="widget premium-clock"><div class="widget-header"><h3>Reloj Ejecutivo</h3><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1"/><path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1"/></svg></div><div class="clock-display"><div class="time-large" id="clockTime">00:00:00</div><div class="time-date" id="clockDate"></div><div class="time-timezone">UTC-3 · Horario ejecutivo</div></div></div>
+                <div class="widget pomodoro-widget"><div class="widget-header"><h3>Pomodoro Timer</h3></div><div class="pomodoro-display"><div class="pomodoro-time" id="pomodoroTime">25:00</div><div class="pomodoro-phase" id="pomodoroPhase">Enfoque</div><div class="pomodoro-controls"><button id="pomodoroStart">▶</button><button id="pomodoroPause">⏸</button><button id="pomodoroReset">⟳</button></div></div></div>
+                <div class="widget stopwatch-widget"><div class="widget-header"><h3>Cronómetro</h3></div><div class="stopwatch-display"><div class="stopwatch-time" id="stopwatchTime">00:00:00.00</div><div class="stopwatch-controls"><button id="stopwatchStart">Iniciar</button><button id="stopwatchPause">Pausa</button><button id="stopwatchReset">Reiniciar</button></div></div></div>
+                <div class="widget timer-widget"><div class="widget-header"><h3>Temporizador</h3></div><div class="timer-display"><input type="number" id="timerInput" placeholder="Segundos" class="timer-input"><div class="timer-time" id="timerTime">00:00</div><div class="timer-controls"><button id="timerStart">Iniciar</button><button id="timerStop">Detener</button></div></div></div>
+                <div class="widget task-counter"><div class="widget-header"><h3>Contador de Tareas</h3></div><div class="counter-stats"><div class="stat"><span class="stat-label">Totales</span><span class="stat-value" id="totalTasks">0</span></div><div class="stat"><span class="stat-label">Completadas</span><span class="stat-value" id="completedTasks">0</span></div><div class="stat"><span class="stat-label">Pendientes</span><span class="stat-value" id="pendingTasks">0</span></div></div></div>
+                <div class="widget calculator-widget"><div class="widget-header"><h3>Calculadora</h3></div><div class="calculator"><input type="text" id="calcDisplay" class="calc-display" readonly value="0"><div class="calc-buttons"><button class="calc-btn" data-calc="7">7</button><button class="calc-btn" data-calc="8">8</button><button class="calc-btn" data-calc="9">9</button><button class="calc-btn operator" data-calc="/">÷</button><button class="calc-btn" data-calc="4">4</button><button class="calc-btn" data-calc="5">5</button><button class="calc-btn" data-calc="6">6</button><button class="calc-btn operator" data-calc="*">×</button><button class="calc-btn" data-calc="1">1</button><button class="calc-btn" data-calc="2">2</button><button class="calc-btn" data-calc="3">3</button><button class="calc-btn operator" data-calc="-">-</button><button class="calc-btn" data-calc="0">0</button><button class="calc-btn" data-calc=".">.</button><button class="calc-btn" data-calc="=">=</button><button class="calc-btn operator" data-calc="+">+</button><button class="calc-btn clear" data-calc="C">C</button></div></div></div>
+                <div class="widget notes-widget"><div class="widget-header"><h3>Notas Rápidas</h3><button id="newNoteBtn">+ Nueva</button></div><div class="notes-container" id="notesContainer"><div class="note-placeholder">No hay notas. Crea una nueva nota.</div></div></div>
+                <div class="widget embedded-space"><div class="widget-header"><h3>Recursos</h3><button class="refresh-embed">↻</button></div><div class="embed-content"><div class="embed-placeholder"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M18 18H30M18 24H30M18 30H26" stroke="currentColor" stroke-width="1.5"/></svg><p>Panel de recursos</p><small>Contenido integrado</small></div></div></div>
+            </div>
+        </div>
+        <!-- Timer View -->
+        <div id="timerView" class="view"><div class="timer-detailed"><div class="timer-tabs" style="display:flex; gap:10px; margin-bottom:20px;"><button class="timer-tab active" data-timer-type="pomodoro">Pomodoro</button><button class="timer-tab" data-timer-type="stopwatch">Cronómetro</button><button class="timer-tab" data-timer-type="countdown">Cuenta Regresiva</button></div><div class="timer-detailed-content"><div class="pomodoro-settings"><label>Duración Enfoque: <input type="number" id="focusDuration" value="25" min="1"> min</label> <label>Duración Descanso: <input type="number" id="breakDuration" value="5" min="1"> min</label></div></div></div></div>
+        <!-- Tasks View -->
+        <div id="tasksView" class="view"><div class="tasks-container"><div class="task-input-area"><input type="text" id="newTaskInput" placeholder="Nueva tarea..."><button id="addTaskBtn">+ Agregar</button></div><div class="tasks-list" id="tasksList"></div></div></div>
+        <!-- Notes Full View -->
+        <div id="notesView" class="view"><div class="notes-full-container"><textarea id="fullNotes" placeholder="Escribe tus notas aquí..."></textarea><div class="notes-actions" style="margin-top: 16px;"><button id="saveNotesBtn">Guardar</button><button id="exportNotesBtn">Exportar</button></div></div></div>
+        <!-- Calculator Full View (same as widget but bigger) -->
+        <div id="calculatorView" class="view"><div class="calculator-full" style="max-width: 500px; margin: 0 auto;"><div class="calculator"><input type="text" id="calcDisplayFull" class="calc-display" readonly value="0"><div class="calc-buttons"><button class="calc-btn" data-calc-full="7">7</button><button class="calc-btn" data-calc-full="8">8</button><button class="calc-btn" data-calc-full="9">9</button><button class="calc-btn operator" data-calc-full="/">÷</button><button class="calc-btn" data-calc-full="4">4</button><button class="calc-btn" data-calc-full="5">5</button><button class="calc-btn" data-calc-full="6">6</button><button class="calc-btn operator" data-calc-full="*">×</button><button class="calc-btn" data-calc-full="1">1</button><button class="calc-btn" data-calc-full="2">2</button><button class="calc-btn" data-calc-full="3">3</button><button class="calc-btn operator" data-calc-full="-">-</button><button class="calc-btn" data-calc-full="0">0</button><button class="calc-btn" data-calc-full=".">.</button><button class="calc-btn" data-calc-full="=">=</button><button class="calc-btn operator" data-calc-full="+">+</button><button class="calc-btn clear" data-calc-full="C">C</button></div></div></div></div>
+        <!-- Settings View -->
+        <div id="settingsView" class="view"><div class="settings-panel"><h2>Preferencias</h2><div class="setting-group"><label>Widgets ordenables</label><input type="checkbox" id="draggableWidgets"></div><div class="setting-group"><label>Modo enfoque</label><input type="checkbox" id="focusMode"></div><div class="setting-group"><label>Notificaciones</label><input type="checkbox" id="notifications"></div><div class="setting-group"><label>Sonidos</label><input type="checkbox" id="sounds"></div><button id="resetSettingsBtn">Resetear Configuración</button></div></div>
+    </main>
 </div>
-    <!-- banner -->
 
-    <!-- <section class="reformas bottom-buffer">
-         <div class="container">
-         <div class="alert alert-custom">
-         cuenta con un
-         </div>
-         </div>
-         </section> -->
+<!-- ============================================ -->
+<!-- === REPRODUCTOR DE MÚSICA (ELFSIGHT) ====== -->
+<!-- ============================================ -->
 
-    <!-- pisos -->
-    <div class="paginated">
-    <link href="/cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
-<link href="https://framework-gb.cdn.gob.mx/assets/styles/vendor/banner.css" media="screen" rel="stylesheet" />
-<script src="/cms/assets/responsiveslides.js"></script>
+<!-- Overlay -->
+<div id="musicOverlay" onclick="collapseMusic()"></div>
 
-<section class="flag-banner">
-
-  <input type="hidden" id="maxHeight" value="false">
-  <input type="hidden" id="id_banner" value="14901">
-
-  <div id="banner-fade-14901" class="container">
-    <ul style="height:100%;!important;" class="rslides" id = 'sliderMain-14901'>
-              <li>
-                      <div class="section"  data-type="background" id-identity="50550" style="cursor:pointer;  max-height: 350px; background-size: cover; height: 100%; width: 100%; text-align: center;"
-                 onclick="location.href='https://www.gob.mx/becasbenitojuarez/articulos/becas-bienestar-cada-vez-mas-cerca-de-ti'">
-              <img class=" img-responsive" src="/cms/uploads/identity/image/50550/20260112_BW_DECS_ActualizacionBannerPW.jpg" style=" background-size: cover;  max-height: 350px; height: auto; width: 100%; text-align: center;">
-              <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                              </div>
-            </div>
-                  </li>
-              <li>
-                      <div class="section"  data-type="background" id-identity="48905" style="cursor:pointer;  max-height: 350px; background-size: cover; height: 100%; width: 100%; text-align: center;"
-                 onclick="location.href='https://buscador.becasbenitojuarez.gob.mx/sedes-atencion/'">
-              <img class=" img-responsive" src="/cms/uploads/identity/image/48905/20250710_BW_DECS_BuscadorEstatus_V1.jpg" style=" background-size: cover;  max-height: 350px; height: auto; width: 100%; text-align: center;">
-              <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                              </div>
-            </div>
-                  </li>
-              <li>
-                      <div class="section"  data-type="background" id-identity="48892" style="cursor:pointer;  max-height: 350px; background-size: cover; height: 100%; width: 100%; text-align: center;"
-                 onclick="location.href='https://www.gob.mx/becasbenitojuarez/articulos/conoce-a-beca-y-benito-y-sigue-todas-sus-aventuras'">
-              <img class=" img-responsive" src="/cms/uploads/identity/image/48892/20250710_BW_DECS_ConoceBecaBenito_V1__2_.png" style=" background-size: cover;  max-height: 350px; height: auto; width: 100%; text-align: center;">
-              <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                              </div>
-            </div>
-                  </li>
-          </ul>
-  </div>
-</section>
+<!-- Widget Container -->
+<div id="musicWidgetContainer" class="collapsed">
+    <!-- Burbuja (visible cuando está colapsado) -->
+    <div id="musicBubble" onclick="expandMusic()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18V5l12-2v13"></path>
+            <circle cx="6" cy="18" r="3"></circle>
+            <circle cx="18" cy="16" r="3"></circle>
+        </svg>
+    </div>
+    
+    <!-- Barra del reproductor (visible cuando está expandido) -->
+    <div id="musicBar">
+        <button id="musicCloseBtn" onclick="collapseMusic()">&times;</button>
+        <div id="musicWidgetWrapper">
+            <!-- Elfsight Widget - SIEMPRE renderizado -->
+            <div class="elfsight-app-c9c596e6-f493-4aa9-81c8-7c7ebae37f59" data-elfsight-app-lazy="disabled"></div>
+        </div>
+    </div>
+</div>
 
 <script>
+    // Control del reproductor de música
+    function expandMusic() {
+        const container = document.getElementById('musicWidgetContainer');
+        container.classList.remove('collapsed');
+        container.classList.add('expanded');
+        document.getElementById('musicOverlay').classList.add('show');
+    }
 
-    $(function () {
+    function collapseMusic() {
+        const container = document.getElementById('musicWidgetContainer');
+        container.classList.remove('expanded');
+        container.classList.add('collapsed');
+        document.getElementById('musicOverlay').classList.remove('show');
+    }
 
+    // Cerrar con tecla Escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') collapseMusic();
+    });
 
-        // Slideshow 1
-        $("#sliderMain-"+14901).responsiveSlides({
-            auto: true,
-            pager: true,
-            nav: true,
-            speed: 500,
-            timeout: 6000,
-            maxwidth: 1200,
-            maxheight: 350,
-            namespace: "centered-btns"
-        });
+    // Iniciar colapsado por defecto
+    document.addEventListener('DOMContentLoaded', function() {
+        const container = document.getElementById('musicWidgetContainer');
+        container.classList.add('collapsed');
     });
 </script>
 
-<div id="contenido-14901"> </div>
-
 <script>
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/player_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    $(function() {
-        var started = false;
-        var player;
-        $('#viewVideo').click(function() {
-            if( started ) {
-                onPlayerReady(event)
-            } else {
-                onYouTubePlayerAPIReady();
-                started = true;
+    // ------------------------ UTILS ------------------------
+    const Utils = {
+        formatTime(seconds, includeMs = false) {
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const secs = Math.floor(seconds % 60);
+            if (includeMs) {
+                const ms = Math.floor((seconds % 1) * 100);
+                return `${hours.toString().padStart(2,'0')}:${minutes.toString().padStart(2,'0')}:${secs.toString().padStart(2,'0')}.${ms.toString().padStart(2,'0')}`;
             }
-        });
-
-        function onYouTubePlayerAPIReady() {
-            var vId = $('#viewVideo').data( 'url' );
-            var fullWidth = $(window).innerWidth();
-            if (!player) {
-                player = new YT.Player('videoContainer', {
-                    height: '900',
-                    width: fullWidth,
-                    videoId: vId,
-                    playerVars: { 'autoplay':1, 'controls': 1, 'rel': 0 },
-                    events: {
-                        'onReady':onPlayerReady,
-                        'onStateChange': onPlayerStateChange
-                    }
-                });
-            }
-            if (player){
-                player.playVideo();
-            }
-            $('#videoContainer').show();
-            $( '#videoBannerPlay' ).hide();
+            if (hours > 0) return `${hours}:${minutes.toString().padStart(2,'0')}:${secs.toString().padStart(2,'0')}`;
+            return `${minutes}:${secs.toString().padStart(2,'0')}`;
+        },
+        formatDate(date) { return date.toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }); },
+        generateId() { return Date.now().toString(36) + Math.random().toString(36).substr(2); },
+        showNotification(msg, type='info') {
+            if (store.state.settings.notifications && Notification.permission === 'granted') new Notification('Productivity Suite', { body: msg });
+            const div = document.createElement('div'); div.className = 'notification'; div.textContent = msg; document.body.appendChild(div);
+            setTimeout(() => div.remove(), 3000);
+        },
+        playSound() { if (store.state.settings.sounds) { try { const ctx = new (window.AudioContext || window.webkitAudioContext)(); const osc = ctx.createOscillator(); const gain = ctx.createGain(); osc.connect(gain); gain.connect(ctx.destination); osc.frequency.value = 880; gain.gain.value = 0.3; osc.start(); gain.gain.exponentialRampToValueAtTime(0.00001, ctx.currentTime + 0.5); osc.stop(ctx.currentTime + 0.5); } catch(e) {} } }
+    };
+    // ------------------------ STORE ------------------------
+    class Store {
+        constructor() { this.state = this.loadState(); this.listeners = []; }
+        loadState() {
+            const defaultState = { notes: [], tasks: [], settings: { draggableWidgets: false, focusMode: false, notifications: true, sounds: false }, pomodoro: { focusDuration: 25, breakDuration: 5, currentPhase: 'focus', timeLeft: 25*60 }, stopwatch: { time: 0, isRunning: false }, widgetsOrder: [] };
+            const saved = localStorage.getItem('productivity_suite');
+            return saved ? { ...defaultState, ...JSON.parse(saved) } : defaultState;
         }
+        saveState() { localStorage.setItem('productivity_suite', JSON.stringify(this.state)); this.listeners.forEach(l=>l(this.state)); }
+        subscribe(l) { this.listeners.push(l); return ()=> this.listeners = this.listeners.filter(ll=>ll!==l); }
+        setState(updates) { this.state = { ...this.state, ...updates }; this.saveState(); }
+        updateNotes(notes) { this.state.notes = notes; this.saveState(); }
+        updateTasks(tasks) { this.state.tasks = tasks; this.saveState(); }
+        updateSettings(settings) { this.state.settings = { ...this.state.settings, ...settings }; this.saveState(); }
+    }
+    const store = new Store();
+    if (Notification.permission !== 'granted' && store.state.settings.notifications) Notification.requestPermission();
 
-        // autoplay video
-        function onPlayerReady(event) {
-            player.playVideo();
-        }
-
-        // when video ends
-        function onPlayerStateChange(event) {
-            if(event.data === 0) {
-                $('#videoContainer').hide();
-                $( '.video-banner' ).show();
-                $( '#videoBannerPlay' ).show();
-                $(window).off('.videopopup');
-                started=false;
-            }else if(event.data === 2 ) {
-                //pause
-                $('#videoContainer').hide();
-                $( '.video-banner' ).show();
-                $( '#videoBannerPlay' ).show();
-            }else if(event.data === 1 ) {
-                //start
-                $(window).on("keyup.videopopup", onPlayingKeyUp);
-                $('#videoContainer').show();
-                $( '#videoBannerPlay' ).hide();
-                $('#videoContainer').css({'height':'380px'});
-            }
-        }
-        function onPlayingKeyUp(e){
-            if (e.keyCode === 27 && player) {
-                player.pauseVideo();
-                $(window).off('.videopopup');
-            }
-        }
-    });
+    // ------------------------ MODULES ------------------------
+    // Clock
+    function initClock() {
+        const update = () => {
+            const now = new Date();
+            document.getElementById('clockTime') && (document.getElementById('clockTime').textContent = now.toLocaleTimeString('es-ES'));
+            document.getElementById('clockDate') && (document.getElementById('clockDate').textContent = Utils.formatDate(now));
+            document.getElementById('globalTime') && (document.getElementById('globalTime').textContent = now.toLocaleTimeString('es-ES', { hour:'2-digit', minute:'2-digit' }));
+            document.getElementById('globalDate') && (document.getElementById('globalDate').textContent = now.toLocaleDateString('es-ES', { weekday:'short', month:'short', day:'numeric' }));
+        };
+        update(); setInterval(update, 1000);
+    }
+    // Stopwatch
+    let stopwatchInterval = null, stopwatchRunning = false, stopwatchTime = store.state.stopwatch.time;
+    function updateStopwatchDisplay() { const el = document.getElementById('stopwatchTime'); if(el) el.textContent = Utils.formatTime(stopwatchTime, true); }
+    function stopwatchStart() { if(stopwatchRunning) return; stopwatchRunning = true; const start = Date.now() - stopwatchTime * 1000; stopwatchInterval = setInterval(() => { stopwatchTime = (Date.now() - start) / 1000; updateStopwatchDisplay(); store.setState({ stopwatch: { time: stopwatchTime, isRunning: true } }); }, 10); }
+    function stopwatchPause() { clearInterval(stopwatchInterval); stopwatchRunning = false; store.setState({ stopwatch: { time: stopwatchTime, isRunning: false } }); }
+    function stopwatchReset() { stopwatchPause(); stopwatchTime = 0; updateStopwatchDisplay(); store.setState({ stopwatch: { time: 0, isRunning: false } }); }
+    // Timer (countdown)
+    let timerInterval = null, timerRunning = false, timerSeconds = 0;
+    function updateTimerDisplay() { const el = document.getElementById('timerTime'); if(el) { let m = Math.floor(timerSeconds/60), s = timerSeconds%60; el.textContent = `${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`; } }
+    function timerStart() { if(timerRunning || timerSeconds<=0) return; timerRunning = true; timerInterval = setInterval(() => { if(timerSeconds>0) { timerSeconds--; updateTimerDisplay(); } else { timerStop(); Utils.showNotification('¡Temporizador completado!','success'); Utils.playSound(); } }, 1000); }
+    function timerStop() { clearInterval(timerInterval); timerRunning = false; }
+    // Pomodoro
+    let pomodoroInterval = null, pomodoroRunning = false, pomodoroTimeLeft = store.state.pomodoro.timeLeft, pomodoroPhase = store.state.pomodoro.currentPhase, pomodoroFocus = store.state.pomodoro.focusDuration, pomodoroBreak = store.state.pomodoro.breakDuration;
+    function updatePomodoroDisplay() { const el = document.getElementById('pomodoroTime'); if(el) { let m = Math.floor(pomodoroTimeLeft/60), s = pomodoroTimeLeft%60; el.textContent = `${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`; } document.getElementById('pomodoroPhase') && (document.getElementById('pomodoroPhase').textContent = pomodoroPhase === 'focus' ? 'Enfoque 🔥' : 'Descanso 🧘'); }
+    function pomodoroComplete() { pomodoroStop(); if(pomodoroPhase === 'focus') { pomodoroPhase = 'break'; pomodoroTimeLeft = pomodoroBreak * 60; Utils.showNotification('¡Descanso! Tiempo para relajarte','success'); Utils.playSound(); } else { pomodoroPhase = 'focus'; pomodoroTimeLeft = pomodoroFocus * 60; Utils.showNotification('¡Enfoque! Comienza tu sesión de trabajo','success'); Utils.playSound(); } updatePomodoroDisplay(); store.setState({ pomodoro: { focusDuration: pomodoroFocus, breakDuration: pomodoroBreak, currentPhase: pomodoroPhase, timeLeft: pomodoroTimeLeft } }); }
+    function pomodoroStart() { if(pomodoroRunning) return; pomodoroRunning = true; pomodoroInterval = setInterval(() => { if(pomodoroTimeLeft > 0) { pomodoroTimeLeft--; updatePomodoroDisplay(); store.setState({ pomodoro: { focusDuration: pomodoroFocus, breakDuration: pomodoroBreak, currentPhase: pomodoroPhase, timeLeft: pomodoroTimeLeft } }); } else { pomodoroComplete(); } }, 1000); }
+    function pomodoroStop() { clearInterval(pomodoroInterval); pomodoroRunning = false; }
+    function pomodoroReset() { pomodoroStop(); pomodoroTimeLeft = pomodoroPhase === 'focus' ? pomodoroFocus * 60 : pomodoroBreak * 60; updatePomodoroDisplay(); store.setState({ pomodoro: { focusDuration: pomodoroFocus, breakDuration: pomodoroBreak, currentPhase: pomodoroPhase, timeLeft: pomodoroTimeLeft } }); }
+    // Calculator (two instances: widget and full)
+    let calcValue = '0', calcPrev = null, calcOp = null, calcWait = false;
+    function updateCalcDisplay(displayId, value) { const el = document.getElementById(displayId); if(el) el.value = value; }
+    function handleCalcInput(val, displayId) {
+        if(val === 'C') { calcValue = '0'; calcPrev = null; calcOp = null; calcWait = false; updateCalcDisplay(displayId, calcValue); return; }
+        if(val === '=') { if(calcOp && calcPrev !== null) { let current = parseFloat(calcValue); let res; switch(calcOp) { case '+': res = calcPrev + current; break; case '-': res = calcPrev - current; break; case '*': res = calcPrev * current; break; case '/': res = calcPrev / current; break; } calcValue = res.toString(); calcOp = null; calcPrev = null; calcWait = true; updateCalcDisplay(displayId, calcValue); } return; }
+        if(['+','-','*','/'].includes(val)) { if(calcOp && !calcWait) { let current = parseFloat(calcValue); switch(calcOp) { case '+': calcPrev += current; break; case '-': calcPrev -= current; break; case '*': calcPrev *= current; break; case '/': calcPrev /= current; break; } calcValue = calcPrev.toString(); updateCalcDisplay(displayId, calcValue); } else { calcPrev = parseFloat(calcValue); } calcOp = val; calcWait = true; return; }
+        if(calcWait) { calcValue = val; calcWait = false; } else { calcValue = calcValue === '0' ? val : calcValue + val; } updateCalcDisplay(displayId, calcValue);
+    }
+    // Notes
+    let notesArray = store.state.notes;
+    function renderNotes() { const container = document.getElementById('notesContainer'); if(!container) return; if(notesArray.length===0) { container.innerHTML = '<div class="note-placeholder">No hay notas. Crea una nueva nota.</div>'; return; } container.innerHTML = notesArray.map(n => `<div class="note-item" data-id="${n.id}"><div><strong>${escapeHtml(n.title)}</strong><br><small>${new Date(n.createdAt).toLocaleDateString()}</small></div><button class="delete-note" data-id="${n.id}">🗑️</button></div>`).join(''); document.querySelectorAll('.delete-note').forEach(btn => { btn.onclick = (e) => { e.stopPropagation(); deleteNote(btn.dataset.id); }; }); document.querySelectorAll('.note-item').forEach(item => { item.onclick = () => editNote(item.dataset.id); }); }
+    function deleteNote(id) { if(confirm('¿Eliminar nota?')) { notesArray = notesArray.filter(n => n.id !== id); store.updateNotes(notesArray); renderNotes(); } }
+    function editNote(id) { const note = notesArray.find(n=>n.id===id); if(note) { const newContent = prompt('Editar contenido:', note.content); if(newContent !== null) { note.content = newContent; store.updateNotes(notesArray); renderNotes(); } } }
+    function createNewNote() { const title = prompt('Título de la nota:'); if(title) { notesArray.unshift({ id: Utils.generateId(), title, content: '', createdAt: new Date().toISOString() }); store.updateNotes(notesArray); renderNotes(); } }
+    function saveFullNotes() { const text = document.getElementById('fullNotes').value; localStorage.setItem('full_notes', text); Utils.showNotification('Notas guardadas','success'); }
+    function exportNotes() { const text = document.getElementById('fullNotes').value || localStorage.getItem('full_notes') || ''; const blob = new Blob([text], {type:'text/plain'}); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `notes_${new Date().toISOString().split('T')[0]}.txt`; a.click(); URL.revokeObjectURL(a.href); }
+    function loadFullNotes() { const saved = localStorage.getItem('full_notes'); if(saved && document.getElementById('fullNotes')) document.getElementById('fullNotes').value = saved; }
+    // Tasks
+    let tasksArray = store.state.tasks || [];
+    function renderTasks() { const container = document.getElementById('tasksList'); if(!container) return; if(tasksArray.length===0) { container.innerHTML = '<div class="task-placeholder">No hay tareas. Agrega una nueva tarea.</div>'; return; } container.innerHTML = tasksArray.map(t => `<div class="task-item" data-id="${t.id}"><input type="checkbox" class="task-checkbox" ${t.completed ? 'checked':''} data-id="${t.id}"><span class="task-text ${t.completed ? 'completed':''}">${escapeHtml(t.text)}</span><button class="delete-task" data-id="${t.id}">🗑️</button></div>`).join(''); document.querySelectorAll('.task-checkbox').forEach(cb => { cb.onchange = () => toggleTask(cb.dataset.id); }); document.querySelectorAll('.delete-task').forEach(btn => { btn.onclick = () => deleteTask(btn.dataset.id); }); updateTaskCounter(); }
+    function toggleTask(id) { const task = tasksArray.find(t=>t.id===id); if(task) { task.completed = !task.completed; store.updateTasks(tasksArray); renderTasks(); } }
+    function deleteTask(id) { tasksArray = tasksArray.filter(t=>t.id!==id); store.updateTasks(tasksArray); renderTasks(); }
+    function addTask() { const input = document.getElementById('newTaskInput'); const text = input.value.trim(); if(text) { tasksArray.push({ id: Utils.generateId(), text, completed: false, createdAt: new Date().toISOString() }); store.updateTasks(tasksArray); input.value = ''; renderTasks(); } }
+    function updateTaskCounter() { const total = tasksArray.length; const completed = tasksArray.filter(t=>t.completed).length; const pending = total - completed; document.getElementById('totalTasks') && (document.getElementById('totalTasks').textContent = total); document.getElementById('completedTasks') && (document.getElementById('completedTasks').textContent = completed); document.getElementById('pendingTasks') && (document.getElementById('pendingTasks').textContent = pending); }
+    // Settings & UI
+    let currentView = 'dashboard';
+    function switchView(view) { currentView = view; document.querySelectorAll('.view').forEach(v=>v.classList.remove('active')); document.getElementById(`${view}View`).classList.add('active'); document.querySelectorAll('.nav-item').forEach(nav=>nav.classList.remove('active')); const activeNav = Array.from(document.querySelectorAll('.nav-item')).find(n=>n.dataset.view===view); if(activeNav) activeNav.classList.add('active'); const titles = { dashboard:'Dashboard Ejecutivo', timer:'Control de Tiempo', tasks:'Gestión de Tareas', notes:'Bloc de Notas', calculator:'Calculadora', settings:'Configuración' }; document.getElementById('currentViewTitle').innerText = titles[view] || 'Productivity Suite'; localStorage.setItem('lastView', view); }
+    function loadSettings() { const s = store.state.settings; document.getElementById('draggableWidgets').checked = s.draggableWidgets; document.getElementById('focusMode').checked = s.focusMode; document.getElementById('notifications').checked = s.notifications; document.getElementById('sounds').checked = s.sounds; }
+    function initEventListeners() {
+        document.getElementById('stopwatchStart').onclick = stopwatchStart;
+        document.getElementById('stopwatchPause').onclick = stopwatchPause;
+        document.getElementById('stopwatchReset').onclick = stopwatchReset;
+        document.getElementById('timerStart').onclick = () => { const inp = document.getElementById('timerInput'); timerSeconds = parseInt(inp.value) || 0; updateTimerDisplay(); timerStart(); };
+        document.getElementById('timerStop').onclick = timerStop;
+        document.getElementById('pomodoroStart').onclick = pomodoroStart;
+        document.getElementById('pomodoroPause').onclick = pomodoroStop;
+        document.getElementById('pomodoroReset').onclick = pomodoroReset;
+        document.getElementById('newNoteBtn').onclick = createNewNote;
+        document.getElementById('addTaskBtn').onclick = addTask;
+        document.getElementById('saveNotesBtn').onclick = saveFullNotes;
+        document.getElementById('exportNotesBtn').onclick = exportNotes;
+        document.getElementById('quickSettingsBtn').onclick = () => switchView('settings');
+        document.getElementById('resetSettingsBtn').onclick = () => { if(confirm('Resetear todas las configuraciones?')) { localStorage.clear(); location.reload(); } };
+        document.querySelectorAll('.nav-item').forEach(nav => nav.addEventListener('click', () => switchView(nav.dataset.view)));
+        document.getElementById('draggableWidgets').onchange = (e) => store.updateSettings({ draggableWidgets: e.target.checked });
+        document.getElementById('focusMode').onchange = (e) => { store.updateSettings({ focusMode: e.target.checked }); if(e.target.checked) { const div = document.createElement('div'); div.className = 'focus-mode-overlay'; div.id='focusOverlay'; div.innerHTML = '<div style="text-align:center"><h2>Modo Enfoque</h2><button onclick="document.getElementById(\'focusOverlay\').remove()">Salir</button></div>'; document.body.appendChild(div); } else { const ov = document.getElementById('focusOverlay'); if(ov) ov.remove(); } };
+        document.getElementById('notifications').onchange = (e) => store.updateSettings({ notifications: e.target.checked });
+        document.getElementById('sounds').onchange = (e) => store.updateSettings({ sounds: e.target.checked });
+        // Calculator widget buttons
+        document.querySelectorAll('.calc-btn[data-calc]').forEach(btn => btn.onclick = () => handleCalcInput(btn.dataset.calc, 'calcDisplay'));
+        document.querySelectorAll('.calc-btn[data-calc-full]').forEach(btn => btn.onclick = () => handleCalcInput(btn.dataset.calcFull, 'calcDisplayFull'));
+        // Timer detailed settings
+        const focusInput = document.getElementById('focusDuration'); const breakInput = document.getElementById('breakDuration');
+        if(focusInput) focusInput.onchange = (e) => { pomodoroFocus = parseInt(e.target.value); if(pomodoroPhase==='focus') { pomodoroTimeLeft = pomodoroFocus * 60; updatePomodoroDisplay(); store.setState({ pomodoro: { focusDuration: pomodoroFocus, breakDuration: pomodoroBreak, currentPhase: pomodoroPhase, timeLeft: pomodoroTimeLeft } }); } };
+        if(breakInput) breakInput.onchange = (e) => { pomodoroBreak = parseInt(e.target.value); if(pomodoroPhase==='break') { pomodoroTimeLeft = pomodoroBreak * 60; updatePomodoroDisplay(); store.setState({ pomodoro: { focusDuration: pomodoroFocus, breakDuration: pomodoroBreak, currentPhase: pomodoroPhase, timeLeft: pomodoroTimeLeft } }); } };
+        // keyboard shortcuts
+        document.addEventListener('keydown', (e) => { if(e.altKey) { if(e.key === '1') switchView('dashboard'); if(e.key === '2') switchView('timer'); if(e.key === '3') switchView('tasks'); if(e.key === '4') switchView('notes'); if(e.key === '5') switchView('calculator'); if(e.key === '6') switchView('settings'); } if((e.ctrlKey||e.metaKey) && e.key === 'k') { e.preventDefault(); const cmd = prompt('Comando rápido (dashboard, timer, tasks, notes, calculator, settings):'); if(cmd && ['dashboard','timer','tasks','notes','calculator','settings'].includes(cmd)) switchView(cmd); } });
+    }
+    function escapeHtml(str) { const div = document.createElement('div'); div.textContent = str; return div.innerHTML; }
+    // restore last view
+    const lastView = localStorage.getItem('lastView'); if(lastView && ['dashboard','timer','tasks','notes','calculator','settings'].includes(lastView)) switchView(lastView); else switchView('dashboard');
+    initClock(); updateStopwatchDisplay(); updatePomodoroDisplay(); updateTimerDisplay(); renderNotes(); renderTasks(); loadFullNotes(); loadSettings(); initEventListeners();
+    // load pomodoro stored values
+    pomodoroFocus = store.state.pomodoro.focusDuration; pomodoroBreak = store.state.pomodoro.breakDuration; pomodoroPhase = store.state.pomodoro.currentPhase; pomodoroTimeLeft = store.state.pomodoro.timeLeft; updatePomodoroDisplay();
+    if(store.state.stopwatch.isRunning) { stopwatchTime = store.state.stopwatch.time; stopwatchStart(); }
 </script>
-
-<span id=2242 class="anchor"></span>
-<section id=2242>
-                                                                                                                                                                  <style>
-.home {
-    overflow: hidden;
-}
-nav.navbar.navbar-inverse.sub-navbar.navbar-fixed.hello {
-display:none;
-}
-  #neomenu {
-    top:50px;
-    position: fixed;
-  }
-  #banner-fade-14901 {
-    width: 80%;
-margin-top:64px;
-  }
-  #sliderMain-14901 {
-    max-width: 90% !important;
-  }
-  .home .font-changer {
-    z-index: 1000;
-  }
-</style>
-
-<nav class="navbar navbar-inverse sub-navbar navbar-fixed neomenu" id="neomenu">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subneoenlaces">
-        <span class="sr-only">Interruptor de Navegación</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="link-name" href="?tab="></a>
-    </div>
-    <div class="collapse navbar-collapse" id="subneoenlaces">
-      <ul class="nav subnav navbar-nav navbar-right">
-        <li><a href="https://www.gob.mx/becasbenitojuarez">Inicio</a></li>
-        <li><a href="https://www.gob.mx/becasbenitojuarez?tab=nosotros">Nosotros</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Documentos
-              <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-              <li><a href="https://www.gob.mx/becasbenitojuarez/es/archivo/documentos">Documentos</a>
-              </li>
-              <li><a href="https://www.gob.mx/becasbenitojuarez/archivo/articulos">Artículos</a>
-              </li>
-          </ul>
-      </li>
-      <li><a href="https://www.gob.mx/becasbenitojuarez/archivo/prensa">Comunicados</a></li>
-      <li><a href="https://cn.becasbenitojuarez.gob.mx/swb/swb/gobmx">Transparencia</a></li>
-      <li><a
-              href="https://cn.becasbenitojuarez.gob.mx/swb/es/gobmx/Proteccion_de_Datos_Personales">Protección
-              de Datos Personales</a></li>   
-    <!--li class="landing-btn">
-                    <a href="http://sep.gob.mx/es/sep1/transparencia_rendicion">
-                Transparencia            </a>
-            </li-->
-      </ul>
-    </div>
-  </div>
-</nav>
-        
-
-<style>
-    .sn-text {
-        font-weight: bold;
-        text-align: right;
-        position: relative;
-        color:  #ffffff;
-    }
-    a {
-        text-decoration: none;
-    }
-    div.button {
-        background-color: #ffffff;
-        color: #2c3e50;
-        border: none;
-        border-radius: 30px;
-        width: 185px;
-        height: 36px;
-        position: fixed;
-        left: -150px;
-        transition: .7s ease;
-        z-index: 3000;
-    }
-    #butn1 {
-        top: 60%;
-    }
-    #butn2 {
-        top: 65%;
-    }
-    #butn3 {
-        top: 70%;
-    }
-    #butn4 {
-        top: 75%;
-    }
-    div.button:hover {
-        position: fixed;
-        left: -50px;
-        width: 180px;
-        border-radius: 30px;
-        color: #ffffff;
-    }
-    div.button:active {
-        transition: 0s;
-        color: #ecf0f1;
-    }
-</style>
-<div id="socialside" style="">
-    <a href="https://www.facebook.com/BecasBenito/" target="_blank ">
-        <div id="butn1" class="button" style="background-color: #3b5998; color: #ffffff">
-            <div class="row" style="margin-top: 6px">
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                    <p class="sn-text" style="margin-top: 4px;  font-size: 14px;">Facebook</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding-left: 8px; padding-right: 0;">
-                    <img src="https://www.gob.mx/cms/uploads/image/file/556656/fb.png" style="width: 25px; height: 25px; position: relative; z-index: -30000; float:left" class="img-circle"   alt="">
-                </div>
-            </div>
-        </div>
-    </a>
-    <a href="https://twitter.com/BecasBenito" target="_blank" style="">
-        <div id="butn2" class="button" style="background-color: #379cc8; color: #ffffff">
-            <div class="row" style="margin-top: 6px">
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                    <p class="sn-text" style="margin-top: 4px;  font-size: 14px;">Twitter</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding-left: 8px; padding-right: 0;">
-                    <img src="https://www.gob.mx/cms/uploads/image/file/556658/twitter.png" style="width: 25px; height: 25px; position: relative; z-index: -30000; float:left" class="img-circle"   alt="">
-                </div>
-            </div>
-        </div>
-    </a>
-
-    <a href="https://www.youtube.com/becasbenitojuarezoficial" target="_blank">
-        <div id="butn3" class="button" style="background-color: #ee0002; color: #ffffff">
-            <div class="row" style="margin-top: 6px">
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                    <p class="sn-text" style="margin-top: 4px;  font-size: 14px;">Youtube</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding-left: 8px; padding-right: 0;">
-                    <img src="https://www.gob.mx/cms/uploads/image/file/556657/yt.jpg" style="width: 25px; height: 25px; position: relative; z-index: -30000; float:left" class="img-circle"   alt="">
-                </div>
-            </div>
-        </div>
-    </a>
-
-    <!--<a href="#">
-        <div id="butn4" class="button" style="background-color: #ee0002; color: #ffffff">
-            <div class="row" style="margin-top: 6px">
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                    <p class="sn-text">Instagram</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding-left: 8px; padding-right: 0;">
-                    <img src="3/icons/yt.jpg" style="width: 25px; height: 25px; position: relative; z-index: -30000; float:left" class="img-circle"   alt="">
-                </div>
-            </div>
-        </div>
-    </a>-->
-</div>
-<!-----------------------------------------------FIN BARRA REDES------------------------------------->        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </section>
-<span id=14903 class="anchor"></span>
-<section id=14903>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <div class="container top-buffer">
-
-<!-- Contenedor para las imágenes -->
-    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
-       <div>
-<a href="https://www.gob.mx/becasbenitojuarez/articulos/beca-de-apoyo-para-uniformes-y-utiles-rita-cetina-primaria" target="_blank">
-            <img src="https://www.gob.mx/cms/uploads/image/file/1055865/20260213_IG_DECS_BotonRCPrimaria.png" 
-                 alt="" class="img-responsive img-fluid" style=" border-radius: 10px;">
-        </a>
-        </div>
-        <div>
-<a href="https://www.gob.mx/becasbenitojuarez/articulos/beca-universal-de-educacion-basica-rita-cetina-394120" target="_blank">
-            <img src="https://www.gob.mx/cms/uploads/image/file/1055864/20260213_IG_DECS_BotonRCSecundaria.png" 
-                 alt="" class="img-responsive img-fluid" style=" border-radius: 10px;">
-        </a>
-        </div>
-        <div>
-<a href="https://www.gob.mx/becasbenitojuarez/es/articulos/conoce-todo-sobre-la-beca-universal-de-educacion-media-superior-benito-juarez" target="_blank">
-            <img src="https://www.gob.mx/cms/uploads/image/file/1044529/20260108_BW_DECS_BotonMedia_V2.jpg" 
-                 alt="" class="img-responsive img-fluid" style=" border-radius: 10px;">
-        </a>
-        </div>
-        <div>
-<a href="https://www.gob.mx/becasbenitojuarez/es/articulos/conoce-todo-sobre-la-beca-jovenes-escribiendo-el-futuro" target="_blank">
-            <img src="https://www.gob.mx/cms/uploads/image/file/1044528/20260105_BW_DECS_BotonJEF.png" 
-                 alt="" class="img-responsive img-fluid" style=" border-radius: 10px;">
-        </a>
-       </div>
-       <div>
-<a href="https://www.gob.mx/becasbenitojuarez/articulos/beca-de-transporte-gertrudis-bocanegra" target="_blank">
-            <img src="https://www.gob.mx/cms/uploads/image/file/1044527/20260108_bw_DECS_BotonGB.jpg" 
-                 alt="" class="img-responsive img-fluid" style=" border-radius: 10px;">
-        </a>
-        </div>
-     
-<div style="display:flex; flex-direction:column; gap:10px;">
-  
-
-  <a href="https://linktr.ee/CanalesBecasBienestar" target="_blank">
-    <img src="https://www.gob.mx/cms/uploads/image/file/1055872/20260211_GR_DECS_BotonWA.png"
-         alt="" class="img-responsive img-fluid"
-         style="border-radius: 1px; width:100%;">
-  </a>
-
-  <a href="https://www.gob.mx/becasbenitojuarez/articulos/que-es-la-contraloria-social-234537" target="_blank">
-    <img src="https://www.gob.mx/cms/uploads/image/file/1055873/20260210_GR_DECS_BotonContraloriaSocial_FONDOBLANCO.png"
-         alt="" class="img-responsive img-fluid"
-         style="border-radius: 1px; width:100%;">
-  </a>
-
-  <!-- ========================================== -->
-  <!-- BOTÓN MODIFICADO: Buscador de oficinas      -->
-  <!-- Ya NO abre enlace, solo el reproductor     -->
-  <!-- ========================================== -->
-  <a id="oficinasBtn" href="javascript:void(0);" style="cursor:pointer;">
-    <img src="https://www.gob.mx/cms/uploads/image/file/985360/1.png"
-         alt="Abrir reproductor de música"
-         class="img-responsive img-fluid"
-         style="border-radius: 1px; width:100%;">
-  </a>
-
-</div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </section>
-
-    </div>
-    <input type="hidden" id="tab_title" name="tab_title" value="Página 0" >
-    <div class="space_bottom clearfix vertical-buffer"></div>
-</main>
-<input type="hidden" id="page_type" name="page_type" value="Home">
-<input type="hidden" id="organization_name" name="organization_name" value="becasbenitojuarez">
-<input type="hidden" id="total-levels" value=7>
-<input type="hidden" id="page-size" value=3>
-<input type="hidden" id="organization_path" name="organization_path" value="becasbenitojuarez">
-
-
-<footer class="main-footer">
-  <div class="list-info">
-    <div class="container padding-cont">
-
-      <div id="wrapper">
-        <div class="col-sm-3 logo-footer">
-          <img src="https://framework-gb.cdn.gob.mx/gobmx/img/logo_blanco.svg" href="/" alt="logo gobierno de méxico" class="logo_footer" style="max-width: 50%; margin-left: -27px;   margin-top: 12px;">
-        </div>
-          <div class="accordion">
-            <input id="toggle1" type="checkbox" class="accordion-toggle" name="toggle" />
-            <label for="toggle1"> <h4 class="footer-title">Enlaces</h4></label>
-            <section>
-              <div class=" wrapper-content col-sm-3">
-                <ul>
-                  <!-- <li><a  href="http://www.participa.gob.mx">Participa</a></li> -->
-                  <li><a href="https://datos.gob.mx/" target="_blank">Datos</a></li>
-                  <!-- <li><a href="https://www.gob.mx/publicaciones" rel="noopener" title="Enlace abre en ventana nueva">Publicaciones </a></li> -->
-
-                        <li><a class="footer" href="http://consultapublicamx.inai.org.mx:8080/vut-web/" id="Transparencia" target="blank" title="Enlace abre en ventana nueva">Portal de Obligaciones de Transparencia</a></li>
-
-                        <li><a class="footer" href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/" id="PNT" target="blank" title="Enlace abre en ventana nueva">PNT</a></li>
-
-                        <li><a class="footer" href="http://www.inai.org.mx/" id="INAI" target="blank" title="Enlace abre sitio INAI en ventana nueva">INAI</a></li>
-
-                  <li>
-                    <a class="footer" id="INAI" href="http://alertadores.funcionpublica.gob.mx/" target="_blank" rel="alertadores">Alerta</a>
-                  </li>
-                  <li>
-                    <a class="footer" id="SIDEC" href="https://sidec.buengobierno.gob.mx/#!/" target="_blank" rel="sidec">Denuncia</a>
-                  </li>
-                </ul>
-              </div>
-            </section>
-          </div>
-
-          <div class="accordion">
-            <input id="toggle2" type="checkbox" class="accordion-toggle" name="toggle" />
-            <label for="toggle2"> <h4 class="footer-title">¿Qué es gob.mx?</h4></label>
-            <section>
-              <div class=" wrapper-content col-sm-3 ">
-
-                <div>Es el portal único de trámites, información y participación ciudadana.
-                  <a href="/que-es-gobmx" target="_blank" style="text-decoration: none;">Leer más </a>
-                </div>
-                <ul>
-
-
-                    
-                  <li><a href="/accesibilidad" target="_blank">Declaración de Accesibilidad</a></li>
-                  <!--  <li><a href="/privacidadintegral"  target="_blank"></a></li>
-          <li><a href="/privacidadsimplificado"  target="_blank"></a></li>-->
-                  <li><a href="/terminos" target="_blank">Términos y Condiciones </a></li>
-                </ul>
-              </div>
-            </section>
-          </div>
-          </div>
-
-        <div class="col-sm-3">
-          <h5 class="link-a"><a class="footer" id="SIDEC" href="https://sidec.buengobierno.gob.mx/#!/" target="_blank" rel="sidec">Denuncia contra servidores públicos</a></h5>
-
-          <h4 class="col-xs-6 col-md-11 footer-title" style="padding: 3px; margin: 0px;">Síguenos en </h4>
-
-          <ul class="col-xs-6 col-md-11 list-inline">
-            <li>
-              <a id="Facebook" href="https://www.facebook.com/gobmexico" target="_blank" rel="noopener" class="facebook share-info footer" title="enlace a facebook abre en una nueva ventana">
-                <img alt="Facebook" src="https://framework-gb.cdn.gob.mx/landing/img/facebook.png" />
-              </a>
-            </li>
-            <li>
-              <a id="Twitter" href="https://twitter.com/GobiernoMX" target="_blank" rel="noopener" class="twitter share-info footer" title="Enlace a twitter abre en una nueva ventana">
-                <img alt="Twitter" src="https://framework-gb.cdn.gob.mx/landing/img/twitter.png" />
-              </a>
-            </li>
-            <li>
-              <a id="Twitter" href="https://www.instagram.com/gobmexico/" target="_blank" rel="noopener" class="instagram share-info footer" title="Enlace a instagram abre en una nueva ventana">
-                <img src="/cms/assets/instagram.png" alt="gob.mx">
-              </a>
-            </li>
-            <li>
-              <a id="Twitter" href="https://www.youtube.com/@gobiernodemexico"  rel="noopener" class="yotube share-info footer" title="Enlace a Youtube abre en una nueva ventana">
-                <img src="/cms/assets/youtube.png" alt="gob.mx">
-              </a>
-            </li>
-          </ul>
-          <ul class="list-inline">
-            <li>
-              <div class="logo-079">
-                <a href="tel:+079" >
-                  <img src=" https://framework-gb.cdn.gob.mx/gobmx/img/079.png" href="/" alt="logo 079" class="logo-079">
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
-        </div>
-  </div>
-  <div class="container-fluid footer-pleca-oculta">
-    <div class="row">
-      <div class="col">
-        <br><br>
-      </div>
-    </div>
-  </div>
-  </div>
-</footer>
-
-  <script type="text/javascript">
-      //from http://stackoverflow.com/a/11381730/989439
-
-      function mobilecheck() {
-          var check = false;
-          (function(a,b){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))check = true})(navigator.userAgent||navigator.vendor||window.opera);
-          return check;
-      }
-
-      /* if (mobilecheck() === true){
-           $( "#wrapper" ).addClass( "accordion" );
-       }
-       else {
-           $( "#wrapper" ).removeClass( "accordion" );
-       }*/
-
-      // Checks screen width.
-      function mobileCheck(mq) {
-          if (mq.matches) {
-              return true;
-          } else {
-              return false;
-          }
-      }
-
-      const mq = window.matchMedia("(max-width: 1024px)");
-      let timeout;
-
-
-      $("a.footer").click(function () {
-          var pagina_sitio = window.location.pathname;
-          var outbound_link = $(this).attr("id");
-          var subgrupo_paginas = "becasbenitojuarez";
-          var page_type = "Home";
-          var pages_group = "Gobierno";
-          if ($("#page_type").length > 0) {
-              page_type = $("#page_type").val();
-          }
-
-          console.log("Metrica links externos footer - " + outbound_link);
-          gtag('set', 'dimension14', pages_group);
-          gtag('set', 'dimension15', subgrupo_paginas);
-          gtag('set', 'dimension16', page_type);
-          gtag('send', 'event', 'Outbound link - Footer', outbound_link, pagina_sitio);
-          gtag('set', 'dimension14', null);
-          gtag('set, ‘dimension15', null);
-      })
-     
-      document.addEventListener('DOMContentLoaded', () => {
-          const accordion = document.querySelector('.accordion');
-          const headers = accordion.querySelectorAll('.accordion-header');
-          const toggleBtn = document.getElementById('modeToggle');
-
-          function closeAll() {
-              accordion.querySelectorAll('.accordion-item').forEach(item => {
-                  const content = item.querySelector('.accordion-content');
-                  content.style.maxHeight = '0px';
-                  content.classList.remove('show');
-                  item.querySelector('.accordion-header').classList.remove('rotated');
-              });
-          }
-
-          function handleHeaderClick(header) {
-              const item = header.parentElement;
-              const content = item.querySelector('.accordion-content');
-              const isOpen = content.classList.contains('show');
-              const mode = accordion.dataset.mode;
-
-              if (mode === 'single') closeAll();
-
-              if (isOpen) {
-                  content.style.maxHeight = content.scrollHeight + 'px';
-                  requestAnimationFrame(() => {
-                      content.style.maxHeight = '0px';
-                  });
-              } else {
-                  content.style.maxHeight = content.scrollHeight + 'px';
-              }
-
-              content.classList.toggle('show', !isOpen);
-              header.classList.toggle('rotated', !isOpen);
-          }
-
-          headers.forEach(header => {
-              header.addEventListener('click', () => handleHeaderClick(header));
-          });
-
-          toggleBtn.addEventListener('click', () => {
-              const isSingle = accordion.dataset.mode === 'single';
-              accordion.dataset.mode = isSingle ? 'multiple' : 'single';
-              // toggleBtn.textContent = isSingle ? 'Switch to Single' : 'Switch to Multi';
-              toggleBtn.textContent = isSingle ? 'Multiple' : 'Single';
-
-              if (!isSingle) {
-                  const openItems = accordion.querySelectorAll('.accordion-content.show');
-                  openItems.forEach((content, idx) => {
-                      if (idx === 0) return;
-                      content.style.maxHeight = '0px';
-                      content.classList.remove('show');
-                      content.closest('.accordion-item').querySelector('.accordion-header').classList.remove('rotated');
-                  });
-              }
-          });
-      });
-
-      document.addEventListener('DOMContentLoaded', () => {
-          const yearSpan = document.getElementById('year');
-          if (yearSpan) {
-              yearSpan.textContent = new Date().getFullYear();
-          }
-      });
-
-  </script>
-
-<input class="hidden" id="route" value="/becasbenitojuarez" type="hidden" >
-<!-- div id="fb-root"></div -->
-
-    <script src="/cms/assets/paginator.js"></script>
-    <script src="/cms/assets/paginate.js"></script>
-    <script src="/cms/assets/paginate-content.js"></script>
-
-
-
-
-  <!-- Begin comScore Tag -->
-
-  <!-- End comScore Tag -->
-
-  <script type="text/javascript">
-
-      var _sf_startpt=(new Date()).getTime();
-      var _sf_async_config = { uid: 43659, domain: 'www.gob.mx', useCanonical: true } ;
-      (function() {
-          function loadChartbeat() { window._sf_endpt = (new Date()).getTime(); var e = document.createElement('script'); e.setAttribute('language', 'javascript'); e.setAttribute('type', 'text/javascript'); e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js'); document.body.appendChild(e); };
-          var oldonload = window.onload;
-          window.onload = (typeof window.onload != 'function') ?
-              loadChartbeat : function()
-              { oldonload(); loadChartbeat(); };
-      })();
-      var ele = "/becasbenitojuarez";
-      if( "#{(@organization_site.present? ? @organization_site.category : 'gobmx')}" == "Campaña") {
-          var siteEls = 'campaign';
-      } else {
-          var siteEls = 'gobierno';
-      }
-
-      for( var i = 1; i < ele.split('/').length; i++ ) {
-          siteEls = siteEls + '.' + ele.split('/')[i];
-      }
-
-      function udm_(e){var t="comScore=",n=document,r=n.cookie,i="",s="indexOf",o="substring",u="length",a=2048,f,l="&ns_",c="&",h,p,d,v,m=window,g=m.encodeURIComponent||escape;if(r[s](t)+1)for(d=0,p=r.split(";"),v=p[u];d<v;d++)h=p[d][s](t),h+1&&(i=c+unescape(p[d][o](h+t[u])));e+=l+"_t="+ +(new Date)+l+"c="+(n.characterSet||n.defaultCharset||"")+"&c8="+g(n.title)+i+"&c7="+g(n.URL)+"&c9="+g(n.referrer),e[u]>a&&e[s](c)>0&&(f=e[o](0,a-8).lastIndexOf(c),e=(e[o](0,f)+l+"cut="+g(e[o](f+1)))[o](0,a)),n.images?(h=new Image,m.ns_p||(ns_p=h),h.src=e):n.write("<","p","><",'img src="',e,'" height="1" width="1" alt="*"',"><","/p",">")};
-      function uid_call(a, b){
-          ui_c2 = 17183199; // your corporate c2 client value
-          ui_ns_site = 'gobmx'; // your sites identifier
-          window.b_ui_event = window.c_ui_event != null ? window.c_ui_event:"",window.c_ui_event = a;
-          var ui_pixel_url = 'https://sb.scorecardresearch.com/p?c1=2&c2='+ui_c2+'&ns_site='+ui_ns_site+'&name='+a+'&ns_type=hidden&type=hidden&ns_ui_type='+b;
-          var b="comScore=",c=document,d=c.cookie,e="",f="indexOf",g="substring",h="length",i=2048,j,k="&ns_",l="&",m,n,o,p,q=window,r=q.encodeURIComponent||escape;if(d[f](b)+1)for(o=0,n=d.split(";"),p=n[h];o<p;o++)m=n[o][f](b),m+1&&(e=l+unescape(n[o][g](m+b[h])));ui_pixel_url+=k+"_t="+ +(new Date)+k+"c="+(c.characterSet||c.defaultCharset||"")+"&c8="+r(c.title)+e+"&c7="+r(c.URL)+"&c9="+r(c.referrer)+"&b_ui_event="+b_ui_event+"&c_ui_event="+c_ui_event,ui_pixel_url[h]>i&&ui_pixel_url[f](l)>0&&(j=ui_pixel_url[g](0,i-8).lastIndexOf(l),ui_pixel_url=(ui_pixel_url[g](0,j)+k+"cut="+r(ui_pixel_url[g](j+1)))[g](0,i)),c.images?(m=new Image,q.ns_p||(ns_p=m),m.src=ui_pixel_url):c.write("<p><img src='",ui_pixel_url,"' height='1' width='1' alt='*'></p>");
-      }
-      udm_('https://sb.scorecardresearch.com/b?c1=2&c2=17183199&ns_site=gobmx&name='+siteEls);
-  </script>
-
-  <noscript>
-    <img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=17183199&amp;ns_site=gobmx&amp;name=gobierno.becasbenitojuarez" height="1" width="1" alt="*" />
-  </noscript>
-<script>
-    let key = '';
-    $(function () {
-
-        $.getJSON("https://framework-gb.cdn.gob.mx/applications/cms/configGobmx.json", function(json) {
-            // console.log(json.keyAnalytics); this will show the info it in firebug console
-            key = json.keyAnalytics;
-            ga('create', key , 'auto', 'GobTracker');
-            ga('GobTracker.require', 'linker');
-            ga('GobTracker.linker:autoLink', ['www.gob.mx']);
-            ga('GobTracker.set', 'contentGroup1', 'Gobierno');
-            ga('GobTracker.set', 'contentGroup2', SubGroup);
-            ga('GobTracker.set', 'contentGroup3', PageType);
-            ga('GobTracker.set', 'dimension14', 'Gobierno');
-            ga('GobTracker.set', 'dimension15', SubGroup);
-            ga('GobTracker.set', 'dimension16', PageType);
-            ga('GobTracker.set', 'dimension13', 'No Registrado');
-            ga('GobTracker.send', 'pageview');
-            ga('GobTracker.set', 'contentGroup1', null);
-            ga('GobTracker.set', 'contentGroup2', null);
-            ga('GobTracker.set', 'contentGroup3', null);
-            ga('GobTracker.set', 'dimension14', null);
-            ga('GobTracker.set', 'dimension15', null);
-            ga('GobTracker.set', 'dimension16', null);
-            ga('GobTracker.set', 'dimension13', null);
-        });
-    });
-</script>
-
-<script src="https://framework-gb.cdn.gob.mx/applications/cms/modal_global_cms.js"></script>
-<script src="https://framework-gb.cdn.gob.mx/gm/accesibilidad/js/gobmx-accesibilidad.min.js"></script>
-<script src="https://framework-gb.cdn.gob.mx/assets/scripts/vendor/slick.js"></script>
-<script src="https://framework-gb.cdn.gob.mx/assets/scripts/vendor/slick.min.js"></script>
-<script src="https://framework-gb.cdn.gob.mx/assets/scripts/vendor/slick-lightbox.js"></script>
-<link rel="stylesheet" href="https://framework-gb.cdn.gob.mx/assets/scripts/vendor/slick-lightbox.css">
-
-
-<script src="https://framework-gb.cdn.gob.mx/applications/cms/config_dependency.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- ============================================== -->
-<!-- REPRODUCTOR FLOTANTE SIGILOSO                   -->
-<!-- ============================================== -->
-<style>
-  .music-bubble-watermark {
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    width: 32px;
-    height: 32px;
-    background: rgba(150, 150, 150, 0.12);
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 999999;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(1px);
-    border: 0.5px solid rgba(255,255,255,0.05);
-  }
-  .music-bubble-watermark:hover {
-    background: rgba(150, 150, 150, 0.25);
-    transform: scale(1.05);
-  }
-  .music-bubble-watermark::before {
-    content: "🎵";
-    font-size: 14px;
-    opacity: 0.3;
-  }
-  .music-bubble-watermark.playing::before {
-    content: "🎧";
-    opacity: 0.5;
-    animation: pulse-faint 1.5s infinite;
-  }
-  @keyframes pulse-faint {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 0.6; }
-  }
-  .player-panel-watermark {
-    position: fixed;
-    bottom: 55px;
-    right: 15px;
-    background: rgba(0,0,0,0.7);
-    backdrop-filter: blur(12px);
-    border-radius: 16px;
-    padding: 10px;
-    z-index: 999998;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    border: 1px solid rgba(255,255,255,0.08);
-    width: 260px;
-    max-width: calc(100vw - 40px);
-  }
-  .player-panel-watermark.hidden {
-    display: none;
-  }
-</style>
-
-<div id="musicBubble" class="music-bubble-watermark"></div>
-<div id="playerPanel" class="player-panel-watermark hidden">
-  <div class="elfsight-app-c9c596e6-f493-4aa9-81c8-7c7ebae37f59" data-elfsight-app-lazy></div>
-</div>
-
-<script src="https://elfsightcdn.com/platform.js" async></script>
-
-<script>
-(function() {
-  const bubble = document.getElementById('musicBubble');
-  const panel = document.getElementById('playerPanel');
-  let isPanelVisible = false;
-  let audioElement = null;
-  
-  function findAudioElement() {
-    const audio = document.querySelector('audio');
-    if (audio && audio !== audioElement) {
-      audioElement = audio;
-      audio.addEventListener('play', () => bubble.classList.add('playing'));
-      audio.addEventListener('pause', () => bubble.classList.remove('playing'));
-      audio.addEventListener('ended', () => bubble.classList.remove('playing'));
-      if (!audio.paused && !audio.ended) bubble.classList.add('playing');
-    }
-  }
-  
-  const observer = new MutationObserver(() => findAudioElement());
-  observer.observe(document.body, { childList: true, subtree: true });
-  
-  bubble.addEventListener('click', (e) => {
-    e.stopPropagation();
-    if (isPanelVisible) {
-      panel.classList.add('hidden');
-      isPanelVisible = false;
-    } else {
-      panel.classList.remove('hidden');
-      isPanelVisible = true;
-      setTimeout(findAudioElement, 500);
-    }
-  });
-  
-  document.addEventListener('click', (event) => {
-    if (isPanelVisible && !panel.contains(event.target) && !bubble.contains(event.target)) {
-      panel.classList.add('hidden');
-      isPanelVisible = false;
-    }
-  });
-  
-  setInterval(findAudioElement, 3000);
-  setTimeout(findAudioElement, 1500);
-  
-  // Botón de oficinas - activa el reproductor
-  const oficinasBtn = document.getElementById('oficinasBtn');
-  if (oficinasBtn) {
-    oficinasBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      if (!isPanelVisible) {
-        panel.classList.remove('hidden');
-        isPanelVisible = true;
-        setTimeout(findAudioElement, 300);
-      }
-    });
-  }
-})();
-</script>
-
 </body>
 </html>
